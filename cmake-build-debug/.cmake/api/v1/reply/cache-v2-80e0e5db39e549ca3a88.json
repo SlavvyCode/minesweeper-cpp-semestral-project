@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/MinesweeperPCC"
+			"value" : "C:/Program Files (x86)/pcc_semestralka"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe"
+			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -875,7 +875,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "MinesweeperPCC"
+			"value" : "pcc_semestralka"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1254,7 +1254,19 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "MinesweeperPCC_BINARY_DIR",
+			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
+		},
+		{
+			"name" : "pcc_semestralka_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1266,7 +1278,7 @@
 			"value" : "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug"
 		},
 		{
-			"name" : "MinesweeperPCC_IS_TOP_LEVEL",
+			"name" : "pcc_semestralka_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1278,7 +1290,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "MinesweeperPCC_SOURCE_DIR",
+			"name" : "pcc_semestralka_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1288,18 +1300,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka"
-		},
-		{
-			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "linker supports push/pop state"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "TRUE"
 		}
 	],
 	"kind" : "cache",

@@ -1,10 +1,8 @@
-#include <iostream>
-
-#include "Game/Threads/inputThread.h"
-
 //
 // Created by Adam on 22/11/2023.
 //
+
+#include "Game/Threads/inputThread.h"
 
 int main() {
     // Create an instance of InputThread

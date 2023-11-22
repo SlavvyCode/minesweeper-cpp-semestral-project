@@ -2,8 +2,8 @@
 // Created by Adam on 21/11/2023.
 //
 
-#ifndef CMAKEPROJEKT_INPUTTHREAD_H
-#define CMAKEPROJEKT_INPUTTHREAD_H
+#ifndef PCC-SEMESTRALKA_INPUTTHREAD_H
+#define PCC-SEMESTRALKA_INPUTTHREAD_H
 
 
 #include <iostream>
@@ -29,4 +29,4 @@ private:
     // Add any other private members or functions as needed
 };
 
-#endif //CMAKEPROJEKT_INPUTTHREAD_H
+#endif //PCC-SEMESTRALKA_INPUTTHREAD_H

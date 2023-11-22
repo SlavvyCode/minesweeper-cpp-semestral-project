@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "MinesweeperPCC",
+					"name" : "pcc_semestralka",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "MinesweeperPCC::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MinesweeperPCC-Debug-87cd6c9775e7d480cb3d.json",
-					"name" : "MinesweeperPCC",
+					"id" : "pcc_semestralka::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pcc_semestralka-Debug-21f9d388d8f7e69e25f2.json",
+					"name" : "pcc_semestralka",
 					"projectIndex" : 0
 				}
 			]

@@ -1,9 +1,9 @@
 //
-// Created by Adam on 21/11/2023.
+// Created by Adam on 22/11/2023.
 //
 
-#ifndef CMAKEPROJEKT_OUTPUTTHREAD_H
-#define CMAKEPROJEKT_OUTPUTTHREAD_H
+#ifndef PCC_SEMESTRALKA_OUTPUTTHREAD_H
+#define PCC_SEMESTRALKA_OUTPUTTHREAD_H
 
 
 class outputThread {
@@ -11,4 +11,4 @@ class outputThread {
 };
 
 
-#endif //CMAKEPROJEKT_OUTPUTTHREAD_H
+#endif //PCC_SEMESTRALKA_OUTPUTTHREAD_H
