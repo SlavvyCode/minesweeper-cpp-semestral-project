@@ -1,0 +1,4 @@
+# ninja log v5
+6	713	7223454363275010	CMakeFiles/MinesweeperPCC.dir/main.cpp.obj	c647e8f8a74015c8
+1	748	7223454363626166	CMakeFiles/MinesweeperPCC.dir/Game/Threads/inputThread.cpp.obj	d61cdf708e710a9a
+748	892	7223454365029567	MinesweeperPCC.exe	9d93feb5b12d16f8
