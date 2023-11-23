@@ -20,7 +20,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="removed leftover not deleted revert file before trying to add it properly as submodule agian" />
+    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="added board class, cell struct, started their implementation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700666773294</updated>
       <workItem from="1700666774546" duration="887000" />
-      <workItem from="1700761554435" duration="412000" />
+      <workItem from="1700761554435" duration="1432000" />
     </task>
     <task id="LOCAL-00001" summary="pushtest">
       <option name="closed" value="true" />
@@ -111,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700761694989</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added board class, cell struct, started their implementation">
+      <option name="closed" value="true" />
+      <created>1700762044731</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700762044731</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,9 +141,9 @@
             <State>
               <option name="COLUMN_ID_WIDTH">
                 <map>
-                  <entry key="Table.Default.Author.ColumnIdWidth" value="78" />
-                  <entry key="Table.Default.Date.ColumnIdWidth" value="82" />
-                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="81" />
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="94" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="74" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="73" />
                 </map>
               </option>
             </State>
@@ -146,6 +156,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="pushtest" />
     <MESSAGE value="removed leftover not deleted revert file before trying to add it properly as submodule agian" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed leftover not deleted revert file before trying to add it properly as submodule agian" />
+    <MESSAGE value="added board class, cell struct, started their implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added board class, cell struct, started their implementation" />
   </component>
 </project>
