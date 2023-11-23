@@ -1,9 +1,7 @@
 # ninja log v5
-1	216	7223708473791888	build.ninja	22903c0e6c4ad196
-3	691	7223704402406076	CMakeFiles/pcc_semestralka.dir/main.cpp.obj	fae4e7c6a3cdd96f
-1	147	7223708473791888	build.ninja	22903c0e6c4ad196
+1	147	7224645971189958	build.ninja	22903c0e6c4ad196
+11	761	7223708481982239	CMakeFiles/pcc_semestralka.dir/main.cpp.obj	5e8184b4db432193
+807	927	7223708483601707	pcc_semestralka.exe	db41874315dc8dac
 7	69	7223708475052882	CMakeFiles/pcc_semestralka.dir/Game/Threads/computeThread.cpp.obj	faca512a46d86168
 3	70	7223708475065691	CMakeFiles/pcc_semestralka.dir/Game/Threads/outputThread.cpp.obj	b5ba2f754ab02610
-11	761	7223708481982239	CMakeFiles/pcc_semestralka.dir/main.cpp.obj	5e8184b4db432193
 15	807	7223708482427820	CMakeFiles/pcc_semestralka.dir/Game/Threads/inputThread.cpp.obj	c4e897a99c2aa97a
-807	927	7223708483601707	pcc_semestralka.exe	db41874315dc8dac
