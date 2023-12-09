@@ -1,0 +1,7 @@
+add_test( to_narrow [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/unicode.test.exe]==] [==[--test-case=to_narrow]==])
+set_tests_properties( to_narrow PROPERTIES WORKING_DIRECTORY [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests]==] LABELS)
+add_test( to_wide [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/unicode.test.exe]==] [==[--test-case=to_wide]==])
+set_tests_properties( to_wide PROPERTIES WORKING_DIRECTORY [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests]==] LABELS)
+add_test( [==[utf32 to utf8]==] [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/unicode.test.exe]==] [==[--test-case=utf32 to utf8]==])
+set_tests_properties( [==[utf32 to utf8]==] PROPERTIES WORKING_DIRECTORY [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests]==] LABELS)
+set( unicode.test_TESTS to_narrow to_wide [==[utf32 to utf8]==])

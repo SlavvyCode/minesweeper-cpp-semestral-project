@@ -1,0 +1,5 @@
+add_test( [==[Test Term::Screen]==] [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/screen.test.exe]==] [==[--test-case=Test Term::Screen]==])
+set_tests_properties( [==[Test Term::Screen]==] PROPERTIES WORKING_DIRECTORY [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests]==] LABELS)
+add_test( [==[Test Term::Screen(5,10)]==] [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/screen.test.exe]==] [==[--test-case=Test Term::Screen(5\,10)]==])
+set_tests_properties( [==[Test Term::Screen(5,10)]==] PROPERTIES WORKING_DIRECTORY [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests]==] LABELS)
+set( screen.test_TESTS [==[Test Term::Screen]==] [==[Test Term::Screen(5,10)]==])

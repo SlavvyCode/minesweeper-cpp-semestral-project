@@ -1,4 +1,12 @@
 "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka" -B "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug"
--- Configuring done (0.1s)
--- Generating done (0.0s)
+-- Could NOT find LATEX (missing: LATEX_COMPILER) 
+CMake Warning at cpp-terminal/cmake/Documentation.cmake:135 (message):
+  DOXYGEN_GENERATE_LATEX is set to ON but latex compilers are not found !
+  Disabling the pdf generation !
+Call Stack (most recent call first):
+  cpp-terminal/docs/CMakeLists.txt:55 (doxyfile_docs)
+
+
+-- Configuring done (1.0s)
+-- Generating done (0.1s)
 -- Build files have been written to: C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug

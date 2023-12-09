@@ -11,7 +11,42 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="pcc_semestralka" targetName="pcc_semestralka" />
+      <config projectName="minesweeper" targetName="prompt_simple" />
+      <config projectName="minesweeper" targetName="kilo" />
+      <config projectName="minesweeper" targetName="args" />
+      <config projectName="minesweeper" targetName="exception.test" />
+      <config projectName="minesweeper" targetName="minesweeper" />
+      <config projectName="minesweeper" targetName="menu_window" />
+      <config projectName="minesweeper" targetName="menu" />
+      <config projectName="minesweeper" targetName="minimal" />
+      <config projectName="minesweeper" targetName="cpp-terminal" />
+      <config projectName="minesweeper" targetName="events.test" />
+      <config projectName="minesweeper" targetName="cpp-terminal-private" />
+      <config projectName="minesweeper" targetName="colors" />
+      <config projectName="minesweeper" targetName="doc-latex" />
+      <config projectName="minesweeper" targetName="generate-doxygen" />
+      <config projectName="minesweeper" targetName="cout" />
+      <config projectName="minesweeper" targetName="prompt_immediate" />
+      <config projectName="minesweeper" targetName="prompt_multiline" />
+      <config projectName="minesweeper" targetName="prompt_not_immediate" />
+      <config projectName="minesweeper" targetName="doc-html" />
+      <config projectName="minesweeper" targetName="styles" />
+      <config projectName="minesweeper" targetName="slow_events" />
+      <config projectName="minesweeper" targetName="events" />
+      <config projectName="minesweeper" targetName="unicode.test" />
+      <config projectName="minesweeper" targetName="attach_console" />
+      <config projectName="minesweeper" targetName="attach_console_minimal" />
+      <config projectName="minesweeper" targetName="cin_cooked" />
+      <config projectName="minesweeper" targetName="screen.test" />
+      <config projectName="minesweeper" targetName="docs" />
+      <config projectName="minesweeper" targetName="key.test" />
+      <config projectName="minesweeper" targetName="cin_raw" />
+      <config projectName="minesweeper" targetName="utf8" />
+      <config projectName="minesweeper" targetName="keys" />
+      <config projectName="minesweeper" targetName="doctest_with_main" />
+      <config projectName="minesweeper" targetName="version.test" />
+      <config projectName="minesweeper" targetName="options.test" />
+      <config projectName="minesweeper" targetName="file.test" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -20,8 +55,182 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="added board class, cell struct, started their implementation">
+    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="git removing tracking of the library's git repository">
+      <change afterPath="$PROJECT_DIR$/Game/Model/GameManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Model/GameManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Model/InputHandler.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Model/InputHandler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Model/Menu.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Model/Menu.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-8657ff6733b166ed1b39.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-fe0805031ccbb1a34129.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal.examples-Debug-9bb6edf671fc17179fde.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-09T11-13-51-0142.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-args-Debug-dcc61865b1fc3e5d1f3b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-attach_console-Debug-bf064d556cd7c252ef53.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-attach_console_minimal-Debug-0bfa0c34fd10ae32f5cf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cin_cooked-Debug-71a98a6be7c1cef49cf8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cin_raw-Debug-2793bdb56f7243b71101.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-colors-Debug-e35ce9f2a73abe78eddc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cout-Debug-40eddd7e43244abe5312.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-events-Debug-ea8e4f13e202b7c61d9b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-events.test-Debug-617cb4e8d0153e68ec85.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-exception.test-Debug-f94dc2ac74fae98827f4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-file.test-Debug-769a94a7d62a69d1b283.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-key.test-Debug-1fc0ca479813e7dee8f6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-keys-Debug-94e58482cb082adbf32a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kilo-Debug-94c80761a35f0de3e9d3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-menu-Debug-7997bdcaef5f81371a70.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-menu_window-Debug-fd240932c97da46f5513.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minesweeper-Debug-5e6d9481056f1125b3b3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minimal-Debug-ee429d59668de4f75240.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-options.test-Debug-8b6155007d41dec23432.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_immediate-Debug-80db39e37815999e492a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_multiline-Debug-d258d67dcd7db798d653.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_not_immediate-Debug-e984b199c3bdace7e52a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_simple-Debug-73247e317680335a8e6f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-screen.test-Debug-e6b29eff3d365b7dc23d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-slow_events-Debug-ab8739352335e434bc16.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-styles-Debug-c94ee42caa1f914d6762.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-unicode.test-Debug-1dd972186ad33e2b31e2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-utf8-Debug-1758b4587461d534d939.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-version.test-Debug-ffb4f5b7472b11c1b8a5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream_initializer.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_impl.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_initializer.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/version.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/libcpp-terminal.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/args.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/blocking_queue.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/conversion.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/cursor.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/env.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/exception.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/file.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/file_initializer.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/input.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/return_code.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/screen.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/sigwinch.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/terminal.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/terminfo.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/tty.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/unicode.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/args.dir/args.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/attach_console.dir/attach_console.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/attach_console_minimal.dir/attach_console_minimal.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/cin_cooked.dir/cin_cooked.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/cin_raw.dir/cin_raw.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/colors.dir/colors.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/cout.dir/cout.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/events.dir/events.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/keys.dir/keys.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/kilo.dir/kilo.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/menu.dir/menu.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/menu_window.dir/menu_window.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/minimal.dir/minimal.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/prompt_immediate.dir/prompt_immediate.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/prompt_multiline.dir/prompt_multiline.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/prompt_not_immediate.dir/prompt_not_immediate.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/slow_events.dir/slow_events.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/styles.dir/styles.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/utf8.dir/utf8.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/args.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/attach_console.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/attach_console_minimal.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/cin_cooked.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/cin_raw.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/colors.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/cout.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/events.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/keys.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/kilo.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/menu.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/menu_window.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/minimal.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/prompt_immediate.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/prompt_multiline.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/prompt_not_immediate.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/prompt_simple.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/slow_events.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/styles.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/utf8.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/events.test.dir/events.test.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/exception.test.dir/exception.test.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/file.test.dir/file.test.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/key.test.dir/key.test.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/options.test.dir/options.test.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/screen.test.dir/screen.test.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/unicode.test.dir/unicode.test.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/version.test.dir/version.test.cpp.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/events.test.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/events.test_tests-b858cb2.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/exception.test.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/exception.test_tests-b858cb2.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/file.test.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/file.test_tests-b858cb2.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/key.test.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/key.test_tests-b858cb2.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/options.test.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/options.test_tests-b858cb2.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/screen.test.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/screen.test_tests-b858cb2.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/unicode.test.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/unicode.test_tests-b858cb2.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/version.test.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/version.test_tests-b858cb2.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/version.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cppterminaltest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/board.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Threads/computeThread.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Threads/computeThread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Threads/inputThread.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Threads/inputThread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Threads/outputThread.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Threads/outputThread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-47db923df0ef7a2ca2f0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-9b39f79e6880a1fdb712.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c8c83b8e0f8e610779a3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-11-23T17-43-17-0185.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-pcc_semestralka-Debug-ff53a20b876d2d7ea3d1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/Game/Threads/inputThread.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/Game/Threads/inputThread.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pcc_semestralka.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pcc_semestralka.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +244,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,36 +265,264 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.advertisement.text.has.clang-format&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\Game\Model" />
       <recent name="C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="pcc_semestralka" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="pcc_semestralka" TARGET_NAME="pcc_semestralka" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="pcc_semestralka" RUN_TARGET_NAME="pcc_semestralka">
+  <component name="RunManager" selected="CMake Application.minesweeper">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="args" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="args" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="args">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="attach_console" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="attach_console" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="attach_console">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="attach_console_minimal" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="attach_console_minimal" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="attach_console_minimal">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cin_cooked" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="cin_cooked" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="cin_cooked">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cin_raw" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="cin_raw" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="cin_raw">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="colors" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="colors" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="colors">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cout" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="cout" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="cout">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cpp-terminal-private" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="cpp-terminal-private" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cpp-terminal" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="cpp-terminal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cppterminaltest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="true" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="cppterminaltest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="cppterminaltest">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="doc-html" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="doc-html" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="doc-latex" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="doc-latex" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="docs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="docs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="doctest_with_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="doctest_with_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="events" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="events" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="events">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="events.test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="events.test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="events.test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exception.test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="exception.test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="exception.test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="file.test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="file.test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="file.test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-doxygen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="generate-doxygen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="key.test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="key.test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="key.test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="keys" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="keys" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="keys">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kilo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="kilo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="kilo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="menu" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="menu" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="menu">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="menu_window" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="menu_window" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="menu_window">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="minesweeper" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minesweeper" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minesweeper">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="minimal" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minimal" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minimal">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="options.test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="options.test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="options.test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="prompt_immediate" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="prompt_immediate" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="prompt_immediate">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="prompt_multiline" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="prompt_multiline" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="prompt_multiline">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="prompt_not_immediate" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="prompt_not_immediate" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="prompt_not_immediate">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="prompt_simple" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="prompt_simple" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="prompt_simple">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="screen.test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="screen.test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="screen.test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="slow_events" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="slow_events" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="slow_events">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="styles" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="styles" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="styles">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="unicode.test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="unicode.test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="unicode.test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="utf8" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="utf8" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="utf8">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="version.test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="version.test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="version.test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.cppterminaltest" />
+      <item itemvalue="CMake Application.minesweeper" />
+      <item itemvalue="CMake Application.doctest_with_main" />
+      <item itemvalue="CMake Application.cpp-terminal" />
+      <item itemvalue="CMake Application.cpp-terminal-private" />
+      <item itemvalue="CMake Application.doc-html" />
+      <item itemvalue="CMake Application.doc-latex" />
+      <item itemvalue="CMake Application.docs" />
+      <item itemvalue="CMake Application.generate-doxygen" />
+      <item itemvalue="CMake Application.args" />
+      <item itemvalue="CMake Application.attach_console" />
+      <item itemvalue="CMake Application.attach_console_minimal" />
+      <item itemvalue="CMake Application.cin_cooked" />
+      <item itemvalue="CMake Application.cin_raw" />
+      <item itemvalue="CMake Application.colors" />
+      <item itemvalue="CMake Application.cout" />
+      <item itemvalue="CMake Application.events" />
+      <item itemvalue="CMake Application.keys" />
+      <item itemvalue="CMake Application.kilo" />
+      <item itemvalue="CMake Application.menu" />
+      <item itemvalue="CMake Application.menu_window" />
+      <item itemvalue="CMake Application.minimal" />
+      <item itemvalue="CMake Application.prompt_immediate" />
+      <item itemvalue="CMake Application.prompt_multiline" />
+      <item itemvalue="CMake Application.prompt_not_immediate" />
+      <item itemvalue="CMake Application.prompt_simple" />
+      <item itemvalue="CMake Application.slow_events" />
+      <item itemvalue="CMake Application.styles" />
+      <item itemvalue="CMake Application.utf8" />
+      <item itemvalue="CMake Application.events.test" />
+      <item itemvalue="CMake Application.exception.test" />
+      <item itemvalue="CMake Application.file.test" />
+      <item itemvalue="CMake Application.key.test" />
+      <item itemvalue="CMake Application.options.test" />
+      <item itemvalue="CMake Application.screen.test" />
+      <item itemvalue="CMake Application.unicode.test" />
+      <item itemvalue="CMake Application.version.test" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,7 +533,16 @@
       <option name="presentableId" value="Default" />
       <updated>1700666773294</updated>
       <workItem from="1700666774546" duration="887000" />
-      <workItem from="1700761554435" duration="1432000" />
+      <workItem from="1700761554435" duration="2348000" />
+      <workItem from="1700764551842" duration="3665000" />
+      <workItem from="1701341107967" duration="463000" />
+      <workItem from="1701349512127" duration="4146000" />
+      <workItem from="1701457787851" duration="625000" />
+      <workItem from="1701514546560" duration="1157000" />
+      <workItem from="1701804819158" duration="2009000" />
+      <workItem from="1701890440835" duration="2000" />
+      <workItem from="1701983299517" duration="4206000" />
+      <workItem from="1702117757570" duration="6119000" />
     </task>
     <task id="LOCAL-00001" summary="pushtest">
       <option name="closed" value="true" />
@@ -121,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700762044731</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="git removing tracking of the library's git repository">
+      <option name="closed" value="true" />
+      <created>1700763622712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700763622712</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +601,17 @@
                   <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="73" />
                 </map>
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
@@ -157,6 +623,18 @@
     <MESSAGE value="pushtest" />
     <MESSAGE value="removed leftover not deleted revert file before trying to add it properly as submodule agian" />
     <MESSAGE value="added board class, cell struct, started their implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added board class, cell struct, started their implementation" />
+    <MESSAGE value="git removing tracking of the library's git repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="git removing tracking of the library's git repository" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

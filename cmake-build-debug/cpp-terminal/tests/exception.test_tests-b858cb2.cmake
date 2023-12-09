@@ -1,0 +1,7 @@
+add_test( WindowsError [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/exception.test.exe]==] [==[--test-case=WindowsError]==])
+set_tests_properties( WindowsError PROPERTIES WORKING_DIRECTORY [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests]==] LABELS)
+add_test( Exception [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/exception.test.exe]==] [==[--test-case=Exception]==])
+set_tests_properties( Exception PROPERTIES WORKING_DIRECTORY [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests]==] LABELS)
+add_test( ErrnoException [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/exception.test.exe]==] [==[--test-case=ErrnoException]==])
+set_tests_properties( ErrnoException PROPERTIES WORKING_DIRECTORY [==[C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests]==] LABELS)
+set( exception.test_TESTS WindowsError Exception ErrnoException)

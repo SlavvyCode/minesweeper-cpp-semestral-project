@@ -2,22 +2,22 @@
 // Created by Adam on 22/11/2023.
 //
 
-#include "Game/Threads/inputThread.h"
+#include "Game/Model/Menu.h"
+
+#include <unistd.h>
+#include <iostream>
+#include <thread>
+#include <mutex>
 
 int main() {
-    // Create an instance of InputThread
-    inputThread inputThread;
 
-    // Start the input thread
-    inputThread.start();
+    //FUCK THREADS LET ME JUST GET IT DONE
 
-    // Main application logic goes here
-    std::cout << "Press 'Q' to quit." << std::endl;
+    Menu
 
-    // Wait for the input thread to finish (pressing 'Q' will stop it)
-    inputThread.stop();
-
-    // Other cleanup or post-processing logic
+    minesweeper.runGame();
 
     return 0;
 }
+
+

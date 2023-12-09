@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: pcc_semestralka
+# Project: minesweeper
 # Configurations: Debug
 # =============================================================================
 
@@ -41,55 +41,73 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target pcc_semestralka
+# Object build statements for EXECUTABLE target minesweeper
 
 
 #############################################
-# Order-only phony target for pcc_semestralka
+# Order-only phony target for minesweeper
 
-build cmake_object_order_depends_target_pcc_semestralka: phony || CMakeFiles/pcc_semestralka.dir
+build cmake_object_order_depends_target_minesweeper: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
 
-build CMakeFiles/pcc_semestralka.dir/main.cpp.obj: CXX_COMPILER__pcc_semestralka_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/main.cpp || cmake_object_order_depends_target_pcc_semestralka
-  DEP_FILE = CMakeFiles\pcc_semestralka.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\pcc_semestralka.dir
-  OBJECT_FILE_DIR = CMakeFiles\pcc_semestralka.dir
+build CMakeFiles/minesweeper.dir/main.cpp.obj: CXX_COMPILER__minesweeper_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/main.cpp || cmake_object_order_depends_target_minesweeper
+  DEP_FILE = CMakeFiles\minesweeper.dir\main.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeper.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeper.dir
 
-build CMakeFiles/pcc_semestralka.dir/Game/Threads/outputThread.cpp.obj: CXX_COMPILER__pcc_semestralka_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/Game/Threads/outputThread.cpp || cmake_object_order_depends_target_pcc_semestralka
-  DEP_FILE = CMakeFiles\pcc_semestralka.dir\Game\Threads\outputThread.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\pcc_semestralka.dir
-  OBJECT_FILE_DIR = CMakeFiles\pcc_semestralka.dir\Game\Threads
+build CMakeFiles/minesweeper.dir/cppterminaltest.cpp.obj: CXX_COMPILER__minesweeper_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cppterminaltest.cpp || cmake_object_order_depends_target_minesweeper
+  DEP_FILE = CMakeFiles\minesweeper.dir\cppterminaltest.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeper.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeper.dir
 
-build CMakeFiles/pcc_semestralka.dir/Game/Threads/computeThread.cpp.obj: CXX_COMPILER__pcc_semestralka_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/Game/Threads/computeThread.cpp || cmake_object_order_depends_target_pcc_semestralka
-  DEP_FILE = CMakeFiles\pcc_semestralka.dir\Game\Threads\computeThread.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\pcc_semestralka.dir
-  OBJECT_FILE_DIR = CMakeFiles\pcc_semestralka.dir\Game\Threads
+build CMakeFiles/minesweeper.dir/Game/Model/Board.cpp.obj: CXX_COMPILER__minesweeper_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/Game/Model/Board.cpp || cmake_object_order_depends_target_minesweeper
+  DEP_FILE = CMakeFiles\minesweeper.dir\Game\Model\Board.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeper.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeper.dir\Game\Model
 
-build CMakeFiles/pcc_semestralka.dir/Game/Threads/inputThread.cpp.obj: CXX_COMPILER__pcc_semestralka_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/Game/Threads/inputThread.cpp || cmake_object_order_depends_target_pcc_semestralka
-  DEP_FILE = CMakeFiles\pcc_semestralka.dir\Game\Threads\inputThread.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\pcc_semestralka.dir
-  OBJECT_FILE_DIR = CMakeFiles\pcc_semestralka.dir\Game\Threads
+build CMakeFiles/minesweeper.dir/Game/Model/Menu.cpp.obj: CXX_COMPILER__minesweeper_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/Game/Model/Menu.cpp || cmake_object_order_depends_target_minesweeper
+  DEP_FILE = CMakeFiles\minesweeper.dir\Game\Model\Menu.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeper.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeper.dir\Game\Model
+
+build CMakeFiles/minesweeper.dir/Game/Model/GameManager.cpp.obj: CXX_COMPILER__minesweeper_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/Game/Model/GameManager.cpp || cmake_object_order_depends_target_minesweeper
+  DEP_FILE = CMakeFiles\minesweeper.dir\Game\Model\GameManager.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeper.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeper.dir\Game\Model
+
+build CMakeFiles/minesweeper.dir/Game/Model/InputHandler.cpp.obj: CXX_COMPILER__minesweeper_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/Game/Model/InputHandler.cpp || cmake_object_order_depends_target_minesweeper
+  DEP_FILE = CMakeFiles\minesweeper.dir\Game\Model\InputHandler.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeper.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeper.dir\Game\Model
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target pcc_semestralka
+# Link build statements for EXECUTABLE target minesweeper
 
 
 #############################################
-# Link the executable pcc_semestralka.exe
+# Link the executable minesweeper.exe
 
-build pcc_semestralka.exe: CXX_EXECUTABLE_LINKER__pcc_semestralka_Debug CMakeFiles/pcc_semestralka.dir/main.cpp.obj CMakeFiles/pcc_semestralka.dir/Game/Threads/outputThread.cpp.obj CMakeFiles/pcc_semestralka.dir/Game/Threads/computeThread.cpp.obj CMakeFiles/pcc_semestralka.dir/Game/Threads/inputThread.cpp.obj
+build minesweeper.exe: CXX_EXECUTABLE_LINKER__minesweeper_Debug CMakeFiles/minesweeper.dir/main.cpp.obj CMakeFiles/minesweeper.dir/cppterminaltest.cpp.obj CMakeFiles/minesweeper.dir/Game/Model/Board.cpp.obj CMakeFiles/minesweeper.dir/Game/Model/Menu.cpp.obj CMakeFiles/minesweeper.dir/Game/Model/GameManager.cpp.obj CMakeFiles/minesweeper.dir/Game/Model/InputHandler.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\pcc_semestralka.dir
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\minesweeper.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = pcc_semestralka.exe
-  TARGET_IMPLIB = libpcc_semestralka.dll.a
-  TARGET_PDB = pcc_semestralka.exe.dbg
+  TARGET_FILE = minesweeper.exe
+  TARGET_IMPLIB = libminesweeper.dll.a
+  TARGET_PDB = minesweeper.exe.dbg
 
 
 #############################################
@@ -114,10 +132,2023 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build cpp-terminal/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build cpp-terminal/edit_cache: phony cpp-terminal/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build cpp-terminal/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka" -B"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build cpp-terminal/rebuild_cache: phony cpp-terminal/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build cpp-terminal/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build cpp-terminal/CMakeFiles/install.util: CUSTOM_COMMAND cpp-terminal/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build cpp-terminal/install: phony cpp-terminal/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build cpp-terminal/CMakeFiles/install/local.util: CUSTOM_COMMAND cpp-terminal/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build cpp-terminal/install/local: phony cpp-terminal/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build cpp-terminal/CMakeFiles/install/strip.util: CUSTOM_COMMAND cpp-terminal/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build cpp-terminal/install/strip: phony cpp-terminal/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target cpp-terminal
+
+
+#############################################
+# Order-only phony target for cpp-terminal
+
+build cmake_object_order_depends_target_cpp-terminal: phony || cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_impl.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/terminal_impl.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\terminal_impl.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_initializer.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/terminal_initializer.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\terminal_initializer.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream_initializer.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/iostream_initializer.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\iostream_initializer.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/mouse.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\mouse.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/args.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\args.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/focus.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\focus.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/buffer.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\buffer.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/iostream.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\iostream.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/stream.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\stream.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/prompt.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\prompt.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/window.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\window.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/terminal.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\terminal.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/color.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\color.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/key.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\key.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/event.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\event.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/screen.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\screen.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/options.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\options.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/cursor.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\cursor.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/style.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\style.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+build cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/version.cpp.obj: CXX_COMPILER__cpp-terminal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/cpp-terminal/version.cpp || cmake_object_order_depends_target_cpp-terminal
+  DEP_FILE = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir\version.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target cpp-terminal
+
+
+#############################################
+# Link the static library cpp-terminal\cpp-terminal\libcpp-terminal.a
+
+build cpp-terminal/cpp-terminal/libcpp-terminal.a: CXX_STATIC_LIBRARY_LINKER__cpp-terminal_Debug cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_impl.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_initializer.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream_initializer.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.obj cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/version.cpp.obj || cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = cpp-terminal\cpp-terminal\CMakeFiles\cpp-terminal.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\cpp-terminal\libcpp-terminal.a
+  TARGET_PDB = cpp-terminal.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build cpp-terminal/cpp-terminal/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\cpp-terminal" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build cpp-terminal/cpp-terminal/edit_cache: phony cpp-terminal/cpp-terminal/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build cpp-terminal/cpp-terminal/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\cpp-terminal" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka" -B"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build cpp-terminal/cpp-terminal/rebuild_cache: phony cpp-terminal/cpp-terminal/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build cpp-terminal/cpp-terminal/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build cpp-terminal/cpp-terminal/CMakeFiles/install.util: CUSTOM_COMMAND cpp-terminal/cpp-terminal/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\cpp-terminal" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build cpp-terminal/cpp-terminal/install: phony cpp-terminal/cpp-terminal/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build cpp-terminal/cpp-terminal/CMakeFiles/install/local.util: CUSTOM_COMMAND cpp-terminal/cpp-terminal/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\cpp-terminal" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build cpp-terminal/cpp-terminal/install/local: phony cpp-terminal/cpp-terminal/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build cpp-terminal/cpp-terminal/CMakeFiles/install/strip.util: CUSTOM_COMMAND cpp-terminal/cpp-terminal/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\cpp-terminal" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build cpp-terminal/cpp-terminal/install/strip: phony cpp-terminal/cpp-terminal/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target cpp-terminal-private
+
+
+#############################################
+# Order-only phony target for cpp-terminal-private
+
+build cmake_object_order_depends_target_cpp-terminal-private: phony || cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/return_code.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/return_code.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\return_code.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/file_initializer.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/file_initializer.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\file_initializer.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/exception.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/exception.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\exception.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/unicode.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/unicode.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\unicode.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/conversion.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/conversion.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\conversion.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/args.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/args.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\args.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/terminal.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/terminal.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\terminal.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/tty.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/tty.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\tty.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/terminfo.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/terminfo.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\terminfo.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/input.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/input.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\input.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/screen.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/screen.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\screen.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/cursor.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/cursor.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\cursor.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/file.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/file.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\file.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/env.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/env.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\env.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/blocking_queue.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/blocking_queue.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\blocking_queue.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/sigwinch.cpp.obj: CXX_COMPILER__cpp-terminal-private_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/sigwinch.cpp || cmake_object_order_depends_target_cpp-terminal-private
+  DEP_FILE = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir\sigwinch.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  OBJECT_FILE_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target cpp-terminal-private
+
+
+#############################################
+# Link the static library cpp-terminal\cpp-terminal\private\libcpp-terminal-private.a
+
+build cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a: CXX_STATIC_LIBRARY_LINKER__cpp-terminal-private_Debug cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/return_code.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/file_initializer.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/exception.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/unicode.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/conversion.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/args.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/terminal.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/tty.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/terminfo.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/input.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/screen.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/cursor.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/file.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/env.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/blocking_queue.cpp.obj cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/sigwinch.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = cpp-terminal\cpp-terminal\private\CMakeFiles\cpp-terminal-private.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\cpp-terminal\private\libcpp-terminal-private.a
+  TARGET_PDB = cpp-terminal-private.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\cpp-terminal\private" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build cpp-terminal/cpp-terminal/private/edit_cache: phony cpp-terminal/cpp-terminal/private/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\cpp-terminal\private" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka" -B"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build cpp-terminal/cpp-terminal/private/rebuild_cache: phony cpp-terminal/cpp-terminal/private/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build cpp-terminal/cpp-terminal/private/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/install.util: CUSTOM_COMMAND cpp-terminal/cpp-terminal/private/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\cpp-terminal\private" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build cpp-terminal/cpp-terminal/private/install: phony cpp-terminal/cpp-terminal/private/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/install/local.util: CUSTOM_COMMAND cpp-terminal/cpp-terminal/private/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\cpp-terminal\private" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build cpp-terminal/cpp-terminal/private/install/local: phony cpp-terminal/cpp-terminal/private/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build cpp-terminal/cpp-terminal/private/CMakeFiles/install/strip.util: CUSTOM_COMMAND cpp-terminal/cpp-terminal/private/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\cpp-terminal\private" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build cpp-terminal/cpp-terminal/private/install/strip: phony cpp-terminal/cpp-terminal/private/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target file.test
+
+
+#############################################
+# Order-only phony target for file.test
+
+build cmake_object_order_depends_target_file.test: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/tests/CMakeFiles/file.test.dir/file.test.cpp.obj: CXX_COMPILER__file.2etest_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/tests/file.test.cpp || cmake_object_order_depends_target_file.test
+  DEP_FILE = cpp-terminal\tests\CMakeFiles\file.test.dir\file.test.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\file.test.dir
+  OBJECT_FILE_DIR = cpp-terminal\tests\CMakeFiles\file.test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target file.test
+
+
+#############################################
+# Link the executable cpp-terminal\tests\file.test.exe
+
+build cpp-terminal/tests/file.test.exe cpp-terminal/tests/file.test_tests-b858cb2.cmake | ${cmake_ninja_workdir}cpp-terminal/tests/file.test_tests-b858cb2.cmake: CXX_EXECUTABLE_LINKER__file.2etest_Debug cpp-terminal/tests/CMakeFiles/file.test.dir/file.test.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\file.test.dir
+  POST_BUILD = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=file.test -D "TEST_EXECUTABLE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/file.test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests" -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_ADD_LABELS= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=file.test_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D "CTEST_FILE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/file.test_tests-b858cb2.cmake" -P "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src/scripts/cmake/doctestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = cpp-terminal\tests\file.test.exe
+  TARGET_IMPLIB = cpp-terminal\tests\libfile.test.dll.a
+  TARGET_PDB = file.test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target key.test
+
+
+#############################################
+# Order-only phony target for key.test
+
+build cmake_object_order_depends_target_key.test: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/tests/CMakeFiles/key.test.dir/key.test.cpp.obj: CXX_COMPILER__key.2etest_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/tests/key.test.cpp || cmake_object_order_depends_target_key.test
+  DEP_FILE = cpp-terminal\tests\CMakeFiles\key.test.dir\key.test.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\key.test.dir
+  OBJECT_FILE_DIR = cpp-terminal\tests\CMakeFiles\key.test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target key.test
+
+
+#############################################
+# Link the executable cpp-terminal\tests\key.test.exe
+
+build cpp-terminal/tests/key.test.exe cpp-terminal/tests/key.test_tests-b858cb2.cmake | ${cmake_ninja_workdir}cpp-terminal/tests/key.test_tests-b858cb2.cmake: CXX_EXECUTABLE_LINKER__key.2etest_Debug cpp-terminal/tests/CMakeFiles/key.test.dir/key.test.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\key.test.dir
+  POST_BUILD = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=key.test -D "TEST_EXECUTABLE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/key.test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests" -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_ADD_LABELS= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=key.test_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D "CTEST_FILE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/key.test_tests-b858cb2.cmake" -P "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src/scripts/cmake/doctestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = cpp-terminal\tests\key.test.exe
+  TARGET_IMPLIB = cpp-terminal\tests\libkey.test.dll.a
+  TARGET_PDB = key.test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target screen.test
+
+
+#############################################
+# Order-only phony target for screen.test
+
+build cmake_object_order_depends_target_screen.test: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/tests/CMakeFiles/screen.test.dir/screen.test.cpp.obj: CXX_COMPILER__screen.2etest_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/tests/screen.test.cpp || cmake_object_order_depends_target_screen.test
+  DEP_FILE = cpp-terminal\tests\CMakeFiles\screen.test.dir\screen.test.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\screen.test.dir
+  OBJECT_FILE_DIR = cpp-terminal\tests\CMakeFiles\screen.test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target screen.test
+
+
+#############################################
+# Link the executable cpp-terminal\tests\screen.test.exe
+
+build cpp-terminal/tests/screen.test.exe cpp-terminal/tests/screen.test_tests-b858cb2.cmake | ${cmake_ninja_workdir}cpp-terminal/tests/screen.test_tests-b858cb2.cmake: CXX_EXECUTABLE_LINKER__screen.2etest_Debug cpp-terminal/tests/CMakeFiles/screen.test.dir/screen.test.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\screen.test.dir
+  POST_BUILD = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=screen.test -D "TEST_EXECUTABLE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/screen.test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests" -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_ADD_LABELS= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=screen.test_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D "CTEST_FILE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/screen.test_tests-b858cb2.cmake" -P "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src/scripts/cmake/doctestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = cpp-terminal\tests\screen.test.exe
+  TARGET_IMPLIB = cpp-terminal\tests\libscreen.test.dll.a
+  TARGET_PDB = screen.test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target events.test
+
+
+#############################################
+# Order-only phony target for events.test
+
+build cmake_object_order_depends_target_events.test: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/tests/CMakeFiles/events.test.dir/events.test.cpp.obj: CXX_COMPILER__events.2etest_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/tests/events.test.cpp || cmake_object_order_depends_target_events.test
+  DEP_FILE = cpp-terminal\tests\CMakeFiles\events.test.dir\events.test.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\events.test.dir
+  OBJECT_FILE_DIR = cpp-terminal\tests\CMakeFiles\events.test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target events.test
+
+
+#############################################
+# Link the executable cpp-terminal\tests\events.test.exe
+
+build cpp-terminal/tests/events.test.exe cpp-terminal/tests/events.test_tests-b858cb2.cmake | ${cmake_ninja_workdir}cpp-terminal/tests/events.test_tests-b858cb2.cmake: CXX_EXECUTABLE_LINKER__events.2etest_Debug cpp-terminal/tests/CMakeFiles/events.test.dir/events.test.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\events.test.dir
+  POST_BUILD = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=events.test -D "TEST_EXECUTABLE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/events.test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests" -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_ADD_LABELS= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=events.test_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D "CTEST_FILE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/events.test_tests-b858cb2.cmake" -P "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src/scripts/cmake/doctestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = cpp-terminal\tests\events.test.exe
+  TARGET_IMPLIB = cpp-terminal\tests\libevents.test.dll.a
+  TARGET_PDB = events.test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target exception.test
+
+
+#############################################
+# Order-only phony target for exception.test
+
+build cmake_object_order_depends_target_exception.test: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/tests/CMakeFiles/exception.test.dir/exception.test.cpp.obj: CXX_COMPILER__exception.2etest_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/tests/exception.test.cpp || cmake_object_order_depends_target_exception.test
+  DEP_FILE = cpp-terminal\tests\CMakeFiles\exception.test.dir\exception.test.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\exception.test.dir
+  OBJECT_FILE_DIR = cpp-terminal\tests\CMakeFiles\exception.test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target exception.test
+
+
+#############################################
+# Link the executable cpp-terminal\tests\exception.test.exe
+
+build cpp-terminal/tests/exception.test.exe cpp-terminal/tests/exception.test_tests-b858cb2.cmake | ${cmake_ninja_workdir}cpp-terminal/tests/exception.test_tests-b858cb2.cmake: CXX_EXECUTABLE_LINKER__exception.2etest_Debug cpp-terminal/tests/CMakeFiles/exception.test.dir/exception.test.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\exception.test.dir
+  POST_BUILD = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=exception.test -D "TEST_EXECUTABLE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/exception.test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests" -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_ADD_LABELS= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=exception.test_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D "CTEST_FILE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/exception.test_tests-b858cb2.cmake" -P "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src/scripts/cmake/doctestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = cpp-terminal\tests\exception.test.exe
+  TARGET_IMPLIB = cpp-terminal\tests\libexception.test.dll.a
+  TARGET_PDB = exception.test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target unicode.test
+
+
+#############################################
+# Order-only phony target for unicode.test
+
+build cmake_object_order_depends_target_unicode.test: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/tests/CMakeFiles/unicode.test.dir/unicode.test.cpp.obj: CXX_COMPILER__unicode.2etest_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/tests/unicode.test.cpp || cmake_object_order_depends_target_unicode.test
+  DEP_FILE = cpp-terminal\tests\CMakeFiles\unicode.test.dir\unicode.test.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\unicode.test.dir
+  OBJECT_FILE_DIR = cpp-terminal\tests\CMakeFiles\unicode.test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unicode.test
+
+
+#############################################
+# Link the executable cpp-terminal\tests\unicode.test.exe
+
+build cpp-terminal/tests/unicode.test.exe cpp-terminal/tests/unicode.test_tests-b858cb2.cmake | ${cmake_ninja_workdir}cpp-terminal/tests/unicode.test_tests-b858cb2.cmake: CXX_EXECUTABLE_LINKER__unicode.2etest_Debug cpp-terminal/tests/CMakeFiles/unicode.test.dir/unicode.test.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\unicode.test.dir
+  POST_BUILD = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=unicode.test -D "TEST_EXECUTABLE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/unicode.test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests" -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_ADD_LABELS= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=unicode.test_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D "CTEST_FILE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/unicode.test_tests-b858cb2.cmake" -P "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src/scripts/cmake/doctestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = cpp-terminal\tests\unicode.test.exe
+  TARGET_IMPLIB = cpp-terminal\tests\libunicode.test.dll.a
+  TARGET_PDB = unicode.test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target options.test
+
+
+#############################################
+# Order-only phony target for options.test
+
+build cmake_object_order_depends_target_options.test: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/tests/CMakeFiles/options.test.dir/options.test.cpp.obj: CXX_COMPILER__options.2etest_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/tests/options.test.cpp || cmake_object_order_depends_target_options.test
+  DEP_FILE = cpp-terminal\tests\CMakeFiles\options.test.dir\options.test.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\options.test.dir
+  OBJECT_FILE_DIR = cpp-terminal\tests\CMakeFiles\options.test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target options.test
+
+
+#############################################
+# Link the executable cpp-terminal\tests\options.test.exe
+
+build cpp-terminal/tests/options.test.exe cpp-terminal/tests/options.test_tests-b858cb2.cmake | ${cmake_ninja_workdir}cpp-terminal/tests/options.test_tests-b858cb2.cmake: CXX_EXECUTABLE_LINKER__options.2etest_Debug cpp-terminal/tests/CMakeFiles/options.test.dir/options.test.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\options.test.dir
+  POST_BUILD = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=options.test -D "TEST_EXECUTABLE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/options.test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests" -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_ADD_LABELS= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=options.test_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D "CTEST_FILE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/options.test_tests-b858cb2.cmake" -P "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src/scripts/cmake/doctestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = cpp-terminal\tests\options.test.exe
+  TARGET_IMPLIB = cpp-terminal\tests\liboptions.test.dll.a
+  TARGET_PDB = options.test.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target version.test
+
+
+#############################################
+# Order-only phony target for version.test
+
+build cmake_object_order_depends_target_version.test: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/tests/CMakeFiles/version.test.dir/version.test.cpp.obj: CXX_COMPILER__version.2etest_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/tests/version.test.cpp || cmake_object_order_depends_target_version.test
+  DEP_FILE = cpp-terminal\tests\CMakeFiles\version.test.dir\version.test.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\version.test.dir
+  OBJECT_FILE_DIR = cpp-terminal\tests\CMakeFiles\version.test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target version.test
+
+
+#############################################
+# Link the executable cpp-terminal\tests\version.test.exe
+
+build cpp-terminal/tests/version.test.exe cpp-terminal/tests/version.test_tests-b858cb2.cmake | ${cmake_ninja_workdir}cpp-terminal/tests/version.test_tests-b858cb2.cmake: CXX_EXECUTABLE_LINKER__version.2etest_Debug cpp-terminal/tests/CMakeFiles/version.test.dir/version.test.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\tests\CMakeFiles\version.test.dir
+  POST_BUILD = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -D TEST_TARGET=version.test -D "TEST_EXECUTABLE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/version.test.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests" -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_ADD_LABELS= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=version.test_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D "CTEST_FILE=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/version.test_tests-b858cb2.cmake" -P "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src/scripts/cmake/doctestAddTests.cmake""
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = cpp-terminal\tests\version.test.exe
+  TARGET_IMPLIB = cpp-terminal\tests\libversion.test.dll.a
+  TARGET_PDB = version.test.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build cpp-terminal/tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build cpp-terminal/tests/edit_cache: phony cpp-terminal/tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build cpp-terminal/tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka" -B"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build cpp-terminal/tests/rebuild_cache: phony cpp-terminal/tests/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build cpp-terminal/tests/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build cpp-terminal/tests/CMakeFiles/install.util: CUSTOM_COMMAND cpp-terminal/tests/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build cpp-terminal/tests/install: phony cpp-terminal/tests/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build cpp-terminal/tests/CMakeFiles/install/local.util: CUSTOM_COMMAND cpp-terminal/tests/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build cpp-terminal/tests/install/local: phony cpp-terminal/tests/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build cpp-terminal/tests/CMakeFiles/install/strip.util: CUSTOM_COMMAND cpp-terminal/tests/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\tests" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build cpp-terminal/tests/install/strip: phony cpp-terminal/tests/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/tests/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target doctest_with_main
+
+
+#############################################
+# Order-only phony target for doctest_with_main
+
+build cmake_object_order_depends_target_doctest_with_main: phony || _deps/doctest-build/CMakeFiles/doctest_with_main.dir
+
+build _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.obj: CXX_COMPILER__doctest_with_main_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src/doctest/parts/doctest.cpp || cmake_object_order_depends_target_doctest_with_main
+  DEFINES = -DDOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+  DEP_FILE = _deps\doctest-build\CMakeFiles\doctest_with_main.dir\doctest\parts\doctest.cpp.obj.d
+  FLAGS = -g -std=c++11 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src"
+  OBJECT_DIR = _deps\doctest-build\CMakeFiles\doctest_with_main.dir
+  OBJECT_FILE_DIR = _deps\doctest-build\CMakeFiles\doctest_with_main.dir\doctest\parts
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target doctest_with_main
+
+
+#############################################
+# Link the static library _deps\doctest-build\libdoctest_with_main.a
+
+build _deps/doctest-build/libdoctest_with_main.a: CXX_STATIC_LIBRARY_LINKER__doctest_with_main_Debug _deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps\doctest-build\CMakeFiles\doctest_with_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _deps\doctest-build\libdoctest_with_main.a
+  TARGET_PDB = doctest_with_main.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/doctest-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\_deps\doctest-build" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/doctest-build/edit_cache: phony _deps/doctest-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/doctest-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\_deps\doctest-build" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka" -B"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/doctest-build/rebuild_cache: phony _deps/doctest-build/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/doctest-build/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/doctest-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/doctest-build/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\_deps\doctest-build" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/doctest-build/install: phony _deps/doctest-build/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/doctest-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/doctest-build/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\_deps\doctest-build" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/doctest-build/install/local: phony _deps/doctest-build/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/doctest-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/doctest-build/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\_deps\doctest-build" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/doctest-build/install/strip: phony _deps/doctest-build/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target args
+
+
+#############################################
+# Order-only phony target for args
+
+build cmake_object_order_depends_target_args: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/args.dir/args.cpp.obj: CXX_COMPILER__args_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/args.cpp || cmake_object_order_depends_target_args
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\args.dir\args.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\args.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\args.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target args
+
+
+#############################################
+# Link the executable cpp-terminal\examples\args.exe
+
+build cpp-terminal/examples/args.exe: CXX_EXECUTABLE_LINKER__args_Debug cpp-terminal/examples/CMakeFiles/args.dir/args.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\args.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\args.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libargs.dll.a
+  TARGET_PDB = args.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cin_cooked
+
+
+#############################################
+# Order-only phony target for cin_cooked
+
+build cmake_object_order_depends_target_cin_cooked: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/cin_cooked.dir/cin_cooked.cpp.obj: CXX_COMPILER__cin_cooked_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/cin_cooked.cpp || cmake_object_order_depends_target_cin_cooked
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\cin_cooked.dir\cin_cooked.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\cin_cooked.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\cin_cooked.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cin_cooked
+
+
+#############################################
+# Link the executable cpp-terminal\examples\cin_cooked.exe
+
+build cpp-terminal/examples/cin_cooked.exe: CXX_EXECUTABLE_LINKER__cin_cooked_Debug cpp-terminal/examples/CMakeFiles/cin_cooked.dir/cin_cooked.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\cin_cooked.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\cin_cooked.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libcin_cooked.dll.a
+  TARGET_PDB = cin_cooked.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cin_raw
+
+
+#############################################
+# Order-only phony target for cin_raw
+
+build cmake_object_order_depends_target_cin_raw: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/cin_raw.dir/cin_raw.cpp.obj: CXX_COMPILER__cin_raw_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/cin_raw.cpp || cmake_object_order_depends_target_cin_raw
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\cin_raw.dir\cin_raw.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\cin_raw.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\cin_raw.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cin_raw
+
+
+#############################################
+# Link the executable cpp-terminal\examples\cin_raw.exe
+
+build cpp-terminal/examples/cin_raw.exe: CXX_EXECUTABLE_LINKER__cin_raw_Debug cpp-terminal/examples/CMakeFiles/cin_raw.dir/cin_raw.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\cin_raw.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\cin_raw.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libcin_raw.dll.a
+  TARGET_PDB = cin_raw.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target colors
+
+
+#############################################
+# Order-only phony target for colors
+
+build cmake_object_order_depends_target_colors: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/colors.dir/colors.cpp.obj: CXX_COMPILER__colors_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/colors.cpp || cmake_object_order_depends_target_colors
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\colors.dir\colors.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\colors.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\colors.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target colors
+
+
+#############################################
+# Link the executable cpp-terminal\examples\colors.exe
+
+build cpp-terminal/examples/colors.exe: CXX_EXECUTABLE_LINKER__colors_Debug cpp-terminal/examples/CMakeFiles/colors.dir/colors.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\colors.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\colors.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libcolors.dll.a
+  TARGET_PDB = colors.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cout
+
+
+#############################################
+# Order-only phony target for cout
+
+build cmake_object_order_depends_target_cout: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/cout.dir/cout.cpp.obj: CXX_COMPILER__cout_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/cout.cpp || cmake_object_order_depends_target_cout
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\cout.dir\cout.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\cout.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\cout.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cout
+
+
+#############################################
+# Link the executable cpp-terminal\examples\cout.exe
+
+build cpp-terminal/examples/cout.exe: CXX_EXECUTABLE_LINKER__cout_Debug cpp-terminal/examples/CMakeFiles/cout.dir/cout.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\cout.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\cout.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libcout.dll.a
+  TARGET_PDB = cout.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target events
+
+
+#############################################
+# Order-only phony target for events
+
+build cmake_object_order_depends_target_events: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/events.dir/events.cpp.obj: CXX_COMPILER__events_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/events.cpp || cmake_object_order_depends_target_events
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\events.dir\events.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\events.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\events.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target events
+
+
+#############################################
+# Link the executable cpp-terminal\examples\events.exe
+
+build cpp-terminal/examples/events.exe: CXX_EXECUTABLE_LINKER__events_Debug cpp-terminal/examples/CMakeFiles/events.dir/events.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\events.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\events.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libevents.dll.a
+  TARGET_PDB = events.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target keys
+
+
+#############################################
+# Order-only phony target for keys
+
+build cmake_object_order_depends_target_keys: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/keys.dir/keys.cpp.obj: CXX_COMPILER__keys_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/keys.cpp || cmake_object_order_depends_target_keys
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\keys.dir\keys.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\keys.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\keys.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target keys
+
+
+#############################################
+# Link the executable cpp-terminal\examples\keys.exe
+
+build cpp-terminal/examples/keys.exe: CXX_EXECUTABLE_LINKER__keys_Debug cpp-terminal/examples/CMakeFiles/keys.dir/keys.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\keys.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\keys.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libkeys.dll.a
+  TARGET_PDB = keys.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target kilo
+
+
+#############################################
+# Order-only phony target for kilo
+
+build cmake_object_order_depends_target_kilo: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/kilo.dir/kilo.cpp.obj: CXX_COMPILER__kilo_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/kilo.cpp || cmake_object_order_depends_target_kilo
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\kilo.dir\kilo.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\kilo.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\kilo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target kilo
+
+
+#############################################
+# Link the executable cpp-terminal\examples\kilo.exe
+
+build cpp-terminal/examples/kilo.exe: CXX_EXECUTABLE_LINKER__kilo_Debug cpp-terminal/examples/CMakeFiles/kilo.dir/kilo.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\kilo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\kilo.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libkilo.dll.a
+  TARGET_PDB = kilo.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target menu
+
+
+#############################################
+# Order-only phony target for menu
+
+build cmake_object_order_depends_target_menu: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/menu.dir/menu.cpp.obj: CXX_COMPILER__menu_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/menu.cpp || cmake_object_order_depends_target_menu
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\menu.dir\menu.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\menu.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\menu.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target menu
+
+
+#############################################
+# Link the executable cpp-terminal\examples\menu.exe
+
+build cpp-terminal/examples/menu.exe: CXX_EXECUTABLE_LINKER__menu_Debug cpp-terminal/examples/CMakeFiles/menu.dir/menu.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\menu.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\menu.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libmenu.dll.a
+  TARGET_PDB = menu.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target menu_window
+
+
+#############################################
+# Order-only phony target for menu_window
+
+build cmake_object_order_depends_target_menu_window: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/menu_window.dir/menu_window.cpp.obj: CXX_COMPILER__menu_window_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/menu_window.cpp || cmake_object_order_depends_target_menu_window
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\menu_window.dir\menu_window.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\menu_window.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\menu_window.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target menu_window
+
+
+#############################################
+# Link the executable cpp-terminal\examples\menu_window.exe
+
+build cpp-terminal/examples/menu_window.exe: CXX_EXECUTABLE_LINKER__menu_window_Debug cpp-terminal/examples/CMakeFiles/menu_window.dir/menu_window.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\menu_window.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\menu_window.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libmenu_window.dll.a
+  TARGET_PDB = menu_window.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target minimal
+
+
+#############################################
+# Order-only phony target for minimal
+
+build cmake_object_order_depends_target_minimal: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/minimal.dir/minimal.cpp.obj: CXX_COMPILER__minimal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/minimal.cpp || cmake_object_order_depends_target_minimal
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\minimal.dir\minimal.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\minimal.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\minimal.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target minimal
+
+
+#############################################
+# Link the executable cpp-terminal\examples\minimal.exe
+
+build cpp-terminal/examples/minimal.exe: CXX_EXECUTABLE_LINKER__minimal_Debug cpp-terminal/examples/CMakeFiles/minimal.dir/minimal.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\minimal.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\minimal.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libminimal.dll.a
+  TARGET_PDB = minimal.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target prompt_immediate
+
+
+#############################################
+# Order-only phony target for prompt_immediate
+
+build cmake_object_order_depends_target_prompt_immediate: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/prompt_immediate.dir/prompt_immediate.cpp.obj: CXX_COMPILER__prompt_immediate_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/prompt_immediate.cpp || cmake_object_order_depends_target_prompt_immediate
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\prompt_immediate.dir\prompt_immediate.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\prompt_immediate.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\prompt_immediate.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target prompt_immediate
+
+
+#############################################
+# Link the executable cpp-terminal\examples\prompt_immediate.exe
+
+build cpp-terminal/examples/prompt_immediate.exe: CXX_EXECUTABLE_LINKER__prompt_immediate_Debug cpp-terminal/examples/CMakeFiles/prompt_immediate.dir/prompt_immediate.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\prompt_immediate.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\prompt_immediate.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libprompt_immediate.dll.a
+  TARGET_PDB = prompt_immediate.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target prompt_multiline
+
+
+#############################################
+# Order-only phony target for prompt_multiline
+
+build cmake_object_order_depends_target_prompt_multiline: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/prompt_multiline.dir/prompt_multiline.cpp.obj: CXX_COMPILER__prompt_multiline_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/prompt_multiline.cpp || cmake_object_order_depends_target_prompt_multiline
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\prompt_multiline.dir\prompt_multiline.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\prompt_multiline.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\prompt_multiline.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target prompt_multiline
+
+
+#############################################
+# Link the executable cpp-terminal\examples\prompt_multiline.exe
+
+build cpp-terminal/examples/prompt_multiline.exe: CXX_EXECUTABLE_LINKER__prompt_multiline_Debug cpp-terminal/examples/CMakeFiles/prompt_multiline.dir/prompt_multiline.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\prompt_multiline.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\prompt_multiline.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libprompt_multiline.dll.a
+  TARGET_PDB = prompt_multiline.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target prompt_not_immediate
+
+
+#############################################
+# Order-only phony target for prompt_not_immediate
+
+build cmake_object_order_depends_target_prompt_not_immediate: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/prompt_not_immediate.dir/prompt_not_immediate.cpp.obj: CXX_COMPILER__prompt_not_immediate_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/prompt_not_immediate.cpp || cmake_object_order_depends_target_prompt_not_immediate
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\prompt_not_immediate.dir\prompt_not_immediate.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\prompt_not_immediate.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\prompt_not_immediate.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target prompt_not_immediate
+
+
+#############################################
+# Link the executable cpp-terminal\examples\prompt_not_immediate.exe
+
+build cpp-terminal/examples/prompt_not_immediate.exe: CXX_EXECUTABLE_LINKER__prompt_not_immediate_Debug cpp-terminal/examples/CMakeFiles/prompt_not_immediate.dir/prompt_not_immediate.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\prompt_not_immediate.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\prompt_not_immediate.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libprompt_not_immediate.dll.a
+  TARGET_PDB = prompt_not_immediate.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target prompt_simple
+
+
+#############################################
+# Order-only phony target for prompt_simple
+
+build cmake_object_order_depends_target_prompt_simple: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.obj: CXX_COMPILER__prompt_simple_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/prompt_simple.cpp || cmake_object_order_depends_target_prompt_simple
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\prompt_simple.dir\prompt_simple.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\prompt_simple.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\prompt_simple.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target prompt_simple
+
+
+#############################################
+# Link the executable cpp-terminal\examples\prompt_simple.exe
+
+build cpp-terminal/examples/prompt_simple.exe: CXX_EXECUTABLE_LINKER__prompt_simple_Debug cpp-terminal/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\prompt_simple.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\prompt_simple.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libprompt_simple.dll.a
+  TARGET_PDB = prompt_simple.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target styles
+
+
+#############################################
+# Order-only phony target for styles
+
+build cmake_object_order_depends_target_styles: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/styles.dir/styles.cpp.obj: CXX_COMPILER__styles_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/styles.cpp || cmake_object_order_depends_target_styles
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\styles.dir\styles.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\styles.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\styles.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target styles
+
+
+#############################################
+# Link the executable cpp-terminal\examples\styles.exe
+
+build cpp-terminal/examples/styles.exe: CXX_EXECUTABLE_LINKER__styles_Debug cpp-terminal/examples/CMakeFiles/styles.dir/styles.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\styles.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\styles.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libstyles.dll.a
+  TARGET_PDB = styles.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target slow_events
+
+
+#############################################
+# Order-only phony target for slow_events
+
+build cmake_object_order_depends_target_slow_events: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/slow_events.dir/slow_events.cpp.obj: CXX_COMPILER__slow_events_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/slow_events.cpp || cmake_object_order_depends_target_slow_events
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\slow_events.dir\slow_events.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\slow_events.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\slow_events.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target slow_events
+
+
+#############################################
+# Link the executable cpp-terminal\examples\slow_events.exe
+
+build cpp-terminal/examples/slow_events.exe: CXX_EXECUTABLE_LINKER__slow_events_Debug cpp-terminal/examples/CMakeFiles/slow_events.dir/slow_events.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\slow_events.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\slow_events.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libslow_events.dll.a
+  TARGET_PDB = slow_events.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target utf8
+
+
+#############################################
+# Order-only phony target for utf8
+
+build cmake_object_order_depends_target_utf8: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/utf8.dir/utf8.cpp.obj: CXX_COMPILER__utf8_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/utf8.cpp || cmake_object_order_depends_target_utf8
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\utf8.dir\utf8.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\utf8.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\utf8.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target utf8
+
+
+#############################################
+# Link the executable cpp-terminal\examples\utf8.exe
+
+build cpp-terminal/examples/utf8.exe: CXX_EXECUTABLE_LINKER__utf8_Debug cpp-terminal/examples/CMakeFiles/utf8.dir/utf8.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\utf8.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\utf8.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libutf8.dll.a
+  TARGET_PDB = utf8.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target attach_console
+
+
+#############################################
+# Order-only phony target for attach_console
+
+build cmake_object_order_depends_target_attach_console: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/attach_console.dir/attach_console.cpp.obj: CXX_COMPILER__attach_console_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/attach_console.cpp || cmake_object_order_depends_target_attach_console
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\attach_console.dir\attach_console.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\attach_console.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\attach_console.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target attach_console
+
+
+#############################################
+# Link the executable cpp-terminal\examples\attach_console.exe
+
+build cpp-terminal/examples/attach_console.exe: CXX_EXECUTABLE_LINKER__attach_console_Debug cpp-terminal/examples/CMakeFiles/attach_console.dir/attach_console.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_FLAGS = -mwindows
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\attach_console.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\attach_console.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libattach_console.dll.a
+  TARGET_PDB = attach_console.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target attach_console_minimal
+
+
+#############################################
+# Order-only phony target for attach_console_minimal
+
+build cmake_object_order_depends_target_attach_console_minimal: phony || cmake_object_order_depends_target_cpp-terminal cmake_object_order_depends_target_cpp-terminal-private
+
+build cpp-terminal/examples/CMakeFiles/attach_console_minimal.dir/attach_console_minimal.cpp.obj: CXX_COMPILER__attach_console_minimal_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/attach_console_minimal.cpp || cmake_object_order_depends_target_attach_console_minimal
+  DEP_FILE = cpp-terminal\examples\CMakeFiles\attach_console_minimal.dir\attach_console_minimal.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -fdiagnostics-color=auto -Wpointer-arith -Wredundant-decls -Wundef -Wwrite-strings -Wdelete-non-virtual-dtor -Wnoexcept
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal" -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal"
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\attach_console_minimal.dir
+  OBJECT_FILE_DIR = cpp-terminal\examples\CMakeFiles\attach_console_minimal.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target attach_console_minimal
+
+
+#############################################
+# Link the executable cpp-terminal\examples\attach_console_minimal.exe
+
+build cpp-terminal/examples/attach_console_minimal.exe: CXX_EXECUTABLE_LINKER__attach_console_minimal_Debug cpp-terminal/examples/CMakeFiles/attach_console_minimal.dir/attach_console_minimal.cpp.obj | cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a || cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+  FLAGS = -g
+  LINK_FLAGS = -mwindows
+  LINK_LIBRARIES = cpp-terminal/cpp-terminal/libcpp-terminal.a  cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = cpp-terminal\examples\CMakeFiles\attach_console_minimal.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cpp-terminal\examples\attach_console_minimal.exe
+  TARGET_IMPLIB = cpp-terminal\examples\libattach_console_minimal.dll.a
+  TARGET_PDB = attach_console_minimal.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build cpp-terminal/examples/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\examples" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build cpp-terminal/examples/edit_cache: phony cpp-terminal/examples/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build cpp-terminal/examples/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\examples" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka" -B"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build cpp-terminal/examples/rebuild_cache: phony cpp-terminal/examples/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build cpp-terminal/examples/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build cpp-terminal/examples/CMakeFiles/install.util: CUSTOM_COMMAND cpp-terminal/examples/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\examples" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build cpp-terminal/examples/install: phony cpp-terminal/examples/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build cpp-terminal/examples/CMakeFiles/install/local.util: CUSTOM_COMMAND cpp-terminal/examples/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\examples" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build cpp-terminal/examples/install/local: phony cpp-terminal/examples/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build cpp-terminal/examples/CMakeFiles/install/strip.util: CUSTOM_COMMAND cpp-terminal/examples/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\examples" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build cpp-terminal/examples/install/strip: phony cpp-terminal/examples/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for generate-doxygen
+
+build cpp-terminal/docs/generate-doxygen: phony cpp-terminal/docs/CMakeFiles/generate-doxygen
+
+
+#############################################
+# Utility command for doc-html
+
+build cpp-terminal/docs/doc-html: phony cpp-terminal/docs/CMakeFiles/doc-html cpp-terminal/docs/generate-doxygen
+
+
+#############################################
+# Utility command for doc-latex
+
+build cpp-terminal/docs/doc-latex: phony cpp-terminal/docs/CMakeFiles/doc-latex
+
+
+#############################################
+# Utility command for docs
+
+build cpp-terminal/docs/docs: phony cpp-terminal/docs/CMakeFiles/docs cpp-terminal/docs/doc-html
+
+
+#############################################
+# Utility command for edit_cache
+
+build cpp-terminal/docs/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\docs" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build cpp-terminal/docs/edit_cache: phony cpp-terminal/docs/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build cpp-terminal/docs/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\docs" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka" -B"C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build cpp-terminal/docs/rebuild_cache: phony cpp-terminal/docs/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build cpp-terminal/docs/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build cpp-terminal/docs/CMakeFiles/install.util: CUSTOM_COMMAND cpp-terminal/docs/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\docs" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build cpp-terminal/docs/install: phony cpp-terminal/docs/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build cpp-terminal/docs/CMakeFiles/install/local.util: CUSTOM_COMMAND cpp-terminal/docs/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\docs" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build cpp-terminal/docs/install/local: phony cpp-terminal/docs/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build cpp-terminal/docs/CMakeFiles/install/strip.util: CUSTOM_COMMAND cpp-terminal/docs/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\docs" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build cpp-terminal/docs/install/strip: phony cpp-terminal/docs/CMakeFiles/install/strip.util
+
+
+#############################################
+# Custom command for cpp-terminal\docs\CMakeFiles\generate-doxygen
+
+build cpp-terminal/docs/CMakeFiles/generate-doxygen | ${cmake_ninja_workdir}cpp-terminal/docs/CMakeFiles/generate-doxygen: CUSTOM_COMMAND cpp-terminal/docs/Doxyfile
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cpp-terminal\docs" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E make_directory "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/docs/doxygen" && "C:\Program Files\doxygen\bin\doxygen.exe" "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/docs/Doxyfile""
+  DESC = Generating API documentation with doxygen.
+
+
+#############################################
+# Phony custom command for cpp-terminal\docs\CMakeFiles\doc-html
+
+build cpp-terminal/docs/CMakeFiles/doc-html | ${cmake_ninja_workdir}cpp-terminal/docs/CMakeFiles/doc-html: phony || cpp-terminal/docs/generate-doxygen
+
+
+#############################################
+# Custom command for cpp-terminal\docs\CMakeFiles\doc-latex
+
+build cpp-terminal/docs/CMakeFiles/doc-latex | ${cmake_ninja_workdir}cpp-terminal/docs/CMakeFiles/doc-latex: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\cmake-build-debug\cpp-terminal\docs" && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E true"
+  DESC = LaTeX format not activated for doxygen !
+
+
+#############################################
+# Phony custom command for cpp-terminal\docs\CMakeFiles\docs
+
+build cpp-terminal/docs/CMakeFiles/docs | ${cmake_ninja_workdir}cpp-terminal/docs/CMakeFiles/docs: phony || cpp-terminal/docs/doc-html cpp-terminal/docs/generate-doxygen
+
 # =============================================================================
 # Target aliases.
 
-build pcc_semestralka: phony pcc_semestralka.exe
+build args: phony cpp-terminal/examples/args.exe
+
+build args.exe: phony cpp-terminal/examples/args.exe
+
+build attach_console: phony cpp-terminal/examples/attach_console.exe
+
+build attach_console.exe: phony cpp-terminal/examples/attach_console.exe
+
+build attach_console_minimal: phony cpp-terminal/examples/attach_console_minimal.exe
+
+build attach_console_minimal.exe: phony cpp-terminal/examples/attach_console_minimal.exe
+
+build cin_cooked: phony cpp-terminal/examples/cin_cooked.exe
+
+build cin_cooked.exe: phony cpp-terminal/examples/cin_cooked.exe
+
+build cin_raw: phony cpp-terminal/examples/cin_raw.exe
+
+build cin_raw.exe: phony cpp-terminal/examples/cin_raw.exe
+
+build colors: phony cpp-terminal/examples/colors.exe
+
+build colors.exe: phony cpp-terminal/examples/colors.exe
+
+build cout: phony cpp-terminal/examples/cout.exe
+
+build cout.exe: phony cpp-terminal/examples/cout.exe
+
+build cpp-terminal: phony cpp-terminal/cpp-terminal/libcpp-terminal.a
+
+build cpp-terminal-private: phony cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+
+build doc-html: phony cpp-terminal/docs/doc-html
+
+build doc-latex: phony cpp-terminal/docs/doc-latex
+
+build docs: phony cpp-terminal/docs/docs
+
+build doctest_with_main: phony _deps/doctest-build/libdoctest_with_main.a
+
+build events: phony cpp-terminal/examples/events.exe
+
+build events.exe: phony cpp-terminal/examples/events.exe
+
+build events.test: phony cpp-terminal/tests/events.test.exe
+
+build events.test.exe: phony cpp-terminal/tests/events.test.exe
+
+build exception.test: phony cpp-terminal/tests/exception.test.exe
+
+build exception.test.exe: phony cpp-terminal/tests/exception.test.exe
+
+build file.test: phony cpp-terminal/tests/file.test.exe
+
+build file.test.exe: phony cpp-terminal/tests/file.test.exe
+
+build generate-doxygen: phony cpp-terminal/docs/generate-doxygen
+
+build key.test: phony cpp-terminal/tests/key.test.exe
+
+build key.test.exe: phony cpp-terminal/tests/key.test.exe
+
+build keys: phony cpp-terminal/examples/keys.exe
+
+build keys.exe: phony cpp-terminal/examples/keys.exe
+
+build kilo: phony cpp-terminal/examples/kilo.exe
+
+build kilo.exe: phony cpp-terminal/examples/kilo.exe
+
+build libcpp-terminal-private.a: phony cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+
+build libcpp-terminal.a: phony cpp-terminal/cpp-terminal/libcpp-terminal.a
+
+build libdoctest_with_main.a: phony _deps/doctest-build/libdoctest_with_main.a
+
+build menu: phony cpp-terminal/examples/menu.exe
+
+build menu.exe: phony cpp-terminal/examples/menu.exe
+
+build menu_window: phony cpp-terminal/examples/menu_window.exe
+
+build menu_window.exe: phony cpp-terminal/examples/menu_window.exe
+
+build minesweeper: phony minesweeper.exe
+
+build minimal: phony cpp-terminal/examples/minimal.exe
+
+build minimal.exe: phony cpp-terminal/examples/minimal.exe
+
+build options.test: phony cpp-terminal/tests/options.test.exe
+
+build options.test.exe: phony cpp-terminal/tests/options.test.exe
+
+build prompt_immediate: phony cpp-terminal/examples/prompt_immediate.exe
+
+build prompt_immediate.exe: phony cpp-terminal/examples/prompt_immediate.exe
+
+build prompt_multiline: phony cpp-terminal/examples/prompt_multiline.exe
+
+build prompt_multiline.exe: phony cpp-terminal/examples/prompt_multiline.exe
+
+build prompt_not_immediate: phony cpp-terminal/examples/prompt_not_immediate.exe
+
+build prompt_not_immediate.exe: phony cpp-terminal/examples/prompt_not_immediate.exe
+
+build prompt_simple: phony cpp-terminal/examples/prompt_simple.exe
+
+build prompt_simple.exe: phony cpp-terminal/examples/prompt_simple.exe
+
+build screen.test: phony cpp-terminal/tests/screen.test.exe
+
+build screen.test.exe: phony cpp-terminal/tests/screen.test.exe
+
+build slow_events: phony cpp-terminal/examples/slow_events.exe
+
+build slow_events.exe: phony cpp-terminal/examples/slow_events.exe
+
+build styles: phony cpp-terminal/examples/styles.exe
+
+build styles.exe: phony cpp-terminal/examples/styles.exe
+
+build unicode.test: phony cpp-terminal/tests/unicode.test.exe
+
+build unicode.test.exe: phony cpp-terminal/tests/unicode.test.exe
+
+build utf8: phony cpp-terminal/examples/utf8.exe
+
+build utf8.exe: phony cpp-terminal/examples/utf8.exe
+
+build version.test: phony cpp-terminal/tests/version.test.exe
+
+build version.test.exe: phony cpp-terminal/tests/version.test.exe
 
 # =============================================================================
 # Folder targets.
@@ -127,7 +2158,56 @@ build pcc_semestralka: phony pcc_semestralka.exe
 #############################################
 # Folder: C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug
 
-build all: phony pcc_semestralka.exe
+build all: phony minesweeper.exe cpp-terminal/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-build
+
+build _deps/doctest-build/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal
+
+build cpp-terminal/all: phony cpp-terminal/cpp-terminal/all cpp-terminal/tests/all cpp-terminal/examples/all cpp-terminal/docs/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/cpp-terminal
+
+build cpp-terminal/cpp-terminal/all: phony cpp-terminal/cpp-terminal/libcpp-terminal.a cpp-terminal/cpp-terminal/private/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/cpp-terminal/private
+
+build cpp-terminal/cpp-terminal/private/all: phony cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/docs
+
+build cpp-terminal/docs/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/examples
+
+build cpp-terminal/examples/all: phony cpp-terminal/examples/args.exe cpp-terminal/examples/cin_cooked.exe cpp-terminal/examples/cin_raw.exe cpp-terminal/examples/colors.exe cpp-terminal/examples/cout.exe cpp-terminal/examples/events.exe cpp-terminal/examples/keys.exe cpp-terminal/examples/kilo.exe cpp-terminal/examples/menu.exe cpp-terminal/examples/menu_window.exe cpp-terminal/examples/minimal.exe cpp-terminal/examples/prompt_immediate.exe cpp-terminal/examples/prompt_multiline.exe cpp-terminal/examples/prompt_not_immediate.exe cpp-terminal/examples/prompt_simple.exe cpp-terminal/examples/styles.exe cpp-terminal/examples/slow_events.exe cpp-terminal/examples/utf8.exe cpp-terminal/examples/attach_console.exe cpp-terminal/examples/attach_console_minimal.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests
+
+build cpp-terminal/tests/all: phony cpp-terminal/tests/file.test.exe cpp-terminal/tests/key.test.exe cpp-terminal/tests/screen.test.exe cpp-terminal/tests/events.test.exe cpp-terminal/tests/exception.test.exe cpp-terminal/tests/unicode.test.exe cpp-terminal/tests/options.test.exe cpp-terminal/tests/version.test.exe _deps/doctest-build/all
 
 # =============================================================================
 # Built-in targets
@@ -136,20 +2216,27 @@ build all: phony pcc_semestralka.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindDoxygen.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindLATEX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cmake/Documentation.cmake C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cmake/Warnings.cmake C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cmake/cpp-terminalConfig.cmake.in C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/version.cpp.in C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/docs/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/docs/imgs/logo.png C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/tests/CMakeLists.txt CMakeCache.txt CMakeDoxyfile.in CMakeDoxygenDefaults.cmake CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake _deps/doctest-src/CMakeLists.txt _deps/doctest-src/scripts/cmake/Config.cmake.in _deps/doctest-src/scripts/cmake/doctest.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindDoxygen.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindLATEX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cmake/Documentation.cmake C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cmake/Warnings.cmake C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cmake/cpp-terminalConfig.cmake.in C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/private/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/cpp-terminal/version.cpp.in C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/docs/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/docs/imgs/logo.png C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/examples/CMakeLists.txt C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/cpp-terminal/tests/CMakeLists.txt CMakeCache.txt CMakeDoxyfile.in CMakeDoxygenDefaults.cmake CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake _deps/doctest-src/CMakeLists.txt _deps/doctest-src/scripts/cmake/Config.cmake.in _deps/doctest-src/scripts/cmake/doctest.cmake: phony
+
+
+#############################################
+# Clean additional files.
+
+build CMakeFiles/clean.additional: CLEAN_ADDITIONAL
+  CONFIG = Debug
 
 
 #############################################
 # Clean all the built files.
 
-build clean: CLEAN
+build clean: CLEAN CMakeFiles/clean.additional
 
 
 #############################################
