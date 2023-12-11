@@ -8,7 +8,7 @@
 
 using namespace std;
 
-void PreGame::optionSelection() {
+void optionSelection() {
 
 
 }

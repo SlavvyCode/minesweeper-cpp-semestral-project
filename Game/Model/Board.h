@@ -16,14 +16,14 @@ class Board {
 
 
 private:
-    ~Board();
 
-    int width = 5;
-    int height = 5;
-    int mineNumber=5;
+    int remainingNonMineCells = width * height - mineNumber;
 
 public:
 
+    const int width = 5;
+    const int height = 5;
+    const int mineNumber = 5;
 
     //constructor
     Board(int width, int height, int mineNumber)
@@ -58,19 +58,22 @@ public:
 
 
 
-
+    int getRemainingNonMineCells() const;
 
 
     struct Cell {
         cellType type;
         cellState state;
         int value = 0;
-        // Add more properties if needed
 
         // Constructor
         Cell(cellType type, cellState state) {
             this->type = type;
             this->state = state;
+        }
+
+        Cell() {
+
         }
     };
 
@@ -82,6 +85,11 @@ public:
     void updateMineCountForSurroundingCells(size_t randomX, size_t randomY);
 
     void cascadeRevealBlankCells(int x, int y);
+
+
+    void distributeNumbers();
+
+    bool isBoardCleared();
 };
 
 

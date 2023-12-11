@@ -6,8 +6,7 @@ set(CMAKE_CXX_STANDARD 23)
 # Add the submodule directory to the project
 add_subdirectory(cpp-terminal)
 
-add_executable(minesweeper main.cpp
-        cppterminaltest.cpp
+set(core-files
         Game/Model/Board.cpp
         Game/Model/Menu.cpp
         Game/Model/Menu.h
@@ -17,6 +16,11 @@ add_executable(minesweeper main.cpp
         Game/Model/InputHandler.h
         Game/Model/GameManager.h
         Game/Model/GameManager.h
+)
+
+add_executable(minesweeper main.cpp
+        cppterminaltest.cpp
+        ${core-files}
 )
 
 
@@ -33,5 +37,8 @@ target_link_libraries(minesweeper PRIVATE cpp-terminal)
 #target_link_libraries(cppterminaltest PRIVATE cpp-terminal)
 
 
+add_executable(minesweeperTests tests-main.cpp
+        test1.cpp
+        ${core-files}
 
-
+)

@@ -3,6 +3,7 @@
 //
 
 #include "Game/Model/Menu.h"
+#include "Game/Model/GameManager.h"
 
 #include <unistd.h>
 #include <iostream>
@@ -13,9 +14,10 @@ int main() {
 
     //FUCK THREADS LET ME JUST GET IT DONE
 
-    Menu
 
-    minesweeper.runGame();
+    GameManager gameManager = GameManager();
+    gameManager.startGame();
+
 
     return 0;
 }

@@ -388,7 +388,7 @@
 				"cpp-terminal/examples/minimal.exe"
 			],
 			"targetId" : "minimal::@39f177bd291fc77415c8",
-			"targetIndex" : 24,
+			"targetIndex" : 25,
 			"type" : "target"
 		},
 		{
@@ -400,7 +400,7 @@
 				"cpp-terminal/examples/prompt_immediate.exe"
 			],
 			"targetId" : "prompt_immediate::@39f177bd291fc77415c8",
-			"targetIndex" : 26,
+			"targetIndex" : 27,
 			"type" : "target"
 		},
 		{
@@ -412,7 +412,7 @@
 				"cpp-terminal/examples/prompt_multiline.exe"
 			],
 			"targetId" : "prompt_multiline::@39f177bd291fc77415c8",
-			"targetIndex" : 27,
+			"targetIndex" : 28,
 			"type" : "target"
 		},
 		{
@@ -424,7 +424,7 @@
 				"cpp-terminal/examples/prompt_not_immediate.exe"
 			],
 			"targetId" : "prompt_not_immediate::@39f177bd291fc77415c8",
-			"targetIndex" : 28,
+			"targetIndex" : 29,
 			"type" : "target"
 		},
 		{
@@ -436,7 +436,7 @@
 				"cpp-terminal/examples/prompt_simple.exe"
 			],
 			"targetId" : "prompt_simple::@39f177bd291fc77415c8",
-			"targetIndex" : 29,
+			"targetIndex" : 30,
 			"type" : "target"
 		},
 		{
@@ -448,7 +448,7 @@
 				"cpp-terminal/examples/styles.exe"
 			],
 			"targetId" : "styles::@39f177bd291fc77415c8",
-			"targetIndex" : 32,
+			"targetIndex" : 33,
 			"type" : "target"
 		},
 		{
@@ -460,7 +460,7 @@
 				"cpp-terminal/examples/slow_events.exe"
 			],
 			"targetId" : "slow_events::@39f177bd291fc77415c8",
-			"targetIndex" : 31,
+			"targetIndex" : 32,
 			"type" : "target"
 		},
 		{
@@ -472,7 +472,7 @@
 				"cpp-terminal/examples/utf8.exe"
 			],
 			"targetId" : "utf8::@39f177bd291fc77415c8",
-			"targetIndex" : 34,
+			"targetIndex" : 35,
 			"type" : "target"
 		},
 		{

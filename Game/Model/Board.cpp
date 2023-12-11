@@ -5,113 +5,123 @@
 #include <iostream>
 #include "Board.h"
 #include <memory>
+#include <stack>
+#include <iomanip>
+#include <random>
+
+#define ANSI_RESET "\033[0m"
+#define ANSI_RED "\033[31m"
+#define ANSI_GREEN "\033[32m"
+#define ANSI_YELLOW "\033[33m"
+#define ANSI_BLUE "\033[34m"
+#define ANSI_MAGENTA "\033[35m"
+#define ANSI_CYAN "\033[36m"
+
+#define ANSI_BOLD "\033[1m"
+#define ANSI_UNBOLD "\033[0m"
 
 using namespace std;
 
 void Board::printBoard() {
+    // Print the top row of numbers with correct alignment
+    std::cout << "   "; // Start with spaces to align with the left edge of the board
+    for (int col = 0; col < width; ++col) {
+        std::cout << " " << std::setw(1) << col;
+    }
+    std::cout << "\n";
 
-    //unique cell ptr
-    std::unique_ptr<Cell> foundCell;
-
-    std::cout << "+";
+    // Print the wider horizontal separator
+    std::cout << "  +";
     for (int col = 0; col < width; ++col) {
         std::cout << "--";
+//        std::cout << ANSI_BOLD "--";
+//        std::cout << ANSI_GREEN "--" ANSI_RESET;
     }
     std::cout << "+\n";
 
     for (int row = 0; row < height; ++row) {
-        std::cout << row + 1 << '|';
+        // Print the row number with correct alignment
+        std::cout << std::setw(2) << row << " |"; // Use setw(2) for proper alignment
 
         for (int col = 0; col < width; ++col) {
-            char symbol = ' ';
+            string symbol = " ";
+            const Cell& cell = mapArray[col][row];
 
-
-            *foundCell = mapArray[col][row];
-            
-            
-            switch (foundCell->state) {
+            switch (cell.state) {
                 case HIDDEN:
-                    symbol = '?';
+                    symbol = "?";
                     break;
-
                 case FLAGGED:
-                    symbol = '!';
+                    symbol = "!";
                     break;
-
                 case REVEALED:
+                    if(cell.type == MINE){
+                        symbol = "X";
 
-                    if(foundCell->type == MINE){
-                        symbol = 'X';
+//                        symbol = ANSI_RED "X" ANSI_RESET;
                     }
-                    else if(foundCell->type == EMPTY){
+                    else if(cell.type == EMPTY){
                         symbol = ' ';
                     }
                     else {
-                        symbol = foundCell->value;
+                        symbol = std::to_string(cell.value)[0];
                     }
                     break;
-
             }
             std::cout << symbol << '|';
         }
         std::cout << "\n";
     }
 
-    std::cout << "+";
+    // Print the bottom separation line
+    std::cout << "  +";
     for (int col = 0; col < width; ++col) {
         std::cout << "--";
     }
     std::cout << "+\n";
-
 }
 
 
-Board::~Board() {
+bool Board::isBoardCleared() {
+    return remainingNonMineCells == 0;
 }
 
 bool Board::distributeMines(int x, int y) {
+    // x and y are the coordinates of the first cell clicked
+    // make sure that the first cell clicked is not a mine
 
-    //x and y are the coordinates of the first cell clicked
+    std::random_device rd; // Obtain a random number from hardware
+    std::mt19937 eng(rd()); // Seed the generator
+    std::uniform_int_distribution<> distrX(0, width - 1); // Define the range for x
+    std::uniform_int_distribution<> distrY(0, height - 1); // Define the range for y
 
-    //make sure that the first cell clicked is not a mine
-
-    //    distribute mineNumber mines across the cells
-
-    //do random coordinates and check if there is a mine there or if it is the first cell clicked
-
-    //todo try to make the distribution so that the user never has to guess
-
-    size_t minesDistributed =0;
+    size_t minesDistributed = 0;
     while (minesDistributed != mineNumber) {
+        size_t randomX = distrX(eng); // Generate a random x coordinate
+        size_t randomY = distrY(eng); // Generate a random y coordinate
 
-        size_t randomX = rand() % width;
-        size_t randomY = rand() % height;
-
-        if(randomX == x && randomY == y ||
-          (mapArray[randomX][randomY].type == MINE))
-        {
+        // Check if the random cell is the first clicked cell or already has a mine
+        if (randomX == x && randomY == y || (mapArray[randomX][randomY].type == MINE)) {
             continue;
         }
 
-        mapArray[randomX][randomY].type = MINE;
+        mapArray[randomX][randomY].type = MINE; // Place a mine
 
-        //update the surrounding cells to have the correct values
+        // Update the surrounding cells to have the correct values
         updateMineCountForSurroundingCells(randomX, randomY);
-
 
         minesDistributed++;
     }
 
 
+    distributeNumbers(); // Distribute numbers on the board
+
+    // Reveal the first cell clicked
+    revealCell(x, y);
 
     return true;
-
-
-
-    //distribute mines semi randomly
-
-
 }
+
 
 void Board::updateMineCountForSurroundingCells(size_t randomX, size_t randomY) {
     //top left
@@ -158,6 +168,10 @@ bool Board::revealCell(int x, int y) {
         return false;
     }
 
+
+
+
+
     //if the cell is already revealed, do nothing
     if(mapArray[x][y].state == REVEALED){
         return false;
@@ -171,14 +185,16 @@ bool Board::revealCell(int x, int y) {
     //if the cell is a mine, return true, leave logic for game ending to other method
     if(mapArray[x][y].type == MINE || mapArray[x][y].type == NUMBER ){
         mapArray[x][y].state = REVEALED;
+        remainingNonMineCells--;
         return true;
     }
 
     //if the cell is empty, reveal it and reveal all surrounding cells
 
     if(mapArray[x][y].type == EMPTY){
-        mapArray[x][y].state = REVEALED;
         cascadeRevealBlankCells(x,y);
+        remainingNonMineCells--;
+
         return true;
     }
 
@@ -192,40 +208,68 @@ bool Board::revealCell(int x, int y) {
 }
 
 void Board::cascadeRevealBlankCells(int x, int y) {
+    // Check if the cell is within bounds
+    if (x < 0 || x >= width || y < 0 || y >= height) {
+        return;
+    }
 
-        //if the cell is empty, reveal it and reveal all surrounding cells
+    // Get the cell to reveal
+    Cell& cellToReveal = mapArray[x][y];
 
+    // If the cell is a mine or already revealed, do nothing
+    if (cellToReveal.type == MINE || cellToReveal.state == REVEALED) {
+        return;
+    }
 
+    // Reveal the cell and decrement the count of remaining non-mine cells
+    cellToReveal.state = REVEALED;
+    remainingNonMineCells--;
 
-        int iteratingX = x;
-        int iteratingY = y;
-
-        for (iteratingX; iteratingX < x+1; ++iteratingX) {
-
-            for (iteratingY; iteratingY; ++iteratingY) {
-
-                if(iteratingX == x && iteratingY == y){
+    // Only cascade reveal if the cell is blank
+    if (cellToReveal.type == EMPTY || cellToReveal.type == NUMBER) {
+        // Iterate over the 3x3 grid centered around the current cell
+        for (int i = std::max(0, x - 1); i <= std::min(width - 1, x + 1); ++i) {
+            for (int j = std::max(0, y - 1); j <= std::min(height - 1, y + 1); ++j) {
+                // Skip the current cell (x, y)
+                if (i == x && j == y) {
                     continue;
                 }
-                if(iteratingX < 0 || iteratingX > width || iteratingY < 0 || iteratingY > height){
-                    continue;
-                }
-
-                Cell cellToReveal = mapArray[iteratingX][iteratingY];
-
-                if(cellToReveal.type == EMPTY && cellToReveal.state == HIDDEN){
-                    cellToReveal.state = REVEALED;
-                    cascadeRevealBlankCells(x + 1, y + 1);
-                }
-                else if(cellToReveal.type == NUMBER && cellToReveal.state == HIDDEN){
-                    cellToReveal.state = REVEALED;
-                }
+                // Recursively reveal adjacent blank cells
+                cascadeRevealBlankCells(i, j);
+            }
+        }
+    }
+}
 
 
+void Board::distributeNumbers() {
+
+    //iterate through the board and update the numbers
+    for (int row = 0; row < height; ++row) {
+        for (int col = 0; col < width; col++) {
+
+
+            Cell& foundCell = mapArray[col][row];
+
+            if (foundCell.type == MINE) {
+                continue;
+            }
+            if (foundCell.value == 0) {
+                continue;
             }
 
-        }
+            // Change the type to NUMBER equal to value
+            foundCell.type = NUMBER;
 
+
+
+        }
+    }
+
+}
+
+int Board::getRemainingNonMineCells() const {
+    return remainingNonMineCells;
 }
 
 

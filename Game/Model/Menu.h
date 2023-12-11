@@ -13,7 +13,11 @@ class Menu {
     //and then start the game
 
     public:
-        void optionSelection();
+
+
+        void mainMenu();
+        void preGameMenu();
+        void inGameMenu();
 
 };
 

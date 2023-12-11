@@ -109,6 +109,75 @@ build minesweeper.exe: CXX_EXECUTABLE_LINKER__minesweeper_Debug CMakeFiles/mines
   TARGET_IMPLIB = libminesweeper.dll.a
   TARGET_PDB = minesweeper.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target minesweeperTests
+
+
+#############################################
+# Order-only phony target for minesweeperTests
+
+build cmake_object_order_depends_target_minesweeperTests: phony || CMakeFiles/minesweeperTests.dir
+
+build CMakeFiles/minesweeperTests.dir/tests-main.cpp.obj: CXX_COMPILER__minesweeperTests_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/tests-main.cpp || cmake_object_order_depends_target_minesweeperTests
+  DEP_FILE = CMakeFiles\minesweeperTests.dir\tests-main.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeperTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeperTests.dir
+
+build CMakeFiles/minesweeperTests.dir/test1.cpp.obj: CXX_COMPILER__minesweeperTests_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/test1.cpp || cmake_object_order_depends_target_minesweeperTests
+  DEP_FILE = CMakeFiles\minesweeperTests.dir\test1.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeperTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeperTests.dir
+
+build CMakeFiles/minesweeperTests.dir/Game/Model/Board.cpp.obj: CXX_COMPILER__minesweeperTests_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/Game/Model/Board.cpp || cmake_object_order_depends_target_minesweeperTests
+  DEP_FILE = CMakeFiles\minesweeperTests.dir\Game\Model\Board.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeperTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeperTests.dir\Game\Model
+
+build CMakeFiles/minesweeperTests.dir/Game/Model/Menu.cpp.obj: CXX_COMPILER__minesweeperTests_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/Game/Model/Menu.cpp || cmake_object_order_depends_target_minesweeperTests
+  DEP_FILE = CMakeFiles\minesweeperTests.dir\Game\Model\Menu.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeperTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeperTests.dir\Game\Model
+
+build CMakeFiles/minesweeperTests.dir/Game/Model/GameManager.cpp.obj: CXX_COMPILER__minesweeperTests_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/Game/Model/GameManager.cpp || cmake_object_order_depends_target_minesweeperTests
+  DEP_FILE = CMakeFiles\minesweeperTests.dir\Game\Model\GameManager.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeperTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeperTests.dir\Game\Model
+
+build CMakeFiles/minesweeperTests.dir/Game/Model/InputHandler.cpp.obj: CXX_COMPILER__minesweeperTests_unscanned_Debug C$:/Users/Adam/Desktop/CVUT/PCC/Semestralni$ Prace/pcc-semestralka/Game/Model/InputHandler.cpp || cmake_object_order_depends_target_minesweeperTests
+  DEP_FILE = CMakeFiles\minesweeperTests.dir\Game\Model\InputHandler.cpp.obj.d
+  FLAGS = -g -std=c++23 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal"
+  OBJECT_DIR = CMakeFiles\minesweeperTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\minesweeperTests.dir\Game\Model
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target minesweeperTests
+
+
+#############################################
+# Link the executable minesweeperTests.exe
+
+build minesweeperTests.exe: CXX_EXECUTABLE_LINKER__minesweeperTests_Debug CMakeFiles/minesweeperTests.dir/tests-main.cpp.obj CMakeFiles/minesweeperTests.dir/test1.cpp.obj CMakeFiles/minesweeperTests.dir/Game/Model/Board.cpp.obj CMakeFiles/minesweeperTests.dir/Game/Model/Menu.cpp.obj CMakeFiles/minesweeperTests.dir/Game/Model/GameManager.cpp.obj CMakeFiles/minesweeperTests.dir/Game/Model/InputHandler.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\minesweeperTests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = minesweeperTests.exe
+  TARGET_IMPLIB = libminesweeperTests.dll.a
+  TARGET_PDB = minesweeperTests.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -2102,6 +2171,8 @@ build menu_window.exe: phony cpp-terminal/examples/menu_window.exe
 
 build minesweeper: phony minesweeper.exe
 
+build minesweeperTests: phony minesweeperTests.exe
+
 build minimal: phony cpp-terminal/examples/minimal.exe
 
 build minimal.exe: phony cpp-terminal/examples/minimal.exe
@@ -2158,7 +2229,7 @@ build version.test.exe: phony cpp-terminal/tests/version.test.exe
 #############################################
 # Folder: C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug
 
-build all: phony minesweeper.exe cpp-terminal/all
+build all: phony minesweeper.exe minesweeperTests.exe cpp-terminal/all
 
 # =============================================================================
 

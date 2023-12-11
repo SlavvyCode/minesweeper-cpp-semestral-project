@@ -7,23 +7,45 @@
 using namespace std;
 
 
-Board *GameManager::preGame(){
+std::unique_ptr<Board> GameManager::preGame(){
 int boardSizeX;
 int boardSizeY;
 int numberOfMines;
 
 //board size from user for both x and y input
-cout << "Please enter the size of the board - first x then y: " << endl;
-
-cin >> boardSizeX;
-cin >> boardSizeY;
 
 
+//make it so that x and y is at least 2 and so the number of mines has to be less than the number of cells
 
-cout << "Please enter the number of mines: " << endl;
-cin >> numberOfMines;
+while (true) {
+    cout << "Please enter the size of the board - first x then y: " << endl;
 
-Board* board = new Board(boardSizeX,boardSizeY, numberOfMines);
+    cin >> boardSizeX;
+    cin >> boardSizeY;
+
+    if(boardSizeX < 2 || boardSizeY < 2){
+        cout << "Invalid board size, please try again" << endl;
+    }
+    else{
+        break;
+    }
+}
+
+
+//the number of mines has to be less than the number of cells
+while (true) {
+    cout << "Please enter the number of mines: " << endl;
+    cin >> numberOfMines;
+
+    if(numberOfMines >= boardSizeX * boardSizeY){
+        cout << "Invalid number of mines, please try again" << endl;
+    }
+    else{
+        break;
+    }
+}
+    std::unique_ptr<Board> board = std::make_unique<Board>(boardSizeX, boardSizeY, numberOfMines);
+currentBoard = std::move(board);
 
 return board;
 
@@ -36,17 +58,40 @@ void GameManager::quitGame() {
     exit(0);
 
 }
+void GameManager::gameOver() {
+    cout << "Game over" << endl;
+    cout << "Would you like to play again? (y/n)" << endl;
+    char input;
+    cin >> input;
+
+    if(input == 'y'){
+        //todo doesn't this make me stuck in this function?
+        startGame();
+    }
+    else if(input == 'n'){
+        navigateToMainMenu();
+    }
+    else{
+        cout << "Invalid input, please try again" << endl;
+    }
+
+}
 
 void GameManager::startGame() {
     // in main menu
 
     preGame();
+    gameLoop();
+    gameOver();
+
+
 
 
 }
 
 void GameManager::navigateToMainMenu() {
 
+    cout << "Navigating to main menu..." << endl;
     // in game
     // save game
     // quit game
@@ -59,61 +104,74 @@ void GameManager::navigateToMainMenu() {
 
 void GameManager::gameLoop() {
 
-    //todo
-    //game loop
-    //while game is not over
-    //get input or wait for raw input
-
-    //update board
-    //print board
-
-
-
-    //if game is over
-    //{
-    //print game over message
-    //ask user if they want to play again
-    //if yes
-    //start game
-    //if no
-    //main menu
-    //}
-
-    //if game is not over
-    //continue game loop
-
     currentBoard->printBoard();
 
-    //get input
+    //todo
+    // ctrl + c to quit to main menu
 
     int x, y;
-    cout << "Please enter the coordinates of the cell you want to reveal: " << endl;
-    cin >> x;
-    cin >> y;
+    revealInputDialogNotRaw(x, y);
 
 
     currentBoard->distributeMines(x,y);
 
 
-    while (gameState != gameState.GAME_OVER) {
+    while (gameState != GameState::GAME_OVER) {
         //get input or wait for raw input
 
+        currentBoard->printBoard();
 
-        cout << "Please enter the coordinates of the next cell you want to reveal: " << endl;
-        cin >> x;
-        cin >> y;
+        revealInputDialogNotRaw(x, y);
 
-        //
+        currentBoard->revealCell(x,y);
 
-        currentBoard.revealCell(x,y);
+        if(isCellMine(x,y)){
+            gameState = GameState::GAME_OVER;
+        }
+        //if xy is a mine, game over
 
 
         currentBoard->printBoard();
-        currentBoard.();
 
-        //update board
-        //print board
+
+        if(currentBoard->isBoardCleared()){
+            gameState = GameState::GAME_OVER;
+            cout << "You win!" << endl;
+        }
 
     }
 
+    //if game is over is checked outside of this method
+
+    return;
+
+}
+
+void GameManager::revealInputDialogNotRaw(int &x, int &y) const {
+
+    while (true)
+    {
+        cout << "Please enter the coordinates of the cell you want to reveal: " << endl;
+        cin >> x;
+        cin >> y;
+
+        if (x < 0 || x >= currentBoard->width || y < 0 || y >= currentBoard->height)
+        {
+            cout << "Invalid coordinates, please try again" << endl;
+        }
+        else
+        {
+            break;
+        }
+    }
+
+}
+
+bool GameManager::isCellMine(int x, int y) {
+    if(currentBoard->mapArray[x][y].type == Board::MINE){
+        return true;
+    }
+    else{
+        return false;
+    }
 }

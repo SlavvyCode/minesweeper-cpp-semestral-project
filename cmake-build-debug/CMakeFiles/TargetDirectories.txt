@@ -1,4 +1,5 @@
 C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/CMakeFiles/minesweeper.dir
+C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/CMakeFiles/minesweeperTests.dir
 C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/CMakeFiles/list_install_components.dir

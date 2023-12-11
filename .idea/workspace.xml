@@ -27,6 +27,7 @@
       <config projectName="minesweeper" targetName="generate-doxygen" />
       <config projectName="minesweeper" targetName="cout" />
       <config projectName="minesweeper" targetName="prompt_immediate" />
+      <config projectName="minesweeper" targetName="minesweeperTests" />
       <config projectName="minesweeper" targetName="prompt_multiline" />
       <config projectName="minesweeper" targetName="prompt_not_immediate" />
       <config projectName="minesweeper" targetName="doc-html" />
@@ -55,182 +56,54 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="git removing tracking of the library's git repository">
-      <change afterPath="$PROJECT_DIR$/Game/Model/GameManager.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Model/GameManager.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Model/InputHandler.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Model/InputHandler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Model/Menu.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Model/Menu.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-8657ff6733b166ed1b39.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-fe0805031ccbb1a34129.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal.examples-Debug-9bb6edf671fc17179fde.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-09T11-13-51-0142.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-args-Debug-dcc61865b1fc3e5d1f3b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-attach_console-Debug-bf064d556cd7c252ef53.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-attach_console_minimal-Debug-0bfa0c34fd10ae32f5cf.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cin_cooked-Debug-71a98a6be7c1cef49cf8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cin_raw-Debug-2793bdb56f7243b71101.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-colors-Debug-e35ce9f2a73abe78eddc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cout-Debug-40eddd7e43244abe5312.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-events-Debug-ea8e4f13e202b7c61d9b.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-events.test-Debug-617cb4e8d0153e68ec85.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-exception.test-Debug-f94dc2ac74fae98827f4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-file.test-Debug-769a94a7d62a69d1b283.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-key.test-Debug-1fc0ca479813e7dee8f6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-keys-Debug-94e58482cb082adbf32a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kilo-Debug-94c80761a35f0de3e9d3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-menu-Debug-7997bdcaef5f81371a70.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-menu_window-Debug-fd240932c97da46f5513.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minesweeper-Debug-5e6d9481056f1125b3b3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minimal-Debug-ee429d59668de4f75240.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-options.test-Debug-8b6155007d41dec23432.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_immediate-Debug-80db39e37815999e492a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_multiline-Debug-d258d67dcd7db798d653.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_not_immediate-Debug-e984b199c3bdace7e52a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_simple-Debug-73247e317680335a8e6f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-screen.test-Debug-e6b29eff3d365b7dc23d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-slow_events-Debug-ab8739352335e434bc16.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-styles-Debug-c94ee42caa1f914d6762.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-unicode.test-Debug-1dd972186ad33e2b31e2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-utf8-Debug-1758b4587461d534d939.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-version.test-Debug-ffb4f5b7472b11c1b8a5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream_initializer.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_impl.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_initializer.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/version.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/libcpp-terminal.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/args.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/blocking_queue.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/conversion.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/cursor.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/env.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/exception.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/file.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/file_initializer.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/input.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/return_code.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/screen.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/sigwinch.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/terminal.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/terminfo.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/tty.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/unicode.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/args.dir/args.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/attach_console.dir/attach_console.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/attach_console_minimal.dir/attach_console_minimal.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/cin_cooked.dir/cin_cooked.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/cin_raw.dir/cin_raw.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/colors.dir/colors.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/cout.dir/cout.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/events.dir/events.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/keys.dir/keys.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/kilo.dir/kilo.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/menu.dir/menu.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/menu_window.dir/menu_window.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/minimal.dir/minimal.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/prompt_immediate.dir/prompt_immediate.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/prompt_multiline.dir/prompt_multiline.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/prompt_not_immediate.dir/prompt_not_immediate.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/slow_events.dir/slow_events.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/styles.dir/styles.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/CMakeFiles/utf8.dir/utf8.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/args.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/attach_console.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/attach_console_minimal.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/cin_cooked.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/cin_raw.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/colors.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/cout.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/events.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/keys.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/kilo.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/menu.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/menu_window.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/minimal.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/prompt_immediate.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/prompt_multiline.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/prompt_not_immediate.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/prompt_simple.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/slow_events.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/styles.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/examples/utf8.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/events.test.dir/events.test.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/exception.test.dir/exception.test.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/file.test.dir/file.test.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/key.test.dir/key.test.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/options.test.dir/options.test.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/screen.test.dir/screen.test.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/unicode.test.dir/unicode.test.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/CMakeFiles/version.test.dir/version.test.cpp.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/events.test.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/events.test_tests-b858cb2.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/exception.test.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/exception.test_tests-b858cb2.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/file.test.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/file.test_tests-b858cb2.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/key.test.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/key.test_tests-b858cb2.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/options.test.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/options.test_tests-b858cb2.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/screen.test.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/screen.test_tests-b858cb2.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/unicode.test.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/unicode.test_tests-b858cb2.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/version.test.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/tests/version.test_tests-b858cb2.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cpp-terminal/version.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cppterminaltest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="decided against using threads due to time constraints, tried a new project class structure, work on board">
+      <change afterPath="$PROJECT_DIR$/catch.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal.examples-Debug-80c309178e7d3ef855d4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests-main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Model/board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Model/board.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Threads/computeThread.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Threads/computeThread.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Threads/inputThread.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Threads/inputThread.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Threads/outputThread.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Threads/outputThread.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-47db923df0ef7a2ca2f0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-9b39f79e6880a1fdb712.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c8c83b8e0f8e610779a3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-11-23T17-43-17-0185.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-pcc_semestralka-Debug-ff53a20b876d2d7ea3d1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/GameManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/GameManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/GameManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/GameManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Menu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Menu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-8657ff6733b166ed1b39.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-fe0805031ccbb1a34129.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal.examples-Debug-9bb6edf671fc17179fde.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-09T11-13-51-0142.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minesweeper-Debug-5e6d9481056f1125b3b3.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/Game/Threads/inputThread.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/Game/Threads/inputThread.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/html_generated/assertions.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/html_generated/assertions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/html_generated/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/html_generated/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/markdown/assertions.md" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/markdown/assertions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/markdown/faq.md" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/markdown/faq.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_junit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_xml.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_xml.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_junit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_xml.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_xml.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/scripts/data/article.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/scripts/data/article.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pcc_semestralka.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pcc_semestralka.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/assertions.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/assertions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/assertions.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/assertions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/faq.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/faq.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_junit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_xml.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_xml.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_junit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_xml.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_xml.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/scripts/data/article.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/scripts/data/article.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +166,13 @@
       <recent name="C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.minesweeper">
+  <component name="RunManager" selected="CMake Application.minesweeperTests">
+    <configuration name="scenario1" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minesweeperTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minesweeperTests" TEST_CLASS="[scenario1][small board]" TEST_METHOD="scenario1" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -424,6 +303,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="minesweeperTests" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minesweeperTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minesweeperTests">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="minimal" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minimal" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minimal">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -485,8 +369,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Catch.scenario1" />
       <item itemvalue="CMake Application.cppterminaltest" />
       <item itemvalue="CMake Application.minesweeper" />
+      <item itemvalue="CMake Application.minesweeperTests" />
       <item itemvalue="CMake Application.doctest_with_main" />
       <item itemvalue="CMake Application.cpp-terminal" />
       <item itemvalue="CMake Application.cpp-terminal-private" />
@@ -523,6 +409,11 @@
       <item itemvalue="CMake Application.unicode.test" />
       <item itemvalue="CMake Application.version.test" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Catch.scenario1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -542,7 +433,10 @@
       <workItem from="1701804819158" duration="2009000" />
       <workItem from="1701890440835" duration="2000" />
       <workItem from="1701983299517" duration="4206000" />
-      <workItem from="1702117757570" duration="6119000" />
+      <workItem from="1702117757570" duration="7668000" />
+      <workItem from="1702306853312" duration="13132000" />
+      <workItem from="1702322982829" duration="388000" />
+      <workItem from="1702323423568" duration="951000" />
     </task>
     <task id="LOCAL-00001" summary="pushtest">
       <option name="closed" value="true" />
@@ -576,7 +470,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700763622712</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="decided against using threads due to time constraints, tried a new project class structure, work on board">
+      <option name="closed" value="true" />
+      <created>1702134042152</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702134042152</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,15 +526,16 @@
     <MESSAGE value="removed leftover not deleted revert file before trying to add it properly as submodule agian" />
     <MESSAGE value="added board class, cell struct, started their implementation" />
     <MESSAGE value="git removing tracking of the library's git repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="git removing tracking of the library's git repository" />
+    <MESSAGE value="decided against using threads due to time constraints, tried a new project class structure, work on board" />
+    <option name="LAST_COMMIT_MESSAGE" value="decided against using threads due to time constraints, tried a new project class structure, work on board" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>16</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/Game/Model/Board.cpp</url>
+          <line>85</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
