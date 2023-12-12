@@ -56,54 +56,28 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="decided against using threads due to time constraints, tried a new project class structure, work on board">
-      <change afterPath="$PROJECT_DIR$/catch.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal.examples-Debug-80c309178e7d3ef855d4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests-main.cpp" afterDir="false" />
+    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="forgot commiting today :(&#10;&#10;mine and number distribution using &lt;random&gt;&#10;&#10;revealing cells cascade-like&#10;&#10;somewhat nice printing &#10;&#10;&#10;added basic tests - almost all passing - using a outdated version of catch 2 (still newer than in our homework) because i was scared of using amalgam catch&#10;&#10;game is playable!!&#10;&#10;nice rendering&#10;&#10;awaiting confirmation about ANSI codes, they dont come out well in CLION consoel">
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-8b4676a893e97052515f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/minesweeperTests.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Model/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Model/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Model/GameManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/GameManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Model/GameManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/GameManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Model/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Menu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Model/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Menu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-8657ff6733b166ed1b39.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-fe0805031ccbb1a34129.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal.examples-Debug-9bb6edf671fc17179fde.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-09T11-13-51-0142.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minesweeper-Debug-5e6d9481056f1125b3b3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/InputHandler.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/InputHandler.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/Menu.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/Menu.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/html_generated/assertions.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/html_generated/assertions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/html_generated/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/html_generated/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/markdown/assertions.md" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/markdown/assertions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/markdown/faq.md" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/doc/markdown/faq.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_junit.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_xml.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_xml.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_junit.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_xml.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_xml.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/scripts/data/article.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/doctest-src/scripts/data/article.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/assertions.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/assertions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/assertions.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/assertions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/faq.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/faq.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_junit.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_xml.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_xml.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_junit.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_xml.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_xml.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/scripts/data/article.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/scripts/data/article.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test1.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,16 +140,22 @@
       <recent name="C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.minesweeperTests">
-    <configuration name="scenario1" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minesweeperTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minesweeperTests" TEST_CLASS="[scenario1][small board]" TEST_METHOD="scenario1" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="CMake Application.minesweeper">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Board creation and basic functionality" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minesweeperTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minesweeperTests" TEST_CLASS="[Board]" TEST_METHOD="Board creation and basic functionality" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="scenario1" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minesweeperTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minesweeperTests" TEST_CLASS="[scenario1][small board]" TEST_METHOD="scenario1" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="args" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="args" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="args">
@@ -369,6 +349,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Catch.Board creation and basic functionality" />
       <item itemvalue="Catch.scenario1" />
       <item itemvalue="CMake Application.cppterminaltest" />
       <item itemvalue="CMake Application.minesweeper" />
@@ -411,6 +392,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Catch.Board creation and basic functionality" />
         <item itemvalue="Catch.scenario1" />
       </list>
     </recent_temporary>
@@ -436,7 +418,8 @@
       <workItem from="1702117757570" duration="7668000" />
       <workItem from="1702306853312" duration="13132000" />
       <workItem from="1702322982829" duration="388000" />
-      <workItem from="1702323423568" duration="951000" />
+      <workItem from="1702323423568" duration="3345000" />
+      <workItem from="1702371202528" duration="2934000" />
     </task>
     <task id="LOCAL-00001" summary="pushtest">
       <option name="closed" value="true" />
@@ -478,7 +461,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702134042152</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="forgot commiting today :(&#10;&#10;mine and number distribution using &lt;random&gt;&#10;&#10;revealing cells cascade-like&#10;&#10;somewhat nice printing &#10;&#10;&#10;added basic tests - almost all passing - using a outdated version of catch 2 (still newer than in our homework) because i was scared of using amalgam catch&#10;&#10;game is playable!!&#10;&#10;nice rendering&#10;&#10;awaiting confirmation about ANSI codes, they dont come out well in CLION consoel">
+      <option name="closed" value="true" />
+      <created>1702324649240</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702324649240</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,15 +518,26 @@
     <MESSAGE value="added board class, cell struct, started their implementation" />
     <MESSAGE value="git removing tracking of the library's git repository" />
     <MESSAGE value="decided against using threads due to time constraints, tried a new project class structure, work on board" />
-    <option name="LAST_COMMIT_MESSAGE" value="decided against using threads due to time constraints, tried a new project class structure, work on board" />
+    <MESSAGE value="forgot commiting today :(&#10;&#10;mine and number distribution using &lt;random&gt;&#10;&#10;revealing cells cascade-like&#10;&#10;somewhat nice printing &#10;&#10;&#10;added basic tests - almost all passing - using a outdated version of catch 2 (still newer than in our homework) because i was scared of using amalgam catch&#10;&#10;game is playable!!&#10;&#10;nice rendering&#10;&#10;awaiting confirmation about ANSI codes, they dont come out well in CLION consoel" />
+    <option name="LAST_COMMIT_MESSAGE" value="forgot commiting today :(&#10;&#10;mine and number distribution using &lt;random&gt;&#10;&#10;revealing cells cascade-like&#10;&#10;somewhat nice printing &#10;&#10;&#10;added basic tests - almost all passing - using a outdated version of catch 2 (still newer than in our homework) because i was scared of using amalgam catch&#10;&#10;game is playable!!&#10;&#10;nice rendering&#10;&#10;awaiting confirmation about ANSI codes, they dont come out well in CLION consoel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Game/Model/Board.cpp</url>
-          <line>85</line>
+          <line>87</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test1.cpp</url>
+          <line>78</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Game/Model/GameManager.cpp</url>
+          <line>22</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

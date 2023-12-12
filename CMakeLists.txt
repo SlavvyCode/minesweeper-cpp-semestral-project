@@ -8,12 +8,8 @@ add_subdirectory(cpp-terminal)
 
 set(core-files
         Game/Model/Board.cpp
-        Game/Model/Menu.cpp
-        Game/Model/Menu.h
         Game/Model/GameManager.cpp
         Game/Model/GameManager.h
-        Game/Model/InputHandler.cpp
-        Game/Model/InputHandler.h
         Game/Model/GameManager.h
         Game/Model/GameManager.h
 )

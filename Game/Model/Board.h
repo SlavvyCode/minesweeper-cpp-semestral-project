@@ -17,7 +17,9 @@ class Board {
 
 private:
 
-    int remainingNonMineCells = width * height - mineNumber;
+
+    int flaggedMines = 0;
+    int remainingNonMines = width * height - mineNumber;
 
 public:
 
@@ -53,12 +55,9 @@ public:
 
     bool revealCell(int x, int y);
 
-
+    bool placeOrRemoveFlag(int x, int y);
     //use some randomness or pseudorandomness to distribute the mines
 
-
-
-    int getRemainingNonMineCells() const;
 
 
     struct Cell {

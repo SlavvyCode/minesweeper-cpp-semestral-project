@@ -49,15 +49,17 @@ void Board::printBoard() {
 
             switch (cell.state) {
                 case HIDDEN:
+//                    ■▣
                     symbol = "?";
                     break;
                 case FLAGGED:
-                    symbol = "!";
+                    symbol = "F";
                     break;
                 case REVEALED:
                     if(cell.type == MINE){
                         symbol = "X";
-
+//                        Ô
+                        //●
 //                        symbol = ANSI_RED "X" ANSI_RESET;
                     }
                     else if(cell.type == EMPTY){
@@ -83,7 +85,7 @@ void Board::printBoard() {
 
 
 bool Board::isBoardCleared() {
-    return remainingNonMineCells == 0;
+    return mineNumber == flaggedMines;
 }
 
 bool Board::distributeMines(int x, int y) {
@@ -182,10 +184,13 @@ bool Board::revealCell(int x, int y) {
         return false;
     }
 
+    if(mapArray[x][y].type==MINE)
+        return true;
+
     //if the cell is a mine, return true, leave logic for game ending to other method
-    if(mapArray[x][y].type == MINE || mapArray[x][y].type == NUMBER ){
+    if(mapArray[x][y].type == NUMBER ){
         mapArray[x][y].state = REVEALED;
-        remainingNonMineCells--;
+        remainingNonMines--;
         return true;
     }
 
@@ -193,8 +198,6 @@ bool Board::revealCell(int x, int y) {
 
     if(mapArray[x][y].type == EMPTY){
         cascadeRevealBlankCells(x,y);
-        remainingNonMineCells--;
-
         return true;
     }
 
@@ -223,7 +226,7 @@ void Board::cascadeRevealBlankCells(int x, int y) {
 
     // Reveal the cell and decrement the count of remaining non-mine cells
     cellToReveal.state = REVEALED;
-    remainingNonMineCells--;
+    remainingNonMines--;
 
     // Only cascade reveal if the cell is blank
     if (cellToReveal.type == EMPTY || cellToReveal.type == NUMBER) {
@@ -268,8 +271,41 @@ void Board::distributeNumbers() {
 
 }
 
-int Board::getRemainingNonMineCells() const {
-    return remainingNonMineCells;
+
+//todo test
+bool Board::placeOrRemoveFlag(int x, int y) {
+    if(x<0 || x>width || y<0 || y>height){
+        cout << "Invalid coordinates, please try again" << endl;
+        return false;
+    }
+
+    //if the cell is already revealed, do nothing
+    if(mapArray[x][y].state == REVEALED){
+        cout << "That cell is revealed already, please try again" << endl;
+        return false;
+    }
+
+    //if the cell is flagged, do nothing
+    if(mapArray[x][y].state == FLAGGED){
+        cout << "Flag removed" << endl;
+
+        mapArray[x][y].state = HIDDEN;
+
+        if(mapArray[x][y].type == MINE)
+            flaggedMines--;
+
+        return true;
+
+    }
+
+
+    //if the cell is a mine, return true, leave logic for game ending to other method
+    if(mapArray[x][y].type == MINE  ){
+        mapArray[x][y].state = FLAGGED;
+        flaggedMines++;
+        return true;
+    }
+
 }
 
 

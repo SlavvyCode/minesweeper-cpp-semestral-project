@@ -7,14 +7,13 @@
 
 
 #include "Board.h"
-#include "Menu.h"
 #include <iostream>
 using namespace std;
 
 class GameManager {
 private:
     std::unique_ptr<Board> currentBoard;
-    Menu* currentMenu;
+
 
     enum GameState {
         NOT_STARTED,
@@ -24,6 +23,8 @@ private:
 
     GameState gameState;
 
+
+    //todo implement or delete
     static void handleCtrlC(int signum) {
         cout << "\nReceived Ctrl+C.\n";
         // Implement your custom 'back' functionality or exit the program
@@ -53,9 +54,12 @@ public:
     void gameLoop();
 
 
+
     void gameOver();
 
     void revealInputDialogNotRaw(int &x, int &y) const;
+
+    void placeFlagDialogNotRaw(int &x, int &y) const;
 };
 
 

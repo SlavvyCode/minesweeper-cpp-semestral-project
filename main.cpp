@@ -2,7 +2,6 @@
 // Created by Adam on 22/11/2023.
 //
 
-#include "Game/Model/Menu.h"
 #include "Game/Model/GameManager.h"
 
 #include <unistd.h>
