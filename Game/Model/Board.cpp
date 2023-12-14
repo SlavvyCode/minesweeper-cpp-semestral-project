@@ -272,7 +272,6 @@ void Board::distributeNumbers() {
 }
 
 
-//todo test
 bool Board::placeOrRemoveFlag(int x, int y) {
     if(x<0 || x>width || y<0 || y>height){
         cout << "Invalid coordinates, please try again" << endl;

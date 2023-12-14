@@ -56,24 +56,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="validation, changed some display symbols, improved win condition logic, deleted unused classes">
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-8657ff6733b166ed1b39.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-465417e24436d385c0e8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-13T19-30-52-0399.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minesweeper-Debug-45c6543eb6e3d3106f4f.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minesweeperTests-Debug-0993a5fdafb14c701f33.json" afterDir="false" />
+    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="improved input validation, improved victory state.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Model/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Model/GameManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/GameManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Model/GameManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/GameManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-8b4676a893e97052515f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -412,7 +400,8 @@
       <workItem from="1702323423568" duration="3345000" />
       <workItem from="1702371202528" duration="3292000" />
       <workItem from="1702495848611" duration="4088000" />
-      <workItem from="1702547882981" duration="2150000" />
+      <workItem from="1702547882981" duration="2486000" />
+      <workItem from="1702573064428" duration="2685000" />
     </task>
     <task id="LOCAL-00001" summary="pushtest">
       <option name="closed" value="true" />
@@ -470,7 +459,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702374208503</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="improved input validation, improved victory state.">
+      <option name="closed" value="true" />
+      <created>1702550117334</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702550117334</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +518,8 @@
     <MESSAGE value="decided against using threads due to time constraints, tried a new project class structure, work on board" />
     <MESSAGE value="forgot commiting today :(&#10;&#10;mine and number distribution using &lt;random&gt;&#10;&#10;revealing cells cascade-like&#10;&#10;somewhat nice printing &#10;&#10;&#10;added basic tests - almost all passing - using a outdated version of catch 2 (still newer than in our homework) because i was scared of using amalgam catch&#10;&#10;game is playable!!&#10;&#10;nice rendering&#10;&#10;awaiting confirmation about ANSI codes, they dont come out well in CLION consoel" />
     <MESSAGE value="validation, changed some display symbols, improved win condition logic, deleted unused classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="validation, changed some display symbols, improved win condition logic, deleted unused classes" />
+    <MESSAGE value="improved input validation, improved victory state." />
+    <option name="LAST_COMMIT_MESSAGE" value="improved input validation, improved victory state." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

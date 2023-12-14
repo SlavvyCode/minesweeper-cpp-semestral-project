@@ -27,11 +27,11 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
         string input;
         getline(cin, input);
 
-        if (input == "--help") {
+        if (input == "help") {
             // Show commands
             cout << "Enter two numbers larger than 2 to dictate the size of the board." << endl ;
             cout << "Commands:" << endl;
-            cout << "   --help - show commands" << endl  << endl;
+            cout << "   help - show commands" << endl  << endl;
         } else {
             // Use a regular expression match to validate the input
             std::smatch match;
@@ -64,11 +64,11 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
         string input;
         getline(cin, input);
 
-        if (input == "--help") {
+        if (input == "help") {
             // Show commands
             cout << "pick a number from the range above." << endl;
             cout << "Commands:" << endl;
-            cout << "   --help - show commands" << endl  << endl;
+            cout << "   help - show commands" << endl  << endl;
         } else {
             // Use a regular expression match to validate the input
             std::smatch match;
@@ -122,12 +122,12 @@ void GameManager::gameOver() {
         } else if (input == "n" || input == "q") {
             // Quit the game
             quitGame();
-        } else if (input == "--help") {
+        } else if (input == "help") {
             // Show commands
             cout << "Commands:" << endl;
             cout << "   y - play again" << endl;
             cout << "   n or q - quit game" << endl;
-            cout << "   --help - show commands" << endl  << endl;
+            cout << "   help - show commands" << endl  << endl;
         } else {
             // Invalid input, prompt user to try again
             cout << "Invalid input, please try again" << endl  << endl;
@@ -138,7 +138,7 @@ void GameManager::gameOver() {
 }
 
 void GameManager::startGame() {
-    cout << "Type '--help' for commands at any time!" << endl << endl << endl;
+    cout << "Type 'help' for commands at any time!" << endl << endl << endl;
 
     preGame();
     gameLoop();
@@ -194,12 +194,12 @@ void GameManager::gameLoop() {
 
             } else if (input == "n") {
                 break;
-            } else if (input == "--help") {
+            } else if (input == "help") {
                 // Show commands
                 cout << "Commands:" << endl;
                 cout << "   y - place a flag" << endl;
                 cout << "   n - don't place a flag" << endl;
-                cout << "   --help - show commands" << endl  << endl ;
+                cout << "   help - show commands" << endl  << endl ;
             } else {
                 cout << "Invalid input, please try again" << endl  << endl;
             }
@@ -278,10 +278,10 @@ void GameManager::placeFlagDialogNotRaw(int &x, int &y) const {
         string input;
         getline(cin, input);
 
-        if(input == "--help"){
+        if(input == "help"){
         cout << "   enter two coordinates that place you within the confines of the board to place the flag." << endl  << endl;
             cout << "Commands:" << endl;
-            cout << "   --help - show commands" << endl  << endl;
+            cout << "   help - show commands" << endl  << endl;
         }
         else {
             // Use a regular expression match to validate the input
