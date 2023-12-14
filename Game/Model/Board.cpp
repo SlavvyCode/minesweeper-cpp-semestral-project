@@ -187,16 +187,16 @@ bool Board::revealCell(int x, int y) {
     if(mapArray[x][y].type==MINE)
         return true;
 
-    //if the cell is a mine, return true, leave logic for game ending to other method
-    if(mapArray[x][y].type == NUMBER ){
-        mapArray[x][y].state = REVEALED;
-        remainingNonMines--;
-        return true;
-    }
+//    //if the cell is a mine, return true, leave logic for game ending to other method
+//    if(mapArray[x][y].type == NUMBER ){
+//        mapArray[x][y].state = REVEALED;
+//        remainingNonMines--;
+//        return true;
+//    }
 
     //if the cell is empty, reveal it and reveal all surrounding cells
 
-    if(mapArray[x][y].type == EMPTY){
+    if(mapArray[x][y].type == EMPTY || mapArray[x][y].type == NUMBER){
         cascadeRevealBlankCells(x,y);
         return true;
     }
@@ -306,6 +306,7 @@ bool Board::placeOrRemoveFlag(int x, int y) {
         return true;
     }
 
+    else throw "Error: unexpected behaviour in Board::placeOrRemoveFlag()";
 }
 
 

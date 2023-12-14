@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/out/build/x64-Debug/cpp-terminal/tests/key.test_tests-b858cb2.cmake")
+  include("C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/out/build/x64-Debug/cpp-terminal/tests/key.test_tests-b858cb2.cmake")
+else()
+  add_test(key.test_NOT_BUILT-b858cb2 key.test_NOT_BUILT-b858cb2)
+endif()

@@ -5,93 +5,140 @@
 #include "GameManager.h"
 #include <iostream>
 #include <limits>
+#include <sstream>
+#include <regex>
 using namespace std;
 
 
-std::unique_ptr<Board> GameManager::preGame(){
-int boardSizeX;
-int boardSizeY;
-int numberOfMines;
+std::unique_ptr<Board> GameManager::preGame() {
+    int boardSizeX;
+    int boardSizeY;
+    int numberOfMines;
 
-//board size from user for both x and y input
+    // Display help commands
 
 
-//make it so that x and y is at least 2 and so the number of mines has to be less than the number of cells
+std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
 
+// Board size from the user for both x and y input
     while (true) {
-        cout << "Please enter the size of the board - first x then y: " << endl;
+        cout << "Please enter the size of the board - first x then y - between 3 and 40: " << endl  << endl;
 
-        if (!(cin >> boardSizeX) || !(cin >> boardSizeY)) {
-            // Input failed, handle the error
-            cout << "Invalid input. Please enter valid integers." << endl;
+        string input;
+        getline(cin, input);
 
-            // Clear the error flag
-            cin.clear();
-
-            // Discard the invalid input
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        } else if (boardSizeX < 2 || boardSizeY < 2) {
-            cout << "Invalid board size, please try again" << endl;
+        if (input == "--help") {
+            // Show commands
+            cout << "Enter two numbers larger than 2 to dictate the size of the board." << endl ;
+            cout << "Commands:" << endl;
+            cout << "   --help - show commands" << endl  << endl;
         } else {
-            // Valid input, break out of the loop
-            break;
+            // Use a regular expression match to validate the input
+            std::smatch match;
+            if (std::regex_match(input, match, input_regex)) {
+                // Use std::stringstream to convert the input to integers
+                std::stringstream ss(input);
+                ss >> boardSizeX >> boardSizeY;
+
+                // Check if the input is within the specified range
+                if (boardSizeX < 2 || boardSizeY < 2 || boardSizeX > 40 || boardSizeY > 40) {
+                    cout << "Invalid board size. Please enter numbers between 2 and 40." << endl  << endl;
+                } else {
+                    // Valid input, break out of the loop
+                    break;
+                }
+            } else {
+                cout << "Invalid input. Please enter two numbers separated by a space." << endl;
+            }
         }
     }
 
 
 
-//the number of mines has to be less than the number of cells
-while (true) {
-    cout << "Please enter the number of mines: " << endl;
+    std::regex input_regex2("^\\s*(\\d+)\\s*$");
 
-    // Check if the input is a valid integer
-    if (!(cin >> numberOfMines)) {
-        cout << "Invalid input. Please enter a valid number." << endl;
-        // Clear the input buffer to handle the invalid input
-        cin.clear();
-        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    } else if (numberOfMines >= boardSizeX * boardSizeY) {
-        cout << "Invalid number of mines. Please enter a smaller value." << endl;
-    } else {
-        // Valid input, break out of the loop
-        break;
+// The number of mines has to be less than the number of cells
+    while (true) {
+        cout << "Please enter a number of mines between 1 and " << boardSizeX*boardSizeY-1 << "." << endl  << endl;
+
+        string input;
+        getline(cin, input);
+
+        if (input == "--help") {
+            // Show commands
+            cout << "pick a number from the range above." << endl;
+            cout << "Commands:" << endl;
+            cout << "   --help - show commands" << endl  << endl;
+        } else {
+            // Use a regular expression match to validate the input
+            std::smatch match;
+            if (std::regex_match(input, match, input_regex2)) {
+                // Use std::stringstream to convert the input to an integer
+                std::stringstream ss(input);
+                ss >> numberOfMines;
+
+                // Check if the input is within the valid range
+                if (numberOfMines < 1 || numberOfMines >= boardSizeX * boardSizeY) {
+                    cout << "Invalid number of mines. Please enter a number between 1 and " << boardSizeX*boardSizeY-1 << "." << endl  << endl;
+                } else {
+                    // Valid input, break out of the loop
+                    break;
+                }
+            } else {
+                cout << "Invalid input. Please enter a valid number." << endl  << endl;
+            }
+        }
     }
-}
-std::unique_ptr<Board> board = std::make_unique<Board>(boardSizeX, boardSizeY, numberOfMines);
-currentBoard = std::move(board);
 
-return board;
 
+    std::unique_ptr<Board> board = std::make_unique<Board>(boardSizeX, boardSizeY, numberOfMines);
+    currentBoard = std::move(board);
+
+    return board;
 }
 
 
 
 void GameManager::quitGame() {
-    cout << "Quitting game..." << endl;
+    cout << "Quitting game..." << endl  << endl;
     exit(0);
-
 }
+
+
+
+
 void GameManager::gameOver() {
     cout << "Game over" << endl;
-    cout << "Would you like to play again? (y/n)" << endl;
-    char input;
-    cin >> input;
 
-    if(input == 'y'){
-        //todo doesn't this make me stuck in this function?
-        startGame();
+    while (true) {
+        cout << "Would you like to play again? (y/n)" << endl  << endl;
+        string input;
+
+        getline(cin, input);
+
+        if (input == "y") {
+            // Restart the game
+            startGame();
+        } else if (input == "n" || input == "q") {
+            // Quit the game
+            quitGame();
+        } else if (input == "--help") {
+            // Show commands
+            cout << "Commands:" << endl;
+            cout << "   y - play again" << endl;
+            cout << "   n or q - quit game" << endl;
+            cout << "   --help - show commands" << endl  << endl;
+        } else {
+            // Invalid input, prompt user to try again
+            cout << "Invalid input, please try again" << endl  << endl;
+        }
     }
-    else if(input == 'n'){
-        navigateToMainMenu();
-    }
-    else{
-        cout << "Invalid input, please try again" << endl;
-    }
+
 
 }
 
 void GameManager::startGame() {
-    // in main menu
+    cout << "Type '--help' for commands at any time!" << endl << endl << endl;
 
     preGame();
     gameLoop();
@@ -99,29 +146,15 @@ void GameManager::startGame() {
 
 
 
-
 }
 
-void GameManager::navigateToMainMenu() {
 
-    cout << "Navigating to main menu..." << endl;
-    // in game
-    // save game
-    // quit game
-    // main menu
-    // load game
-    // start game
-
-
-}
 
 void GameManager::gameLoop() {
 
     gameState = GameState::GAME_RUNNING;
     currentBoard->printBoard();
 
-    //todo
-    // ctrl + c to quit to main menu
 
     int x, y;
     revealInputDialogNotRaw(x, y);
@@ -131,31 +164,54 @@ void GameManager::gameLoop() {
 
 
     while (gameState != GameState::GAME_OVER) {
-        //get input or wait for raw input
-
-        currentBoard->printBoard();
-
-
         //while the player decides they want to place a flag, let them place as many flags as they want
         // until they say they don't want to place a flag anymore
-        while (true) {
-            cout << "Would you like to place a flag? (y/n)" << endl;
-            char input;
-            cin >> input;
 
-            if (input == 'y') {
+        while (true) {
+            currentBoard->printBoard();
+
+            cout << "Would you like to place a flag? (y/n)" << endl;
+            string input;
+            getline(cin, input);
+
+            if (input == "y") {
+
+                currentBoard->printBoard();
+
                 int x, y;
                 placeFlagDialogNotRaw(x, y);
 
                 currentBoard->placeOrRemoveFlag(x, y);
-            } else if (input == 'n') {
+
+                if(currentBoard->isBoardCleared()){
+                    gameState = GameState::GAME_OVER;
+                    cout << "You win!" << endl  << endl;
+                    break;
+                }
+
+
+
+
+            } else if (input == "n") {
                 break;
+            } else if (input == "--help") {
+                // Show commands
+                cout << "Commands:" << endl;
+                cout << "   y - place a flag" << endl;
+                cout << "   n - don't place a flag" << endl;
+                cout << "   --help - show commands" << endl  << endl ;
             } else {
-                cout << "Invalid input, please try again" << endl;
+                cout << "Invalid input, please try again" << endl  << endl;
             }
         }
 
 
+
+        if(currentBoard->isBoardCleared()){
+//            gameState = GameState::GAME_OVER;
+//            cout << "You win!" << endl  << endl;
+            break;
+        }
 
 
 
@@ -164,6 +220,8 @@ void GameManager::gameLoop() {
         currentBoard->revealCell(x,y);
 
         if(isCellMine(x,y)){
+            //reveal the mine and end the game
+            currentBoard->mapArray[x][y].state = Board::REVEALED;
             gameState = GameState::GAME_OVER;
         }
         //if xy is a mine, game over
@@ -171,11 +229,6 @@ void GameManager::gameLoop() {
 
         currentBoard->printBoard();
 
-
-        if(currentBoard->isBoardCleared()){
-            gameState = GameState::GAME_OVER;
-            cout << "You win!" << endl;
-        }
 
     }
 
@@ -185,46 +238,86 @@ void GameManager::gameLoop() {
 
 }
 
+
+
 void GameManager::revealInputDialogNotRaw(int &x, int &y) const {
 
-    while (true) {
-        cout << "Please enter the coordinates of the cell you want to reveal: " << endl;
+    std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
 
-        // Check if the input is a valid integer for both x and y
-        if (!(cin >> x) || !(cin >> y)) {
-            cout << "Invalid input. Please enter valid integer coordinates." << endl;
-            // Clear the input buffer to handle the invalid input
-            cin.clear();
-            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        } else if (x < 0 || x >= currentBoard->width || y < 0 || y >= currentBoard->height) {
-            cout << "Invalid coordinates, please try again" << endl;
+    while (true) {
+        cout << "Please enter the coordinates of the cell you want to reveal: " << endl << endl;
+        string input;
+        getline(cin, input);
+
+        // Use a regular expression match to validate the input
+        std::smatch match;
+        if (std::regex_match(input, match, input_regex)) {
+            // Use std::stringstream to convert the input to integers
+            std::stringstream ss(input);
+            ss >> x >> y;
+
+            // Check if the input is within the valid range
+            if (x < 0 || x >= currentBoard->width || y < 0 || y >= currentBoard->height) {
+                cout << "Invalid coordinates, please try again" << endl  << endl;
+            } else {
+                // Valid input, break out of the loop
+                break;
+            }
         } else {
-            // Valid input, break out of the loop
-            break;
+            cout << "Invalid input. Please enter two numbers separated by a space." << endl  << endl;
         }
     }
 
 }
 void GameManager::placeFlagDialogNotRaw(int &x, int &y) const {
+    std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
 
     while (true)
     {
-        cout << "Please enter the coordinates of the cell you want to flag: " << endl;
-        // Check if the input is a valid integer for both x and y
-        if (!(cin >> x) || !(cin >> y)) {
-            cout << "Invalid input. Please enter valid integer coordinates." << endl;
-            // Clear the input buffer to handle the invalid input
-            cin.clear();
-            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        } else if (x < 0 || x >= currentBoard->width || y < 0 || y >= currentBoard->height) {
-            cout << "Invalid coordinates, please try again" << endl;
-        } else {
-            // Valid input, break out of the loop
-            break;
+        cout << "Please enter the coordinates of the cell you want to flag: " << endl  << endl;
+        string input;
+        getline(cin, input);
+
+        if(input == "--help"){
+        cout << "   enter two coordinates that place you within the confines of the board to place the flag." << endl  << endl;
+            cout << "Commands:" << endl;
+            cout << "   --help - show commands" << endl  << endl;
+        }
+        else {
+            // Use a regular expression match to validate the input
+            std::smatch match;
+            if (std::regex_match(input, match, input_regex)) {
+                // Use std::stringstream to convert the input to integers
+                std::stringstream ss(input);
+                ss >> x >> y;
+
+                // Check if the input is within the valid range
+                if (x < 0 || x >= currentBoard->width || y < 0 || y >= currentBoard->height) {
+                    cout << "Invalid coordinates, please try again" << endl << endl;
+                } else {
+                    // Valid input, break out of the loop
+                    break;
+                }
+            } else {
+                cout << "Invalid input. Please enter two numbers separated by a space." << endl << endl;
+            }
         }
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

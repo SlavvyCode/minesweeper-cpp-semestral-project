@@ -1,0 +1,139 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"cpp-terminal/cpp-terminal/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 75,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"cpp-terminal/cpp-terminal/libcpp-terminal.a"
+			],
+			"targetId" : "cpp-terminal::@a0e0f621caee76e8b07d",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/cpp-terminal",
+			"paths" : 
+			[
+				"cpp-terminal/cpp-terminal/args.hpp",
+				"cpp-terminal/cpp-terminal/buffer.hpp",
+				"cpp-terminal/cpp-terminal/color.hpp",
+				"cpp-terminal/cpp-terminal/cursor.hpp",
+				"cpp-terminal/cpp-terminal/event.hpp",
+				"cpp-terminal/cpp-terminal/exception.hpp",
+				"cpp-terminal/cpp-terminal/focus.hpp",
+				"cpp-terminal/cpp-terminal/input.hpp",
+				"cpp-terminal/cpp-terminal/iostream_initializer.hpp",
+				"cpp-terminal/cpp-terminal/iostream.hpp",
+				"cpp-terminal/cpp-terminal/key.hpp",
+				"cpp-terminal/cpp-terminal/mouse.hpp",
+				"cpp-terminal/cpp-terminal/options.hpp",
+				"cpp-terminal/cpp-terminal/prompt.hpp",
+				"cpp-terminal/cpp-terminal/screen.hpp",
+				"cpp-terminal/cpp-terminal/stream.hpp",
+				"cpp-terminal/cpp-terminal/style.hpp",
+				"cpp-terminal/cpp-terminal/terminal_impl.hpp",
+				"cpp-terminal/cpp-terminal/terminal_initializer.hpp",
+				"cpp-terminal/cpp-terminal/terminal.hpp",
+				"cpp-terminal/cpp-terminal/terminfo.hpp",
+				"cpp-terminal/cpp-terminal/tty.hpp",
+				"cpp-terminal/cpp-terminal/version.hpp",
+				"cpp-terminal/cpp-terminal/window.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"cpp-terminal/cpp-terminal/private/libcpp-terminal-private.a"
+			],
+			"targetId" : "cpp-terminal-private::@b2f3ba042df9b9f65843",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/cpp-terminal",
+			"exportName" : "cpp-terminalTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "cpp-terminal::@a0e0f621caee76e8b07d",
+					"index" : 7
+				},
+				{
+					"id" : "cpp-terminal-private::@b2f3ba042df9b9f65843",
+					"index" : 8
+				},
+				{
+					"id" : "cpp-terminalWarnings::@9e779577460235d12bc9",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"cpp-terminal/cpp-terminal/CMakeFiles/Export/f914531f6191163e7a988aed981bcf11/cpp-terminalTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/cpp-terminal",
+			"paths" : 
+			[
+				"cmake-build-debug/cpp-terminal/cmake/cpp-terminalConfig.cmake",
+				"cmake-build-debug/cpp-terminal/cpp-terminal/cpp-terminalConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "cpp-terminal/cpp-terminal",
+		"source" : "cpp-terminal/cpp-terminal"
+	}
+}

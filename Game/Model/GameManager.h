@@ -16,7 +16,6 @@ private:
 
 
     enum GameState {
-        NOT_STARTED,
         GAME_RUNNING,
         GAME_OVER
     };
@@ -24,20 +23,8 @@ private:
     GameState gameState;
 
 
-    //todo implement or delete
-    static void handleCtrlC(int signum) {
-        cout << "\nReceived Ctrl+C.\n";
-        // Implement your custom 'back' functionality or exit the program
-
-        navigateToMainMenu();
-    }
-
 
 public:
-    GameManager() {
-        // Set up signal handler for Ctrl+C
-        signal(SIGINT, handleCtrlC);
-    }
 
     void startGame();
     void quitGame();

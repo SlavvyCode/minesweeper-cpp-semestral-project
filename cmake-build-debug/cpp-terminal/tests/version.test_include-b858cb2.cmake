@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/version.test_tests-b858cb2.cmake")
+  include("C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal/tests/version.test_tests-b858cb2.cmake")
+else()
+  add_test(version.test_NOT_BUILT-b858cb2 version.test_NOT_BUILT-b858cb2)
+endif()
