@@ -7,6 +7,6 @@ Call Stack (most recent call first):
   cpp-terminal/docs/CMakeLists.txt:55 (doxyfile_docs)
 
 
--- Configuring done (2.3s)
+-- Configuring done (1.4s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug

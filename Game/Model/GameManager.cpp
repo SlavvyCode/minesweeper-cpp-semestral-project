@@ -9,8 +9,11 @@
 #include <regex>
 using namespace std;
 
-
 std::unique_ptr<Board> GameManager::preGame() {
+
+
+
+
     int boardSizeX;
     int boardSizeY;
     int numberOfMines;
@@ -24,27 +27,27 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
     while (true) {
         cout << "Please enter the size of the board - first x then y - between 3 and 40: " << endl  << endl;
 
-        string input;
-        getline(cin, input);
+        string storedInput;
+        getline(input, storedInput);
 
-        if (input == "help") {
+        if (storedInput == "help") {
             // Show commands
             cout << "Enter two numbers larger than 2 to dictate the size of the board." << endl ;
             cout << "Commands:" << endl;
             cout << "   help - show commands" << endl  << endl;
         } else {
-            // Use a regular expression match to validate the input
+            // Use a regular expression match to validate the storedInput
             std::smatch match;
-            if (std::regex_match(input, match, input_regex)) {
-                // Use std::stringstream to convert the input to integers
-                std::stringstream ss(input);
+            if (std::regex_match(storedInput, match, input_regex)) {
+                // Use std::stringstream to convert the storedInput to integers
+                std::stringstream ss(storedInput);
                 ss >> boardSizeX >> boardSizeY;
 
-                // Check if the input is within the specified range
+                // Check if the storedInput is within the specified range
                 if (boardSizeX < 2 || boardSizeY < 2 || boardSizeX > 40 || boardSizeY > 40) {
                     cout << "Invalid board size. Please enter numbers between 2 and 40." << endl  << endl;
                 } else {
-                    // Valid input, break out of the loop
+                    // Valid storedInput, break out of the loop
                     break;
                 }
             } else {
@@ -61,27 +64,27 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
     while (true) {
         cout << "Please enter a number of mines between 1 and " << boardSizeX*boardSizeY-1 << "." << endl  << endl;
 
-        string input;
-        getline(cin, input);
+        string storedInput;
+        getline(input, storedInput);
 
-        if (input == "help") {
+        if (storedInput == "help") {
             // Show commands
             cout << "pick a number from the range above." << endl;
             cout << "Commands:" << endl;
             cout << "   help - show commands" << endl  << endl;
         } else {
-            // Use a regular expression match to validate the input
+            // Use a regular expression match to validate the storedInput
             std::smatch match;
-            if (std::regex_match(input, match, input_regex2)) {
-                // Use std::stringstream to convert the input to an integer
-                std::stringstream ss(input);
+            if (std::regex_match(storedInput, match, input_regex2)) {
+                // Use std::stringstream to convert the storedInput to an integer
+                std::stringstream ss(storedInput);
                 ss >> numberOfMines;
 
-                // Check if the input is within the valid range
+                // Check if the storedInput is within the valid range
                 if (numberOfMines < 1 || numberOfMines >= boardSizeX * boardSizeY) {
                     cout << "Invalid number of mines. Please enter a number between 1 and " << boardSizeX*boardSizeY-1 << "." << endl  << endl;
                 } else {
-                    // Valid input, break out of the loop
+                    // Valid storedInput, break out of the loop
                     break;
                 }
             } else {
@@ -112,17 +115,17 @@ void GameManager::gameOver() {
 
     while (true) {
         cout << "Would you like to play again? (y/n)" << endl  << endl;
-        string input;
+        string storedInput;
 
-        getline(cin, input);
+        getline(input, storedInput);
 
-        if (input == "y") {
+        if (storedInput == "y") {
             // Restart the game
             startGame();
-        } else if (input == "n" || input == "q") {
+        } else if (storedInput == "n" || storedInput == "q") {
             // Quit the game
             quitGame();
-        } else if (input == "help") {
+        } else if (storedInput == "help") {
             // Show commands
             cout << "Commands:" << endl;
             cout << "   y - play again" << endl;
@@ -141,7 +144,7 @@ void GameManager::startGame() {
     cout << "Type 'help' for commands at any time!" << endl << endl << endl;
 
     preGame();
-    gameLoop();
+    gameLoop(nullopt);
     gameOver();
 
 
@@ -150,7 +153,7 @@ void GameManager::startGame() {
 
 
 
-void GameManager::gameLoop() {
+void GameManager::gameLoop(std::optional<size_t> seedSeq) {
 
     gameState = GameState::GAME_RUNNING;
     currentBoard->printBoard();
@@ -160,7 +163,7 @@ void GameManager::gameLoop() {
     revealInputDialogNotRaw(x, y);
 
 
-    currentBoard->distributeMines(x,y);
+    currentBoard->distributeMines(x,y,seedSeq);
 
 
     while (gameState != GameState::GAME_OVER) {
@@ -171,10 +174,10 @@ void GameManager::gameLoop() {
             currentBoard->printBoard();
 
             cout << "Would you like to place a flag? (y/n)" << endl;
-            string input;
-            getline(cin, input);
+            string storedInput;
+            getline(input, storedInput);
 
-            if (input == "y") {
+            if (storedInput == "y") {
 
                 currentBoard->printBoard();
 
@@ -188,13 +191,12 @@ void GameManager::gameLoop() {
                     cout << "You win!" << endl  << endl;
                     break;
                 }
-
-
-
-
-            } else if (input == "n") {
-                break;
-            } else if (input == "help") {
+            } else if (storedInput == "n") {
+                {
+                    currentBoard->printBoard();
+                    break;
+                }
+            } else if (storedInput == "help") {
                 // Show commands
                 cout << "Commands:" << endl;
                 cout << "   y - place a flag" << endl;
@@ -208,8 +210,8 @@ void GameManager::gameLoop() {
 
 
         if(currentBoard->isBoardCleared()){
-//            gameState = GameState::GAME_OVER;
-//            cout << "You win!" << endl  << endl;
+            gameState = GameState::GAME_OVER;
+            cout << "You win!" << endl  << endl;
             break;
         }
 
@@ -217,17 +219,20 @@ void GameManager::gameLoop() {
 
         revealInputDialogNotRaw(x, y);
 
-        currentBoard->revealCell(x,y);
+        //if the player sucessfully reveals a cell,
+        if(currentBoard->revealCell(x,y)){
+            //check if it was a mine they revealed
+            if(currentBoard->isCellMine(x,y)){
+                //reveal the mine and end the game
+                currentBoard->mapArray[x][y].state = Board::REVEALED;
+                gameState = GameState::GAME_OVER;
+                currentBoard->printBoard();
+            }
 
-        if(isCellMine(x,y)){
-            //reveal the mine and end the game
-            currentBoard->mapArray[x][y].state = Board::REVEALED;
-            gameState = GameState::GAME_OVER;
         }
         //if xy is a mine, game over
 
 
-        currentBoard->printBoard();
 
 
     }
@@ -246,21 +251,21 @@ void GameManager::revealInputDialogNotRaw(int &x, int &y) const {
 
     while (true) {
         cout << "Please enter the coordinates of the cell you want to reveal: " << endl << endl;
-        string input;
-        getline(cin, input);
+        string storedInput;
+        getline(input, storedInput);
 
-        // Use a regular expression match to validate the input
+        // Use a regular expression match to validate the storedInput
         std::smatch match;
-        if (std::regex_match(input, match, input_regex)) {
-            // Use std::stringstream to convert the input to integers
-            std::stringstream ss(input);
+        if (std::regex_match(storedInput, match, input_regex)) {
+            // Use std::stringstream to convert the storedInput to integers
+            std::stringstream ss(storedInput);
             ss >> x >> y;
 
-            // Check if the input is within the valid range
+            // Check if the storedInput is within the valid range
             if (x < 0 || x >= currentBoard->width || y < 0 || y >= currentBoard->height) {
                 cout << "Invalid coordinates, please try again" << endl  << endl;
             } else {
-                // Valid input, break out of the loop
+                // Valid storedInput, break out of the loop
                 break;
             }
         } else {
@@ -275,27 +280,27 @@ void GameManager::placeFlagDialogNotRaw(int &x, int &y) const {
     while (true)
     {
         cout << "Please enter the coordinates of the cell you want to flag: " << endl  << endl;
-        string input;
-        getline(cin, input);
+        string storedInput;
+        getline(input, storedInput);
 
-        if(input == "help"){
+        if(storedInput == "help"){
         cout << "   enter two coordinates that place you within the confines of the board to place the flag." << endl  << endl;
             cout << "Commands:" << endl;
             cout << "   help - show commands" << endl  << endl;
         }
         else {
-            // Use a regular expression match to validate the input
+            // Use a regular expression match to validate the storedInput
             std::smatch match;
-            if (std::regex_match(input, match, input_regex)) {
-                // Use std::stringstream to convert the input to integers
-                std::stringstream ss(input);
+            if (std::regex_match(storedInput, match, input_regex)) {
+                // Use std::stringstream to convert the storedInput to integers
+                std::stringstream ss(storedInput);
                 ss >> x >> y;
 
-                // Check if the input is within the valid range
+                // Check if the storedInput is within the valid range
                 if (x < 0 || x >= currentBoard->width || y < 0 || y >= currentBoard->height) {
                     cout << "Invalid coordinates, please try again" << endl << endl;
                 } else {
-                    // Valid input, break out of the loop
+                    // Valid storedInput, break out of the loop
                     break;
                 }
             } else {
@@ -306,31 +311,40 @@ void GameManager::placeFlagDialogNotRaw(int &x, int &y) const {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-bool GameManager::isCellMine(int x, int y) {
-    if(currentBoard->mapArray[x][y].type == Board::MINE){
-        return true;
-    }
-    else{
-        return false;
-    }
+GameManager::GameState GameManager::getGameState() const {
+    return gameState;
 }
+
+
+//get board readonly
+Board* GameManager::getCurrentBoard() const {
+    if(currentBoard == nullptr){
+        return nullptr;
+    }
+    return currentBoard.get();
+}
+
+void GameManager::setCurrentBoard(unique_ptr<Board> &&uniquePtr) {
+    currentBoard = std::move(uniquePtr);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

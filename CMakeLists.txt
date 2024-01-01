@@ -15,7 +15,6 @@ set(core-files
 )
 
 add_executable(minesweeper main.cpp
-        cppterminaltest.cpp
         ${core-files}
 )
 
@@ -33,8 +32,8 @@ target_link_libraries(minesweeper PRIVATE cpp-terminal)
 #target_link_libraries(cppterminaltest PRIVATE cpp-terminal)
 
 
-add_executable(minesweeperTests tests-main.cpp
-        test1.cpp
+add_executable(minesweeperTests tests/tests-main.cpp
+        tests/test1.cpp
         ${core-files}
 
 )

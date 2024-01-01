@@ -11,7 +11,7 @@
 
 int main(int argc, char* argv[]) {
 
-    // Check if the --help argument is present
+    /// provide help if requested by the user
     for (int i = 1; i < argc; ++i) {
         if (std::string(argv[i]) == "--help") {
             // Print program usage information
@@ -26,8 +26,12 @@ int main(int argc, char* argv[]) {
     }
 
 
-    GameManager gameManager = GameManager();
+    std::istream& userInput = std::cin; // User input stream
+
+    // Start the game and make a new instance of GameManager which will handle the game
+    GameManager gameManager = GameManager(userInput);
     gameManager.startGame();
+
 
 
     return 0;
