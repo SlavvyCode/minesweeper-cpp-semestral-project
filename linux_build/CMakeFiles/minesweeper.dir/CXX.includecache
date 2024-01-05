@@ -1,0 +1,64 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/Model/Board.cpp
+iostream
+-
+Board.h
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/Model/Board.h
+memory
+-
+stack
+-
+iomanip
+-
+random
+-
+optional
+-
+
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/Model/Board.h
+vector
+-
+memory
+-
+optional
+-
+random
+-
+
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/Model/GameManager.cpp
+GameManager.h
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/Model/GameManager.h
+iostream
+-
+limits
+-
+sstream
+-
+regex
+-
+
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/Model/GameManager.h
+Board.h
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/Model/Board.h
+iostream
+-
+
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/main.cpp
+Model/GameManager.h
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/Model/GameManager.h
+unistd.h
+-
+iostream
+-
+thread
+-
+mutex
+-
+

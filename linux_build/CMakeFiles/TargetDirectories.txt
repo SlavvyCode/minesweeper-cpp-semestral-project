@@ -1,0 +1,4 @@
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/linux_build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/linux_build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/linux_build/CMakeFiles/minesweeperTests.dir
+/mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/linux_build/CMakeFiles/minesweeper.dir
