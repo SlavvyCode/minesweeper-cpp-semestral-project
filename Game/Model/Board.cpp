@@ -10,16 +10,6 @@
 #include <random>
 #include <optional>
 
-#define ANSI_RESET "\033[0m"
-#define ANSI_RED "\033[31m"
-#define ANSI_GREEN "\033[32m"
-#define ANSI_YELLOW "\033[33m"
-#define ANSI_BLUE "\033[34m"
-#define ANSI_MAGENTA "\033[35m"
-#define ANSI_CYAN "\033[36m"
-
-#define ANSI_BOLD "\033[1m"
-#define ANSI_UNBOLD "\033[0m"
 
 using namespace std;
 
@@ -327,25 +317,4 @@ bool Board::isCellMine(int x, int y) {
     }
 }
 
-bool Board::manuallyPlaceMine(int x, int y) {
-    if(mapArray[x][y].type == Board::MINE){
-        return false;
-    }
-    else{
-        mapArray[x][y].type = Board::MINE;
-        updateMineCountForSurroundingCells(x, y);
-        updateCellsToBeNumberType();
-        return true;
-    }
 
-}
-
-void Board::clearAllMines() {
-    for (int row = 0; row < height; ++row) {
-        for (int col = 0; col < width; col++) {
-            if(mapArray[col][row].type == MINE){
-                mapArray[col][row].type = EMPTY;
-            }
-        }
-    }
-}

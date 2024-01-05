@@ -15,12 +15,6 @@
 ########################
 
 //Path to a program.
-BIBER_COMPILER:FILEPATH=BIBER_COMPILER-NOTFOUND
-
-//Path to a program.
-BIBTEX_COMPILER:FILEPATH=BIBTEX_COMPILER-NOTFOUND
-
-//Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/addr2line.exe
 
 //Path to a program.
@@ -44,9 +38,6 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/min
 // for the GCC compiler
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/gcc-ranlib.exe
 
-//C++ extensions
-CMAKE_CXX_EXTENSIONS:STRING=FALSE
-
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
 
@@ -64,9 +55,6 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-
-//C++ standard required
-CMAKE_CXX_STANDARD_REQUIRED:STRING=TRUE
 
 //C compiler
 CMAKE_C_COMPILER:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/gcc.exe
@@ -124,56 +112,8 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/Adam/Desktop/CVUT/PCC/Semestral
 //Convert GNU import libraries to MS format (requires Visual Studio)
 CMAKE_GNUtoMS:BOOL=OFF
 
-//User executables (bin)
-CMAKE_INSTALL_BINDIR:PATH=bin
-
-//Read-only architecture-independent data (DATAROOTDIR)
-CMAKE_INSTALL_DATADIR:PATH=
-
-//Read-only architecture-independent data root (share)
-CMAKE_INSTALL_DATAROOTDIR:PATH=share
-
-//Documentation root (DATAROOTDIR/doc/PROJECT_NAME)
-CMAKE_INSTALL_DOCDIR:PATH=
-
-//C header files (include)
-CMAKE_INSTALL_INCLUDEDIR:PATH=include
-
-//Info documentation (DATAROOTDIR/info)
-CMAKE_INSTALL_INFODIR:PATH=
-
-//Object code libraries (lib)
-CMAKE_INSTALL_LIBDIR:PATH=lib
-
-//Program executables (libexec)
-CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
-
-//Locale-dependent data (DATAROOTDIR/locale)
-CMAKE_INSTALL_LOCALEDIR:PATH=
-
-//Modifiable single-machine data (var)
-CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
-
-//Man documentation (DATAROOTDIR/man)
-CMAKE_INSTALL_MANDIR:PATH=
-
-//C header files for non-gcc (/usr/include)
-CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
-
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/pcc_semestralka
-
-//Run-time variable data (LOCALSTATEDIR/run)
-CMAKE_INSTALL_RUNSTATEDIR:PATH=
-
-//System admin executables (sbin)
-CMAKE_INSTALL_SBINDIR:PATH=sbin
-
-//Modifiable architecture-independent data (com)
-CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
-
-//Read-only single-machine data (etc)
-CMAKE_INSTALL_SYSCONFDIR:PATH=etc
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/minesweeper
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/ld.exe
@@ -218,21 +158,6 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=minesweeper
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=1.0.0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/ranlib.exe
@@ -314,128 +239,6 @@ CMAKE_STRIP:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/str
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Set to ON to build examples
-CPPTERMINAL_BUILD_EXAMPLES:BOOL=ON
-
-//Set to ON to generate documentation
-CPPTERMINAL_ENABLE_DOCS:BOOL=ON
-
-//Set to ON to enable install
-CPPTERMINAL_ENABLE_INSTALL:BOOL=ON
-
-//Set to ON to enable testing
-CPPTERMINAL_ENABLE_TESTING:BOOL=ON
-
-//Use std headers
-DOCTEST_USE_STD_HEADERS:BOOL=OFF
-
-//Build a static lib (cmake target) with a default main entry point
-DOCTEST_WITH_MAIN_IN_STATIC_LIB:BOOL=ON
-
-//Build tests/examples
-DOCTEST_WITH_TESTS:BOOL=OFF
-
-//Diagram Editor tool for use with Doxygen
-DOXYGEN_DIA_EXECUTABLE:FILEPATH=DOXYGEN_DIA_EXECUTABLE-NOTFOUND
-
-//Dot tool for use with Doxygen
-DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
-
-//Doxygen documentation generation tool (https://www.doxygen.nl)
-DOXYGEN_EXECUTABLE:FILEPATH=C:/Program Files/doxygen/bin/doxygen.exe
-
-//Message sequence chart tool for use with Doxygen
-DOXYGEN_MSCGEN_EXECUTABLE:FILEPATH=DOXYGEN_MSCGEN_EXECUTABLE-NOTFOUND
-
-//Path to a program.
-DVIPDF_CONVERTER:FILEPATH=DVIPDF_CONVERTER-NOTFOUND
-
-//Path to a program.
-DVIPS_CONVERTER:FILEPATH=DVIPS_CONVERTER-NOTFOUND
-
-//Directory under which to collect all populated content
-FETCHCONTENT_BASE_DIR:PATH=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps
-
-//Disables all attempts to download or update content and assumes
-// source dirs already exist
-FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
-
-//Enables QUIET option for all content population
-FETCHCONTENT_QUIET:BOOL=ON
-
-//When not empty, overrides where to find pre-populated content
-// for doctest
-FETCHCONTENT_SOURCE_DIR_DOCTEST:PATH=
-
-//Enables UPDATE_DISCONNECTED behavior for all content population
-FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
-
-//Enables UPDATE_DISCONNECTED behavior just for population of doctest
-FETCHCONTENT_UPDATES_DISCONNECTED_DOCTEST:BOOL=OFF
-
-//Path to the GhostScript binary directory.
-GHOSTSCRIPT_BINARY_PATH:PATH=GHOSTSCRIPT_BINARY_PATH-NOTFOUND
-
-//Path to the GhostScript library directory.
-GHOSTSCRIPT_LIBRARY_PATH:PATH=GHOSTSCRIPT_LIBRARY_PATH-NOTFOUND
-
-//Git command line client
-GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
-
-//Path to a program.
-HTLATEX_COMPILER:FILEPATH=HTLATEX_COMPILER-NOTFOUND
-
-//Path to a program.
-LATEX2HTML_CONVERTER:FILEPATH=LATEX2HTML_CONVERTER-NOTFOUND
-
-//Path to a program.
-LATEX_COMPILER:FILEPATH=LATEX_COMPILER-NOTFOUND
-
-//Path to a program.
-LUALATEX_COMPILER:FILEPATH=LUALATEX_COMPILER-NOTFOUND
-
-//Path to a program.
-MAKEINDEX_COMPILER:FILEPATH=MAKEINDEX_COMPILER-NOTFOUND
-
-//Path to the MikTex binary directory.
-MIKTEX_BINARY_PATH:PATH=MIKTEX_BINARY_PATH-NOTFOUND
-
-//Path to a program.
-PDFLATEX_COMPILER:FILEPATH=PDFLATEX_COMPILER-NOTFOUND
-
-//Path to a program.
-PDFTOPS_CONVERTER:FILEPATH=PDFTOPS_CONVERTER-NOTFOUND
-
-//Path to a program.
-PS2PDF_CONVERTER:FILEPATH=PS2PDF_CONVERTER-NOTFOUND
-
-//Path to a program.
-XELATEX_COMPILER:FILEPATH=XELATEX_COMPILER-NOTFOUND
-
-//Path to a program.
-XINDY_COMPILER:FILEPATH=XINDY_COMPILER-NOTFOUND
-
-//Value Computed by CMake
-cpp-terminal_BINARY_DIR:STATIC=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/cpp-terminal
-
-//Value Computed by CMake
-cpp-terminal_IS_TOP_LEVEL:STATIC=OFF
-
-//Dependencies for the target
-cpp-terminal_LIB_DEPENDS:STATIC=general;cpp-terminal::cpp-terminal-private;
-
-//Value Computed by CMake
-cpp-terminal_SOURCE_DIR:STATIC=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cpp-terminal
-
-//Value Computed by CMake
-doctest_BINARY_DIR:STATIC=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-build
-
-//Value Computed by CMake
-doctest_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-doctest_SOURCE_DIR:STATIC=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug/_deps/doctest-src
-
 //Value Computed by CMake
 minesweeper_BINARY_DIR:STATIC=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug
 
@@ -445,24 +248,11 @@ minesweeper_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 minesweeper_SOURCE_DIR:STATIC=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka
 
-//Value Computed by CMake
-pcc_semestralka_BINARY_DIR:STATIC=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/cmake-build-debug
-
-//Value Computed by CMake
-pcc_semestralka_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-pcc_semestralka_SOURCE_DIR:STATIC=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka
-
 
 ########################
 # INTERNAL cache entries
 ########################
 
-//ADVANCED property for variable: BIBER_COMPILER
-BIBER_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: BIBTEX_COMPILER
-BIBTEX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -543,43 +333,9 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
-//Test CMAKE_HAVE_LIBC_PTHREAD
-CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka
-//ADVANCED property for variable: CMAKE_INSTALL_BINDIR
-CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_DATADIR
-CMAKE_INSTALL_DATADIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_DATAROOTDIR
-CMAKE_INSTALL_DATAROOTDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_DOCDIR
-CMAKE_INSTALL_DOCDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_INCLUDEDIR
-CMAKE_INSTALL_INCLUDEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_INFODIR
-CMAKE_INSTALL_INFODIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LIBDIR
-CMAKE_INSTALL_LIBDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LIBEXECDIR
-CMAKE_INSTALL_LIBEXECDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LOCALEDIR
-CMAKE_INSTALL_LOCALEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_LOCALSTATEDIR
-CMAKE_INSTALL_LOCALSTATEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_MANDIR
-CMAKE_INSTALL_MANDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_OLDINCLUDEDIR
-CMAKE_INSTALL_OLDINCLUDEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_RUNSTATEDIR
-CMAKE_INSTALL_RUNSTATEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_SBINDIR
-CMAKE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_SHAREDSTATEDIR
-CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_INSTALL_SYSCONFDIR
-CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -595,7 +351,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -649,50 +405,6 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DOXYGEN_DIA_EXECUTABLE
-DOXYGEN_DIA_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
-DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DOXYGEN_EXECUTABLE
-DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DOXYGEN_MSCGEN_EXECUTABLE
-DOXYGEN_MSCGEN_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DVIPDF_CONVERTER
-DVIPDF_CONVERTER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DVIPS_CONVERTER
-DVIPS_CONVERTER-ADVANCED:INTERNAL=1
-//Details about finding Threads
-FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//ADVANCED property for variable: GHOSTSCRIPT_BINARY_PATH
-GHOSTSCRIPT_BINARY_PATH-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GHOSTSCRIPT_LIBRARY_PATH
-GHOSTSCRIPT_LIBRARY_PATH-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GIT_EXECUTABLE
-GIT_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: HTLATEX_COMPILER
-HTLATEX_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: LATEX2HTML_CONVERTER
-LATEX2HTML_CONVERTER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: LATEX_COMPILER
-LATEX_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: LUALATEX_COMPILER
-LUALATEX_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MAKEINDEX_COMPILER
-MAKEINDEX_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MIKTEX_BINARY_PATH
-MIKTEX_BINARY_PATH-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PDFLATEX_COMPILER
-PDFLATEX_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PDFTOPS_CONVERTER
-PDFTOPS_CONVERTER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PS2PDF_CONVERTER
-PS2PDF_CONVERTER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: XELATEX_COMPILER
-XELATEX_COMPILER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: XINDY_COMPILER
-XINDY_COMPILER-ADVANCED:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
-//CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/pcc_semestralka
 

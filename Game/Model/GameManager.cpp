@@ -12,6 +12,7 @@ using namespace std;
 std::unique_ptr<Board> GameManager::preGame() {
 
 
+    cout << "Type 'help' for commands at any time!" << endl << endl << endl;
 
 
     int boardSizeX;
@@ -44,8 +45,8 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
                 ss >> boardSizeX >> boardSizeY;
 
                 // Check if the storedInput is within the specified range
-                if (boardSizeX < 2 || boardSizeY < 2 || boardSizeX > 40 || boardSizeY > 40) {
-                    cout << "Invalid board size. Please enter numbers between 2 and 40." << endl  << endl;
+                if (boardSizeX < 3 || boardSizeY < 3 || boardSizeX > 40 || boardSizeY > 40) {
+                    cout << "Invalid board size. Please enter numbers between 3 and 40." << endl  << endl;
                 } else {
                     // Valid storedInput, break out of the loop
                     break;
@@ -93,7 +94,7 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
         }
     }
 
-
+    // Create a new board with the specified parameters
     std::unique_ptr<Board> board = std::make_unique<Board>(boardSizeX, boardSizeY, numberOfMines);
     currentBoard = std::move(board);
 
@@ -122,6 +123,7 @@ void GameManager::gameOver() {
         if (storedInput == "y") {
             // Restart the game
             startGame();
+            return;
         } else if (storedInput == "n" || storedInput == "q") {
             // Quit the game
             quitGame();
@@ -141,7 +143,6 @@ void GameManager::gameOver() {
 }
 
 void GameManager::startGame() {
-    cout << "Type 'help' for commands at any time!" << endl << endl << endl;
 
     preGame();
     gameLoop(nullopt);
@@ -155,17 +156,15 @@ void GameManager::startGame() {
 
 void GameManager::gameLoop(std::optional<size_t> seedSeq) {
 
+    //initial state of the game to make sure the first cell clicked is not a mine and to show the player the board
     gameState = GameState::GAME_RUNNING;
     currentBoard->printBoard();
-
-
     int x, y;
     revealInputDialogNotRaw(x, y);
-
-
     currentBoard->distributeMines(x,y,seedSeq);
 
 
+    //game loop
     while (gameState != GameState::GAME_OVER) {
         //while the player decides they want to place a flag, let them place as many flags as they want
         // until they say they don't want to place a flag anymore

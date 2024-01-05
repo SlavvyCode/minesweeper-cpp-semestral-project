@@ -9,7 +9,7 @@
 #include <ctime>
 #include <cassert>
 #include <optional>
-
+#include <sstream>
 
 
 
@@ -300,7 +300,36 @@ TEST_CASE("Simulate player input at runtime"){
     SECTION("Check if the game chagnes run state and check if double flagging a spot unflags") {
 
         // type this into console
-        std::string fakeInput = "3 3\n" //3x3 board
+        std::string fakeInput = "2 1\n"
+                                "y\n"//place a flag
+                                "1 1\n"
+                                "y\n"
+                                "1 1\n";
+
+
+        std::istringstream fakeInputStringStream(fakeInput);
+
+        GameManager gameManager = GameManager(fakeInputStringStream);
+
+        std::unique_ptr<Board> board = std::make_unique<Board>(3, 3, 1);
+        gameManager.setCurrentBoard(std::move(board));
+        gameManager.gameLoop(15);
+
+        assert(board->mapArray[1][1].state == Board::HIDDEN);
+
+        assert(gameManager.getGameState() == GameManager::GAME_RUNNING);
+
+    }
+
+
+    SECTION("Check if the game handles faulty input well") {
+
+        // type this into console
+        std::string fakeInput = "-3 -222\n"
+                                "8888888 888888\n"
+                                "3.5 3.14159265\n"
+                                "3 2\n"
+
                                 "1\n" //1 mine
                                 "y\n"//place a flag
                                 "1 1\n"
@@ -312,13 +341,13 @@ TEST_CASE("Simulate player input at runtime"){
 
         GameManager gameManager = GameManager(fakeInputStringStream);
 
-        Board* board = gameManager.getCurrentBoard();
-        board->printBoard();
+        std::unique_ptr<Board> board = std::make_unique<Board>(3, 3, 1);
+        gameManager.setCurrentBoard(std::move(board));
         gameManager.startGame();
 
-        assert(board->mapArray[1][1].state == Board::HIDDEN);
 
-        assert(gameManager.getGameState() == GameManager::GAME_RUNNING);
+        assert(board->height == 3);
+        assert(board->width == 2);
 
     }
 }

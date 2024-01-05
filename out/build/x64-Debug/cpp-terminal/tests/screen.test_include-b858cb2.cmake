@@ -1,5 +1,0 @@
-if(EXISTS "C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/out/build/x64-Debug/cpp-terminal/tests/screen.test_tests-b858cb2.cmake")
-  include("C:/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/out/build/x64-Debug/cpp-terminal/tests/screen.test_tests-b858cb2.cmake")
-else()
-  add_test(screen.test_NOT_BUILT-b858cb2 screen.test_NOT_BUILT-b858cb2)
-endif()
