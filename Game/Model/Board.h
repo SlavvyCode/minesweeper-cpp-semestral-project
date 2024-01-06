@@ -35,6 +35,10 @@ private:
 public:
 
     //constants
+
+    const int minBoardWidthAndHeight = 3;
+    const int maxBoardWidthAndHeight = 25;
+
     /**
      * Width of the board
      */
@@ -200,7 +204,15 @@ public:
     bool isBoardCleared();
 
 
+    /**
+     * @brief Prints the top or bottom edge of the board.
+     */
+    void printTopOrBottomBoardEdge() const;
 
+    /**
+     * @brief Prints the board in between its top and bottom edge
+     */
+    void printBoardContents();
 };
 
 

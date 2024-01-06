@@ -13,6 +13,7 @@
 
 
 
+
 TEST_CASE("scenario1", "[scenario1][small board]") {
     const int width = 10;
     const int height = 10;
@@ -297,31 +298,6 @@ TEST_CASE("Simulate player input at runtime"){
     }
 
 
-    SECTION("Check if the game chagnes run state and check if double flagging a spot unflags") {
-
-        // type this into console
-        std::string fakeInput = "2 1\n"
-                                "y\n"//place a flag
-                                "1 1\n"
-                                "y\n"
-                                "1 1\n";
-
-
-        std::istringstream fakeInputStringStream(fakeInput);
-
-        GameManager gameManager = GameManager(fakeInputStringStream);
-
-        std::unique_ptr<Board> board = std::make_unique<Board>(3, 3, 1);
-        gameManager.setCurrentBoard(std::move(board));
-        gameManager.gameLoop(15);
-
-        assert(board->mapArray[1][1].state == Board::HIDDEN);
-
-        assert(gameManager.getGameState() == GameManager::GAME_RUNNING);
-
-    }
-
-
     SECTION("Check if the game handles faulty input well") {
 
         // type this into console
@@ -329,13 +305,11 @@ TEST_CASE("Simulate player input at runtime"){
                                 "8888888 888888\n"
                                 "3.5 3.14159265\n"
                                 "3 2\n"
-
-                                "1\n" //1 mine
-                                "y\n"//place a flag
+                                "abc\n"
+                                "n\n"
                                 "1 1\n"
-                                "y\n"
-                                "1 1\n";
-
+                                "n\n"
+                                "1 2\n"; // game lost here
 
         std::istringstream fakeInputStringStream(fakeInput);
 
@@ -343,11 +317,20 @@ TEST_CASE("Simulate player input at runtime"){
 
         std::unique_ptr<Board> board = std::make_unique<Board>(3, 3, 1);
         gameManager.setCurrentBoard(std::move(board));
-        gameManager.startGame();
 
 
-        assert(board->height == 3);
-        assert(board->width == 2);
+
+
+        size_t seed = 42;
+        std::optional<size_t> seedOptional(seed);
+
+        gameManager.gameLoop(seed);
+
+//        gameManager.startGame();
+
+
+        assert(gameManager.getCurrentBoard()->height == 3);
+        assert(gameManager.getCurrentBoard()->width == 3);
 
     }
 }

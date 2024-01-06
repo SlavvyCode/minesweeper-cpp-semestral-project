@@ -116,7 +116,7 @@ public:
      * @param x == x coordinate of the cell
      * @param y == y coordinate of the cell
      */
-    void placeFlagDialogNotRaw(int &x, int &y) const;
+    void placeFlagDialogNotRaw(int &x, int &y);
 
 
     /**

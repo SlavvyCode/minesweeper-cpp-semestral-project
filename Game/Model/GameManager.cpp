@@ -26,7 +26,7 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
 
 // Board size from the user for both x and y input
     while (true) {
-        cout << "Please enter the size of the board - first x then y - between 3 and 40: " << endl  << endl;
+        cout << "Please enter the size of the board - first x then y - between " << currentBoard->minBoardWidthAndHeight << "  and " << currentBoard->maxBoardWidthAndHeight+": " << endl  << endl;
 
         string storedInput;
         getline(input, storedInput);
@@ -35,8 +35,14 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
             // Show commands
             cout << "Enter two numbers larger than 2 to dictate the size of the board." << endl ;
             cout << "Commands:" << endl;
-            cout << "   help - show commands" << endl  << endl;
-        } else {
+            cout << "   help - show commands"  << endl;
+            cout << "   exit - quit game" << endl  << endl;
+        }
+        else if(storedInput == "exit")
+        {
+            quitGame();
+        }
+        else {
             // Use a regular expression match to validate the storedInput
             std::smatch match;
             if (std::regex_match(storedInput, match, input_regex)) {
@@ -45,8 +51,9 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
                 ss >> boardSizeX >> boardSizeY;
 
                 // Check if the storedInput is within the specified range
-                if (boardSizeX < 3 || boardSizeY < 3 || boardSizeX > 40 || boardSizeY > 40) {
-                    cout << "Invalid board size. Please enter numbers between 3 and 40." << endl  << endl;
+                if (boardSizeX < currentBoard->minBoardWidthAndHeight || boardSizeY < currentBoard->minBoardWidthAndHeight
+                || boardSizeX > currentBoard->maxBoardWidthAndHeight || boardSizeY > currentBoard->maxBoardWidthAndHeight) {
+                    cout << "Invalid board size. Please enter numbers between " << currentBoard->minBoardWidthAndHeight << "  and " << currentBoard->maxBoardWidthAndHeight << "." << endl  << endl;
                 } else {
                     // Valid storedInput, break out of the loop
                     break;
@@ -72,8 +79,13 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
             // Show commands
             cout << "pick a number from the range above." << endl;
             cout << "Commands:" << endl;
+            cout << "   exit - quit the game";
             cout << "   help - show commands" << endl  << endl;
-        } else {
+        } else if(storedInput== "exit"){
+            quitGame();
+        }
+        else
+        {
             // Use a regular expression match to validate the storedInput
             std::smatch match;
             if (std::regex_match(storedInput, match, input_regex2)) {
@@ -124,14 +136,14 @@ void GameManager::gameOver() {
             // Restart the game
             startGame();
             return;
-        } else if (storedInput == "n" || storedInput == "q") {
+        } else if (storedInput == "n" || storedInput == "q" || storedInput == "exit") {
             // Quit the game
             quitGame();
         } else if (storedInput == "help") {
             // Show commands
             cout << "Commands:" << endl;
             cout << "   y - play again" << endl;
-            cout << "   n or q - quit game" << endl;
+            cout << "   n or q or exit - quit game" << endl;
             cout << "   help - show commands" << endl  << endl;
         } else {
             // Invalid input, prompt user to try again
@@ -195,12 +207,17 @@ void GameManager::gameLoop(std::optional<size_t> seedSeq) {
                     currentBoard->printBoard();
                     break;
                 }
-            } else if (storedInput == "help") {
+            }
+            else if(storedInput=="exit"){
+                quitGame();
+            }
+            else if (storedInput == "help") {
                 // Show commands
                 cout << "Commands:" << endl;
                 cout << "   y - place a flag" << endl;
                 cout << "   n - don't place a flag" << endl;
-                cout << "   help - show commands" << endl  << endl ;
+                cout << "   help - show commands" << endl ;
+                cout << "   exit - quit game" << endl  << endl;
             } else {
                 cout << "Invalid input, please try again" << endl  << endl;
             }
@@ -273,7 +290,7 @@ void GameManager::revealInputDialogNotRaw(int &x, int &y) const {
     }
 
 }
-void GameManager::placeFlagDialogNotRaw(int &x, int &y) const {
+void GameManager::placeFlagDialogNotRaw(int &x, int &y) {
     std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
 
     while (true)
@@ -285,7 +302,12 @@ void GameManager::placeFlagDialogNotRaw(int &x, int &y) const {
         if(storedInput == "help"){
         cout << "   enter two coordinates that place you within the confines of the board to place the flag." << endl  << endl;
             cout << "Commands:" << endl;
+            cout << "   exit - exit the game" << endl;
             cout << "   help - show commands" << endl  << endl;
+
+        }
+        else if(storedInput == "exit"){
+            quitGame();
         }
         else {
             // Use a regular expression match to validate the storedInput

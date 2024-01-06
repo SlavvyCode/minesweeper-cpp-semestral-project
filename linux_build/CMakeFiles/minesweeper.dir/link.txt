@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/minesweeper.dir/Game/main.cpp.o CMakeFiles/minesweeper.dir/Game/Model/Board.cpp.o CMakeFiles/minesweeper.dir/Game/Model/GameManager.cpp.o  -o minesweeper  -lcpp-terminal 
+/usr/bin/c++     CMakeFiles/minesweeper.dir/Game/main.cpp.o CMakeFiles/minesweeper.dir/Game/Model/Board.cpp.o CMakeFiles/minesweeper.dir/Game/Model/GameManager.cpp.o  -o minesweeper 

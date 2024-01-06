@@ -15,24 +15,25 @@ using namespace std;
 
 void Board::printBoard() {
     // Print the top row of numbers with correct alignment
-    std::cout << "   "; // Start with spaces to align with the left edge of the board
+
+    std::cout << "    "; // Start with spaces to align with the left edge of the board
     for (int col = 0; col < width; ++col) {
-        std::cout << " " << std::setw(1) << col;
+        std::cout << std::setw(3) << col << '|'; // Adjust setw(3) for proper alignment
     }
     std::cout << "\n";
 
     // Print the wider horizontal separator
-    std::cout << "  +";
-    for (int col = 0; col < width; ++col) {
-        std::cout << "--";
-//        std::cout << ANSI_BOLD "--";
-//        std::cout << ANSI_GREEN "--" ANSI_RESET;
-    }
-    std::cout << "+\n";
+    printTopOrBottomBoardEdge();
 
+    printBoardContents();
+
+    printTopOrBottomBoardEdge();
+}
+
+void Board::printBoardContents() {
     for (int row = 0; row < height; ++row) {
         // Print the row number with correct alignment
-        std::cout << std::setw(2) << row << " |"; // Use setw(2) for proper alignment
+        cout << setw(2) << row << " |"; // Use setw(2) for proper alignment
 
         for (int col = 0; col < width; ++col) {
             string symbol = " ";
@@ -40,7 +41,6 @@ void Board::printBoard() {
 
             switch (cell.state) {
                 case HIDDEN:
-//                    ■▣
                     symbol = "?";
                     break;
                 case FLAGGED:
@@ -49,29 +49,29 @@ void Board::printBoard() {
                 case REVEALED:
                     if(cell.type == MINE){
                         symbol = "X";
-//                        Ô
-                        //●
-//                        symbol = ANSI_RED "X" ANSI_RESET;
                     }
                     else if(cell.type == EMPTY){
                         symbol = ' ';
                     }
                     else {
-                        symbol = std::to_string(cell.value)[0];
+                        symbol = to_string(cell.value)[0];
                     }
                     break;
             }
-            std::cout << symbol << '|';
+            cout << ' ' << setw(1) << symbol << " |"; // Adjust setw(2) for proper alignment
         }
-        std::cout << "\n";
+        cout << "\n";
     }
+}
 
-    // Print the bottom separation line
-    std::cout << "  +";
+void Board::printTopOrBottomBoardEdge() const {
+    cout << "   +";
     for (int col = 0; col < width; ++col) {
-        std::cout << "--";
+        cout << "---";
     }
-    std::cout << "+\n";
+    //delete last char from cout
+    cout << "\b";
+    cout << "+\n";
 }
 
 
@@ -202,7 +202,7 @@ bool Board::revealCell(int x, int y) {
         return true;
     }
 
-    throw "Error: unexpected behaviour in Board::revealCell()";
+    throw runtime_error ("Error: unexpected behaviour in Board::revealCell()");
 }
 
 void Board::cascadeRevealCells(int x, int y) {
@@ -301,8 +301,11 @@ bool Board::placeOrRemoveFlag(int x, int y) {
         flaggedMines++;
         return true;
     }
-
-    else throw "Error: unexpected behaviour in Board::placeOrRemoveFlag()";
+    else if(mapArray[x][y].type == EMPTY || mapArray[x][y].type == NUMBER){
+        mapArray[x][y].state = FLAGGED;
+        return true;
+    }
+    else throw runtime_error ("Error: unexpected behaviour in Board::placeOrRemoveFlag()");
 }
 
 

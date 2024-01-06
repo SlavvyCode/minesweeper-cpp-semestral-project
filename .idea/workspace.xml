@@ -21,174 +21,38 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="added tiny test case, deleted forgotten unused function">
-      <change afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="forgot to commit untracked files">
+      <change afterPath="$PROJECT_DIR$/linux_build/minesweeper" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Model/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Model/GameManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/GameManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-8657ff6733b166ed1b39.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-93d178dcc7a5638d42c4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-147811c85829c62cc9fd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-_deps.doctest-build-Debug-db2b41654e365a9d0e3e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal-Debug-d9dbd3654eb17561f76c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal.cpp-terminal-Debug-cac4e57b9ceac70140a3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal.cpp-terminal.private-Debug-b10dd615cedeba10bbd6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal.docs-Debug-85b0a5a6243b813a3785.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal.examples-Debug-80c309178e7d3ef855d4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-cpp-terminal.tests-Debug-0b9185191d0164edea16.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-01-01T13-38-21-0242.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-args-Debug-dcc61865b1fc3e5d1f3b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-attach_console-Debug-bf064d556cd7c252ef53.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-attach_console_minimal-Debug-0bfa0c34fd10ae32f5cf.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cin_cooked-Debug-71a98a6be7c1cef49cf8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cin_raw-Debug-2793bdb56f7243b71101.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-colors-Debug-e35ce9f2a73abe78eddc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cout-Debug-40eddd7e43244abe5312.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cpp-terminal-Debug-136219d2ef6c2c8fb1ad.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-cpp-terminal-private-Debug-d10e4cd79becaa039413.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-doc-html-Debug-fc2a257579289eb771bb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-doc-latex-Debug-3494b87e627048928833.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-docs-Debug-4ba97c2acc2c8173426f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-doctest_with_main-Debug-2e49d15353d513b5c600.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-events-Debug-ea8e4f13e202b7c61d9b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-events.test-Debug-617cb4e8d0153e68ec85.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-exception.test-Debug-f94dc2ac74fae98827f4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-file.test-Debug-769a94a7d62a69d1b283.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-generate-doxygen-Debug-035f4a19cfb20fa0cb74.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-key.test-Debug-1fc0ca479813e7dee8f6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-keys-Debug-94e58482cb082adbf32a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kilo-Debug-94c80761a35f0de3e9d3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-menu-Debug-7997bdcaef5f81371a70.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-menu_window-Debug-fd240932c97da46f5513.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minesweeper-Debug-5107889611e521936a3b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minesweeperTests-Debug-be0284433e211ae6103e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minimal-Debug-ee429d59668de4f75240.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-options.test-Debug-8b6155007d41dec23432.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_immediate-Debug-80db39e37815999e492a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_multiline-Debug-d258d67dcd7db798d653.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_not_immediate-Debug-e984b199c3bdace7e52a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-prompt_simple-Debug-73247e317680335a8e6f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-screen.test-Debug-e6b29eff3d365b7dc23d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-slow_events-Debug-ab8739352335e434bc16.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-styles-Debug-c94ee42caa1f914d6762.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-unicode.test-Debug-1dd972186ad33e2b31e2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-utf8-Debug-1758b4587461d534d939.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-version.test-Debug-ffb4f5b7472b11c1b8a5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Model/GameManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/GameManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-d51875c2ef95d6f22492.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-5abf976c54df1ccff5b5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-01-05T20-58-32-0615.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minesweeper-Debug-767e40dc9439439782c3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-minesweeperTests-Debug-a42a352ca98a81a11843.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clean_additional.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cppterminaltest.dir/cppterminaltest.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/Model/Board.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/Model/GameManager.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/Model/InputHandler.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/Model/Menu.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/Threads/ComputeThread.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/Threads/InputThread.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/Threads/OutputThread.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/cppterminaltest.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/Game/Model/Board.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/Game/Model/GameManager.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/Game/Model/InputHandler.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/Game/Model/Menu.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/test1.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/tests-main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/tests/test1.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/tests/tests-main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/Game/Model/board.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/Game/Threads/computeThread.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/Game/Threads/inputThread.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/Game/Threads/outputThread.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/cppterminaltest.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pcc_semestralka.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/minesweeperTests.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/minesweeperTests.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cppterminaltest.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cmake/cpp-terminalConfig.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/Export/f914531f6191163e7a988aed981bcf11/cpp-terminalTargets-debug.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/Export/f914531f6191163e7a988aed981bcf11/cpp-terminalTargets.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/cpp-terminal.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream_initializer.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_impl.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_initializer.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/version.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/cpp-terminal.lib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/cpp-terminalConfigVersion.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/args.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/blocking_queue.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/conversion.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/cpp-terminal-private.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/cursor.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/env.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/exception.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/file.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/file_initializer.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/input.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/return_code.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/screen.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/sigwinch.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/terminal.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/terminfo.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/tty.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/unicode.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/private/cpp-terminal-private.lib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/cpp-terminal/version.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/docs/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/docs/Doxyfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/docs/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/docs/doxygen/latex/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/examples/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/examples/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/tests/Args_include-3fac3c2.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/tests/CTestTestfile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/tests/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/tests/events.test_include-b858cb2.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/tests/exception.test_include-b858cb2.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/tests/file.test_include-b858cb2.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/tests/key.test_include-b858cb2.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/tests/options.test_include-b858cb2.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/tests/screen.test_include-b858cb2.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/tests/unicode.test_include-b858cb2.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cpp-terminal/tests/version.test_include-b858cb2.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cppterminaltest.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cppterminaltest.ilk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/cppterminaltest.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp-terminal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeper.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeper.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test1.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +117,13 @@
       <recent name="C:\Users\Adam\Desktop\CVUT\PCC\Semestralni Prace\pcc-semestralka\Game\Model" />
     </key>
   </component>
-  <component name="RunManager" selected="Catch.Simulate player input at runtime">
+  <component name="RunManager" selected="CMake Application.minesweeper">
+    <configuration name="All in test1.cpp" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minesweeperTests" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minesweeperTests" TEST_PATTERN="[#test1]" TEST_MODE="PATTERN">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Board creation and basic functionality" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minesweeperTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minesweeperTests" TEST_CLASS="[Board]" TEST_METHOD="Board creation and basic functionality" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -267,12 +137,6 @@
       </method>
     </configuration>
     <configuration name="Simulate player input at runtime" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minesweeperTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minesweeperTests" TEST_METHOD="Simulate player input at runtime" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Simulate player input" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minesweeper" TARGET_NAME="minesweeperTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minesweeper" RUN_TARGET_NAME="minesweeperTests" TEST_METHOD="Simulate player input" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -305,9 +169,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Catch.All in test1.cpp" />
       <item itemvalue="Catch.End game state - requirement testing" />
       <item itemvalue="Catch.Simulate player input at runtime" />
-      <item itemvalue="Catch.Simulate player input" />
       <item itemvalue="Catch.Board creation and basic functionality" />
       <item itemvalue="Catch.scenario1" />
       <item itemvalue="CMake Application.cppterminaltest" />
@@ -317,10 +181,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Catch.Simulate player input at runtime" />
-        <item itemvalue="Catch.scenario1" />
-        <item itemvalue="Catch.Board creation and basic functionality" />
         <item itemvalue="Catch.End game state - requirement testing" />
-        <item itemvalue="Catch.Simulate player input" />
+        <item itemvalue="Catch.Board creation and basic functionality" />
+        <item itemvalue="Catch.scenario1" />
+        <item itemvalue="Catch.All in test1.cpp" />
       </list>
     </recent_temporary>
   </component>
@@ -353,7 +217,7 @@
       <workItem from="1704112890808" duration="19045000" />
       <workItem from="1704479667723" duration="1833000" />
       <workItem from="1704487544991" duration="233000" />
-      <workItem from="1704488307366" duration="488000" />
+      <workItem from="1704488307366" duration="11197000" />
     </task>
     <task id="LOCAL-00001" summary="pushtest">
       <option name="closed" value="true" />
@@ -443,7 +307,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704145183611</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="removed cpp terminal because i couldnt run valgrind with it anyway and i wasnt using it">
+      <option name="closed" value="true" />
+      <created>1704488822012</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704488822012</updated>
+    </task>
+    <task id="LOCAL-00013" summary="forgot to commit untracked files">
+      <option name="closed" value="true" />
+      <created>1704488845200</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704488845200</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,22 +378,22 @@
     <MESSAGE value="--help implemented" />
     <MESSAGE value="fixed faulty tests, implemented 'faked input' tests, removed excessive board printing at one spot, included unseeded generation for tests. finishing touches" />
     <MESSAGE value="forgot to commit these not sure if they are improtant" />
-    <option name="LAST_COMMIT_MESSAGE" value="forgot to commit these not sure if they are improtant" />
+    <MESSAGE value="removed cpp terminal because i couldnt run valgrind with it anyway and i wasnt using it" />
+    <MESSAGE value="forgot to commit untracked files" />
+    <option name="LAST_COMMIT_MESSAGE" value="forgot to commit untracked files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/tests/test1.cpp</url>
-          <line>315</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Game/Model/GameManager.cpp</url>
           <line>175</line>
-          <option name="timeStamp" value="51" />
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="CidrExceptionBreakpoint" />
+      </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeCatchTestRunConfigurationType">
