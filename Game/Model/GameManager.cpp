@@ -4,30 +4,31 @@
 
 #include "GameManager.h"
 #include <iostream>
-#include <limits>
 #include <sstream>
 #include <regex>
 using namespace std;
 
 std::unique_ptr<Board> GameManager::preGame() {
-
-
     cout << "Type 'help' for commands at any time!" << endl << endl << endl;
 
+    //declare variables for the board size and number of mines
 
+    // the board sizes in each direction
     int boardSizeX;
     int boardSizeY;
+
+    // the number of mines on the board
     int numberOfMines;
 
-    // Display help commands
+    // make a regex which will filter user input
+    std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
 
-
-std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
 
 // Board size from the user for both x and y input
     while (true) {
-        cout << "Please enter the size of the board - first x then y - between " << currentBoard->minBoardWidthAndHeight << "  and " << currentBoard->maxBoardWidthAndHeight+": " << endl  << endl;
+        cout << "Please enter the size of the board - first x then y - between 3 and 25: " << endl  << endl;
 
+        // Get the user input
         string storedInput;
         getline(input, storedInput);
 
@@ -40,6 +41,8 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
         }
         else if(storedInput == "exit")
         {
+            // swap the regexes to free up memory
+            std::regex().swap(input_regex);
             quitGame();
         }
         else {
@@ -48,12 +51,12 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
             if (std::regex_match(storedInput, match, input_regex)) {
                 // Use std::stringstream to convert the storedInput to integers
                 std::stringstream ss(storedInput);
+                // Read the two numbers from the stringstream
                 ss >> boardSizeX >> boardSizeY;
 
                 // Check if the storedInput is within the specified range
-                if (boardSizeX < currentBoard->minBoardWidthAndHeight || boardSizeY < currentBoard->minBoardWidthAndHeight
-                || boardSizeX > currentBoard->maxBoardWidthAndHeight || boardSizeY > currentBoard->maxBoardWidthAndHeight) {
-                    cout << "Invalid board size. Please enter numbers between " << currentBoard->minBoardWidthAndHeight << "  and " << currentBoard->maxBoardWidthAndHeight << "." << endl  << endl;
+                if (boardSizeX < 3 || boardSizeY < 3 || boardSizeX > 25 || boardSizeY > 25) {
+                    cout << "Invalid board size. Please enter numbers between 3 and 25." << endl  << endl;
                 } else {
                     // Valid storedInput, break out of the loop
                     break;
@@ -65,13 +68,14 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
     }
 
 
-
+    // make a regex which will filter user input
     std::regex input_regex2("^\\s*(\\d+)\\s*$");
 
 // The number of mines has to be less than the number of cells
     while (true) {
-        cout << "Please enter a number of mines between 1 and " << boardSizeX*boardSizeY-1 << "." << endl  << endl;
+        cout << "Please enter a number of mines between 1 and " << boardSizeX * boardSizeY - 1 << "." << endl  << endl;
 
+        // Get the user input
         string storedInput;
         getline(input, storedInput);
 
@@ -82,6 +86,10 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
             cout << "   exit - quit the game";
             cout << "   help - show commands" << endl  << endl;
         } else if(storedInput== "exit"){
+            // swap the regexes to free up memory
+            std::regex().swap(input_regex);
+            std::regex().swap(input_regex2);
+
             quitGame();
         }
         else
@@ -108,7 +116,12 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
 
     // Create a new board with the specified parameters
     std::unique_ptr<Board> board = std::make_unique<Board>(boardSizeX, boardSizeY, numberOfMines);
+    // Set the current board to the newly created board
     currentBoard = std::move(board);
+
+    // swap the regexes to free up memory
+    std::regex().swap(input_regex);
+    std::regex().swap(input_regex2);
 
     return board;
 }
@@ -117,7 +130,9 @@ std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
 
 void GameManager::quitGame() {
     cout << "Quitting game..." << endl  << endl;
-    exit(0);
+    // Reset the board pointer since despite being a unique pointer, it was causing still reachable memory leaks in valgrind.
+    currentBoard.reset();
+    std::exit(0);
 }
 
 
@@ -128,12 +143,13 @@ void GameManager::gameOver() {
 
     while (true) {
         cout << "Would you like to play again? (y/n)" << endl  << endl;
-        string storedInput;
 
+        // Get the user input
+        string storedInput;
         getline(input, storedInput);
 
         if (storedInput == "y") {
-            // Restart the game
+            // start the game anew
             startGame();
             return;
         } else if (storedInput == "n" || storedInput == "q" || storedInput == "exit") {
@@ -155,26 +171,32 @@ void GameManager::gameOver() {
 }
 
 void GameManager::startGame() {
-
+    // Set the game state to pre-game where the board is configured
     preGame();
+    // Start the game loop
     gameLoop(nullopt);
+    // game over dialogue
     gameOver();
-
-
-
 }
 
 
 
 void GameManager::gameLoop(std::optional<size_t> seedSeq) {
+    bool gameWon = false;
 
     //initial state of the game to make sure the first cell clicked is not a mine and to show the player the board
     gameState = GameState::GAME_RUNNING;
+    // print the board
     currentBoard->printBoard();
-    int x, y;
-    revealInputDialogNotRaw(x, y);
-    currentBoard->distributeMines(x,y,seedSeq);
 
+    //declare variables for the coordinates of the cell to reveal
+    int x, y;
+
+    //get the coordinates of the cell to reveal
+    revealInputDialog(x, y);
+
+    //distribute the mines on the board using mt19937 so that the first cell clicked is not a mine
+    currentBoard->distributeMines(x,y,seedSeq);
 
     //game loop
     while (gameState != GameState::GAME_OVER) {
@@ -185,30 +207,47 @@ void GameManager::gameLoop(std::optional<size_t> seedSeq) {
             currentBoard->printBoard();
 
             cout << "Would you like to place a flag? (y/n)" << endl;
+            // Get the user input
             string storedInput;
             getline(input, storedInput);
 
             if (storedInput == "y") {
 
+                // print the board
                 currentBoard->printBoard();
 
+                // x and y are the coordinates on the board
                 int x, y;
-                placeFlagDialogNotRaw(x, y);
+                // get the coordinates of the cell to place the flag
+                placeFlagDialog(x, y);
 
+                // place or remove the flag
                 currentBoard->placeOrRemoveFlag(x, y);
 
+                // check if the board is cleared
                 if(currentBoard->isBoardCleared()){
+                    // if it is, the game is over and the player has won
                     gameState = GameState::GAME_OVER;
                     cout << "You win!" << endl  << endl;
+                    // set gameWon to true so that the game over message doesn't show twice
+                    gameWon = true;
                     break;
                 }
+                else if(gameWon){
+                    break;
+                }
+
+
+
             } else if (storedInput == "n") {
                 {
+                    // print the board
                     currentBoard->printBoard();
                     break;
                 }
             }
             else if(storedInput=="exit"){
+                // quit the game
                 quitGame();
             }
             else if (storedInput == "help") {
@@ -225,15 +264,18 @@ void GameManager::gameLoop(std::optional<size_t> seedSeq) {
 
 
 
-        if(currentBoard->isBoardCleared()){
+        if(currentBoard->isBoardCleared() && !gameWon){
             gameState = GameState::GAME_OVER;
             cout << "You win!" << endl  << endl;
             break;
         }
+        else if (gameWon){
+            break;
+        }
 
 
-
-        revealInputDialogNotRaw(x, y);
+        //get the coordinates of the cell to reveal
+        revealInputDialog(x, y);
 
         //if the player sucessfully reveals a cell,
         if(currentBoard->revealCell(x,y)){
@@ -249,9 +291,13 @@ void GameManager::gameLoop(std::optional<size_t> seedSeq) {
         //if xy is a mine, game over
 
 
-
-
-    }
+        //check if the board is cleared for the last time
+        if(currentBoard->isBoardCleared()){
+            gameState = GameState::GAME_OVER;
+            cout << "You win!" << endl  << endl;
+            break;
+        }
+}
 
     //if game is over is checked outside of this method
 
@@ -261,12 +307,14 @@ void GameManager::gameLoop(std::optional<size_t> seedSeq) {
 
 
 
-void GameManager::revealInputDialogNotRaw(int &x, int &y) const {
-
+void GameManager::revealInputDialog(int &x, int &y) const {
+    // make a regex which will filter user input
     std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
 
     while (true) {
         cout << "Please enter the coordinates of the cell you want to reveal: " << endl << endl;
+
+        // Get the user input
         string storedInput;
         getline(input, storedInput);
 
@@ -289,13 +337,19 @@ void GameManager::revealInputDialogNotRaw(int &x, int &y) const {
         }
     }
 
+    // swap the regexes to free up memory
+    std::regex().swap(input_regex);
+
 }
-void GameManager::placeFlagDialogNotRaw(int &x, int &y) {
+void GameManager::placeFlagDialog(int &x, int &y) {
+    // make a regex which will filter user input
     std::regex input_regex("^\\s*(\\d+)\\s+(\\d+)\\s*$");
 
     while (true)
     {
         cout << "Please enter the coordinates of the cell you want to flag: " << endl  << endl;
+
+        // Get the user input
         string storedInput;
         getline(input, storedInput);
 
@@ -307,6 +361,8 @@ void GameManager::placeFlagDialogNotRaw(int &x, int &y) {
 
         }
         else if(storedInput == "exit"){
+            // swap the regexes to free up memory
+            std::regex().swap(input_regex);
             quitGame();
         }
         else {
@@ -330,6 +386,9 @@ void GameManager::placeFlagDialogNotRaw(int &x, int &y) {
         }
     }
 
+    // swap the regexes to free up memory
+    std::regex().swap(input_regex);
+
 }
 
 GameManager::GameState GameManager::getGameState() const {
@@ -337,7 +396,6 @@ GameManager::GameState GameManager::getGameState() const {
 }
 
 
-//get board readonly
 Board* GameManager::getCurrentBoard() const {
     if(currentBoard == nullptr){
         return nullptr;
@@ -345,9 +403,9 @@ Board* GameManager::getCurrentBoard() const {
     return currentBoard.get();
 }
 
+
 void GameManager::setCurrentBoard(unique_ptr<Board> &&uniquePtr) {
     currentBoard = std::move(uniquePtr);
-
 }
 
 

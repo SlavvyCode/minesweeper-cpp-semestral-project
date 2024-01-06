@@ -36,9 +36,6 @@ public:
 
     //constants
 
-    const int minBoardWidthAndHeight = 3;
-    const int maxBoardWidthAndHeight = 25;
-
     /**
      * Width of the board
      */

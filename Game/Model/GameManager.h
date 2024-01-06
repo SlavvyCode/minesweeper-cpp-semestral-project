@@ -8,6 +8,7 @@
 
 #include "Board.h"
 #include <iostream>
+#include <regex>
 using namespace std;
 
 /**
@@ -33,7 +34,14 @@ public:
     };
 
 private:
+    /**
+     * The current board the user is playing on
+     */
     std::unique_ptr<Board> currentBoard;
+
+    /**
+     * The input stream from which the user input is read
+     */
     std::istream& input;
 
 
@@ -41,6 +49,7 @@ private:
      * The current state of the game
      */
     GameState gameState = PRE_GAME;
+
 
 public:
 
@@ -108,7 +117,7 @@ public:
      * @param x == x coordinate of the cell
      * @param y == y coordinate of the cell
      */
-    void revealInputDialogNotRaw(int &x, int &y) const;
+    void revealInputDialog(int &x, int &y) const;
 
     /**
      * @brief Flags or unflags the cell at the given coordinates.
@@ -116,7 +125,7 @@ public:
      * @param x == x coordinate of the cell
      * @param y == y coordinate of the cell
      */
-    void placeFlagDialogNotRaw(int &x, int &y);
+    void placeFlagDialog(int &x, int &y);
 
 
     /**
@@ -130,8 +139,11 @@ public:
     Board* getCurrentBoard() const;
 
 
-
-
+    /**
+     * @brief Sets the current board to the given board.
+     *
+     * @param uniquePtr - unique pointer to the board
+     */
     void setCurrentBoard(unique_ptr<Board> &&uniquePtr);
 };
 

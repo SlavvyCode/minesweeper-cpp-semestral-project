@@ -37,8 +37,6 @@ GameManager.h
 /mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/Model/GameManager.h
 iostream
 -
-limits
--
 sstream
 -
 regex
@@ -48,6 +46,8 @@ regex
 Board.h
 /mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/Model/Board.h
 iostream
+-
+regex
 -
 
 /mnt/c/Users/Adam/Desktop/CVUT/PCC/Semestralni Prace/pcc-semestralka/Game/main.cpp

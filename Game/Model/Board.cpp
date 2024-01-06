@@ -25,8 +25,10 @@ void Board::printBoard() {
     // Print the wider horizontal separator
     printTopOrBottomBoardEdge();
 
+    // Print the board contents and the left edge of the board
     printBoardContents();
 
+    // Print the narrower horizontal separator
     printTopOrBottomBoardEdge();
 }
 
@@ -36,9 +38,13 @@ void Board::printBoardContents() {
         cout << setw(2) << row << " |"; // Use setw(2) for proper alignment
 
         for (int col = 0; col < width; ++col) {
+
+            // declare symbol as a string
             string symbol = " ";
+            // Get the cell at the current position
             const Cell& cell = mapArray[col][row];
 
+            // Print the symbol corresponding to the cell state
             switch (cell.state) {
                 case HIDDEN:
                     symbol = "?";
@@ -58,18 +64,21 @@ void Board::printBoardContents() {
                     }
                     break;
             }
-            cout << ' ' << setw(1) << symbol << " |"; // Adjust setw(2) for proper alignment
+            // Print the symbol with and space around it
+            cout << ' ' << setw(1) << symbol << " |";
         }
         cout << "\n";
     }
 }
 
 void Board::printTopOrBottomBoardEdge() const {
+    // corner
     cout << "   +";
+    // edge of the board
     for (int col = 0; col < width; ++col) {
-        cout << "---";
+        cout << "----";
     }
-    //delete last char from cout
+    //delete last char from cout and replace it with a corner
     cout << "\b";
     cout << "+\n";
 }
@@ -86,6 +95,7 @@ bool Board::distributeMines(int x, int y, const std::optional<const size_t> seed
     // x and y are the coordinates of the first cell clicked
     // make sure that the first cell clicked is not a mine
 
+    //using the mt19937 random number generator
     std::mt19937 eng;
 
     if (seedSeq.has_value()) {
@@ -100,7 +110,6 @@ bool Board::distributeMines(int x, int y, const std::optional<const size_t> seed
 
     std::uniform_int_distribution<> distrX(0, width - 1); // Define the range for x
     std::uniform_int_distribution<> distrY(0, height - 1); // Define the range for y
-
 
     size_t minesDistributed = 0;
     while (minesDistributed != mineNumber) {
@@ -170,14 +179,11 @@ void Board::updateMineCountForSurroundingCells(size_t mineX, size_t mineY) {
 
 bool Board::revealCell(int x, int y) {
 
+    // Check if the cell is within bounds
     if(x<0 || x>width || y<0 || y>height){
         cout << "Invalid coordinates, please try again" << endl;
         return false;
     }
-
-
-
-
 
     //if the cell is already revealed, do nothing
     if(mapArray[x][y].state == REVEALED){
@@ -191,12 +197,12 @@ bool Board::revealCell(int x, int y) {
         return false;
     }
 
+    //if the cell is a mine, return false, leave logic for game ending to other method
     if(mapArray[x][y].type==MINE)
         return true;
 
 
     //if the cell is empty, reveal it and reveal all surrounding cells
-
     if(mapArray[x][y].type == EMPTY || mapArray[x][y].type == NUMBER){
         cascadeRevealCells(x, y);
         return true;
@@ -270,6 +276,7 @@ void Board::updateCellsToBeNumberType() {
 
 
 bool Board::placeOrRemoveFlag(int x, int y) {
+    // Check if the cell is within bounds
     if(x<0 || x>width || y<0 || y>height){
         cout << "Invalid coordinates, please try again" << endl;
         return false;
