@@ -21,44 +21,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="fixed formatting, changed max board size, fixed tests, removed 'magic constants'.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2753b7e4-489b-4d58-a9e8-d9c729190f84" name="Changes" comment="added extra comments, cleaned up a bit more. think all good now.&#10;&#10;ready for grading">
       <change beforePath="$PROJECT_DIR$/Game/Model/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Model/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/Board.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Model/GameManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/GameManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Model/GameManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Model/GameManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/Model/Board.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/Model/Board.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/Model/GameManager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/Model/GameManager.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeper.dir/Game/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/Game/Model/Board.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/Game/Model/Board.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/Game/Model/GameManager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/Game/Model/GameManager.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/tests/test1.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/minesweeperTests.dir/tests/test1.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/minesweeper.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/minesweeperTests.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/minesweeperTests.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeper.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeper.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeper.dir/Game/Model/Board.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeper.dir/Game/Model/Board.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeper.dir/Game/Model/GameManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeper.dir/Game/Model/GameManager.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeper.dir/Game/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeper.dir/Game/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeperTests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeperTests.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeperTests.dir/Game/Model/Board.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeperTests.dir/Game/Model/Board.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeperTests.dir/Game/Model/GameManager.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeperTests.dir/Game/Model/GameManager.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeperTests.dir/tests/test1.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/CMakeFiles/minesweeperTests.dir/tests/test1.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux_build/minesweeper" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/minesweeper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux_build/minesweeperTests" beforeDir="false" afterPath="$PROJECT_DIR$/linux_build/minesweeperTests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/assertions.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/assertions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/html_generated/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/assertions.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/assertions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/faq.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/doc/markdown/faq.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_junit.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_xml.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/all_features/test_output/alternative_macros.cpp_xml.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_junit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_junit.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_xml.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/examples/combining_the_same_tests_built_differently_in_multiple_shared_objects/test_output/same_tests_multiple_configurations_xml.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/scripts/data/article.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/build/x64-Debug/_deps/doctest-src/scripts/data/article.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +186,7 @@
       <workItem from="1704112890808" duration="19045000" />
       <workItem from="1704479667723" duration="1833000" />
       <workItem from="1704487544991" duration="233000" />
-      <workItem from="1704488307366" duration="22614000" />
+      <workItem from="1704488307366" duration="23144000" />
     </task>
     <task id="LOCAL-00001" summary="pushtest">
       <option name="closed" value="true" />
@@ -336,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704549961557</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added extra comments, cleaned up a bit more. think all good now.&#10;&#10;ready for grading">
+      <option name="closed" value="true" />
+      <created>1704576217915</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1704576217915</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +338,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -394,7 +366,8 @@
     <MESSAGE value="removed cpp terminal because i couldnt run valgrind with it anyway and i wasnt using it" />
     <MESSAGE value="forgot to commit untracked files" />
     <MESSAGE value="fixed formatting, changed max board size, fixed tests, removed 'magic constants'." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed formatting, changed max board size, fixed tests, removed 'magic constants'." />
+    <MESSAGE value="added extra comments, cleaned up a bit more. think all good now.&#10;&#10;ready for grading" />
+    <option name="LAST_COMMIT_MESSAGE" value="added extra comments, cleaned up a bit more. think all good now.&#10;&#10;ready for grading" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include "Board.h"
-#include <memory>
 #include <stack>
 #include <iomanip>
 #include <random>
@@ -18,7 +17,7 @@ void Board::printBoard() {
 
     std::cout << "    "; // Start with spaces to align with the left edge of the board
     for (int col = 0; col < width; ++col) {
-        std::cout << std::setw(3) << col << '|'; // Adjust setw(3) for proper alignment
+        std::cout << std::setw(3) << col << '|';
     }
     std::cout << "\n";
 
